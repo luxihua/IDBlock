@@ -1,0 +1,118 @@
+
+
+/* 네비게이션 바 start */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 네비게이션 아이템들 수직 중앙 정렬 */
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    /* 좌우 여백 줄이기 */
+    margin: 0 auto;
+    /* 중앙 정렬 */
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 35px;
+    /* 메뉴 간격 조정 */
+    align-items: center;
+    font-size: 18px;
+    line-height: 80px;
+    /* 네비게이션 높이에 맞춰 정렬 */
+    color: #4e5968;
+}
+
+.navbar_menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.navbar_menu a:hover {
+    background-color: #eeeeee;
+}
+
+.nav-item-download {
+    line-height: 80px;
+    /* Matches the height of the header for alignment */
+    padding: 0 10px;
+    /* Consistent padding with other menu items */
+    font-size: 18px;
+    color: #4e5968;
+    text-decoration: none;
+}
+
+.nav-item-download:hover {
+    background-color: #eeeeee;
+}
+
+.language-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.language-toggle img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    /* Ensure the icon aligns with text */
+}
+
+.navbar_item {
+    position: relative;
+    white-space: nowrap;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown_menu li {
+    padding: 8px 15px;
+    /* Adjusted for better dropdown spacing */
+}
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: #4e5968;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown_menu li a:hover {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.navbar_item:hover .dropdown_menu {
+    display: block;
+}
+
+/* 네비게이션 바 end*/

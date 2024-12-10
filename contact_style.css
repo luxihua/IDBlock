@@ -1,0 +1,228 @@
+/* 제휴문의 start */
+.partnership-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+  margin-bottom: 500px;
+}
+
+.hero-section {
+  background-color: rgba(255, 85, 32, 1);
+  display: flex;
+  min-height: 433px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+}
+
+.hero-text {
+  align-self: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 64px;
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contact-section {
+  align-self: center;
+  display: flex;
+  margin-top: 200px;
+  width: 725px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.contact-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.contact-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 2;
+  align-self: center;
+  ;
+}
+
+.contact-email {
+  color: rgba(255, 85, 32, 1);
+  font-size: 64px;
+  font-weight: 800;
+  margin-top: 9px;
+}
+
+.contact-description {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 37px;
+  align-self: center;
+  margin-top: 72px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .partnership-container {
+    max-width: 100%;
+  }
+
+  .hero-section {
+    max-width: 100%;
+    padding: 100px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .contact-section {
+    margin-top: 40px;
+  }
+
+  .contact-header {
+    max-width: 100%;
+  }
+
+  .contact-title {
+    max-width: 100%;
+  }
+
+  .contact-email {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .contact-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+/* 제휴뮨의 end */
+
+
+/* 오시는길 start */
+.location-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: Pretendard, sans-serif;
+  color: rgba(0, 0, 0, 1);
+  padding: 101px 80px 196px;
+}
+
+.location-container {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.location-title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1.92px;
+  text-align: center;
+}
+
+.location-grid {
+  display: flex;
+  margin-top: 180px;
+  width: 100%;
+  align-items: start;
+  gap: 16px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.location-card {
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: start;
+  flex-grow: 1;
+  width: 474px;
+}
+
+.location-image {
+  aspect-ratio: 1.69;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 17px;
+}
+
+.location-details {
+  display: flex;
+  margin-top: 33px;
+  width: 412px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.location-name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.contact-row {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  gap: 11px;
+}
+
+.contact-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 22px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.contact-text {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .location-section {
+    padding: 100px 20px;
+  }
+
+  .location-title {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .location-grid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .location-card {
+    max-width: 100%;
+  }
+
+  .location-image {
+    max-width: 100%;
+  }
+}
+
+/* 오시는길 end */
