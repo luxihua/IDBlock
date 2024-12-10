@@ -252,6 +252,7 @@ vision-section {
 .core-values {
     background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/d3fd628a9e486cf7cbd61e905ee3b1defec9627212f22afa097543e8e5d2b0e7?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d')
     no-repeat center center;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
