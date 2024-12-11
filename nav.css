@@ -20,6 +20,14 @@
     /* 중앙 정렬 */
 }
 
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    transition: margin 0.3s ease-in-out;
+}
+
 .navbar_menu {
     display: flex;
     gap: 35px;
@@ -29,6 +37,8 @@
     line-height: 80px;
     /* 네비게이션 높이에 맞춰 정렬 */
     color: #4e5968;
+    margin-right: 40px;
+    padding-left: 80px;
 }
 
 .navbar_menu a {
@@ -40,6 +50,7 @@
 
 .navbar_menu a:hover {
     background-color: #eeeeee;
+    border-radius: 10px;
 }
 
 .nav-item-download {
@@ -48,6 +59,7 @@
     padding: 0 10px;
     /* Consistent padding with other menu items */
     font-size: 18px;
+    font-weight: 1000;
     color: #4e5968;
     text-decoration: none;
 }
@@ -64,7 +76,7 @@
     align-items: center;
     justify-content: center;
     height: 80px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .language-toggle img {
@@ -87,28 +99,30 @@
     left: 0;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px 0;
+    border-radius: 5px;
+    padding: 3px 0;
     z-index: 1000;
-    min-width: 150px;
+    min-width: 180px;
+    top: 100%;
+    left: 0;
 }
 
 .dropdown_menu li {
-    padding: 8px 15px;
+    padding: 4px 10px;
     /* Adjusted for better dropdown spacing */
 }
 
 .dropdown_menu li a {
     text-decoration: none;
     color: #4e5968;
-    font-size: 16px;
+    font-size: 15px;
     display: block;
     text-align: center;
 }
 
 .dropdown_menu li a:hover {
     background-color: #eeeeee;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .navbar_item:hover .dropdown_menu {
