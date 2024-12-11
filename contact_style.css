@@ -50,8 +50,10 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 2;
+  white-space: nowrap;
+  text-align: center;
   align-self: center;
-  ;
+
 }
 
 .contact-email {
@@ -59,6 +61,8 @@
   font-size: 64px;
   font-weight: 800;
   margin-top: 9px;
+  text-align: center;
+  align-self: center;
 }
 
 .contact-description {
@@ -69,6 +73,7 @@
   align-self: center;
   margin-top: 72px;
   text-align: center;
+  white-space: nowrap;
 }
 
 @media (max-width: 991px) {
@@ -136,6 +141,7 @@
   font-weight: 800;
   letter-spacing: 1.92px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .location-grid {

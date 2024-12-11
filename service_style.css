@@ -120,6 +120,7 @@
     font-weight: 700;
     line-height: 72px;
     margin: 0;
+    white-space: nowrap;
 }
 
 .highlight-text {
@@ -250,6 +251,7 @@
     color: rgb(255, 85, 32);
     font-size: 24px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .text-wrapper {
@@ -272,6 +274,7 @@
     font-size: 24px;
     font-weight: 400;
     margin-top: 52px;
+    white-space: nowrap;
 }
 
 .images-container {
@@ -516,6 +519,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
+    white-space: nowrap;
 }
 
 .auth-description {
@@ -524,6 +528,7 @@
     font-weight: 400;
     line-height: 36px;
     margin-top: 52px;
+    white-space: nowrap;
 }
 
 @media (max-width: 991px) {
@@ -631,6 +636,7 @@
     line-height: 72px;
     align-self: stretch;
     margin-top: 19px;
+    white-space: nowrap;
 }
 
 .payment-description {
@@ -638,6 +644,7 @@
     font-weight: 400;
     line-height: 36px;
     margin-top: 18px;
+    white-space: nowrap;
 }
 
 .payment-image {
@@ -896,6 +903,7 @@
 .subtitle {
     font-size: 32px;
     color: #fff;
+    white-space: nowrap;
 }
 
 .main-title {
@@ -904,6 +912,7 @@
     align-self: stretch;
     margin-top: 27px;
     color: #fff;
+    white-space: nowrap;
 }
 
 .hero-image {
