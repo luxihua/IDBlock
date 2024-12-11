@@ -1,4 +1,3 @@
-
 .vision-section {
     background-color: #fff;
     display: flex;
@@ -44,7 +43,7 @@
     max-width: 100%;
     flex-direction: column;
     justify-content: center;
-    color:#fff;
+    color: #fff;
     position: relative;
     top: -30px;
 }
@@ -59,7 +58,7 @@
 
 .vision-description {
     font-size: 32px;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 48px;
     text-align: center;
     align-self: center;
@@ -130,7 +129,7 @@
     justify-content: center;
     background: #fff;
     overflow: hidden;
-    padding: 175px 80px;
+    padding: 176px 80px;
 }
 
 .overview-container {
@@ -138,86 +137,90 @@
     width: 1193px;
     max-width: 100%;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 250px;
+    align-items: center;
 }
 
 .overview-title {
+    width: 100%;
     color: #000;
     text-align: center;
-    font: 700 40px/60px Pretendard, sans-serif;
     padding: 16px 40px;
-    align-self: center;
+    font: 700 40px/60px Pretendard, sans-serif;
 }
 
-.vertical-line {
-    background-color: #FF7043;
-    align-self: center;
-    min-height: 160px;
+.divider-line {
     width: 1px;
     margin: 24px 0;
 }
 
-.circles-container {
-    display: flex;
-    gap: 20px;
+.divider-inner {
+    background-color: #FF7043;
+    min-height: 160px;
     width: 100%;
+    flex: 1;
 }
 
-.circle-wrapper {
+.cards-container {
     display: flex;
-    flex-direction: column;
-    width: 33%;
+    margin-top: 24px;
+    gap: 24px;
+    font-family: Pretendard, sans-serif;
+    color: #fff;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-.circle-outer {
+.card {
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    width: 371px;
+}
+
+.mission-circle-outer {
     background-color: rgba(255, 208, 194, 0.5);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
-    padding: 15px;
+    padding: 14px;
 }
 
-.circle-inner {
-    background-color: #FF7043;
+.mission-circle-inner {
+    background-color: rgba(255, 112, 67, 1);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    color: #fff;
-    text-align: center;
-    font-family: Pretendard, sans-serif;
+    padding: 46px 37px 100px;
 }
 
-.section-heading {
+.mission-title {
+    color: #fff;
     font-size: 27px;
     font-weight: 300;
-    margin-bottom: 25px;
+    align-self: center;
 }
 
-.section-content {
+.mission-description {
+    color: #fff;
     font-size: 23px;
     font-weight: 700;
     line-height: 35px;
+    margin-top: 24px;
 }
 
-.mission-circle {
-    padding: 45px 50px 100px;
-}
-
-.slogan-circle {
-    padding: 45px 68px 112px;
+@media (max-width: 991px) {
+    .mission-circle-inner {
+        padding: 20px;
+    }
 }
 
 .slogan-text {
     font-size: 32px;
+    font-weight: 700;
     line-height: 48px;
-    margin: 57px 0 -22px;
-}
-
-.vision-circle {
-    padding: 46px 38px 99px;
+    margin: 56px 0 -22px;
 }
 
 @media (max-width: 991px) {
@@ -229,26 +232,16 @@
         padding: 0 20px;
     }
 
-    .circles-container {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .circle-wrapper {
-        width: 100%;
-        margin: 40px 0 0;
-    }
-
-    .circle-inner {
+    .card-inner-circle {
         padding: 0 20px;
-    }
-
-    .slogan-circle {
-        padding: 0 20px 100px;
     }
 
     .slogan-text {
         margin: 40px 0 10px;
+    }
+
+    .cards-container {
+        max-width: 100%;
     }
 }
 
@@ -257,8 +250,7 @@
 
 /* about - intro3 start */
 .core-values {
-    background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/d3fd628a9e486cf7cbd61e905ee3b1defec9627212f22afa097543e8e5d2b0e7?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d')
-    no-repeat center center;
+    background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/d3fd628a9e486cf7cbd61e905ee3b1defec9627212f22afa097543e8e5d2b0e7?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d') no-repeat center center;
     background-size: cover;
     position: relative;
     display: flex;
@@ -337,7 +329,7 @@
     font-weight: 700;
     line-height: 50px;
     margin-top: 73px;
-    white-space : nowrap;
+    white-space: nowrap;
 }
 
 @media (max-width: 991px) {
@@ -379,134 +371,116 @@
 
 
 /*about - 수상 및 연혁 start */
-.awards-history {
-    background: #fff;
+.awards-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 중앙 정렬 */
     justify-content: center;
-    padding: 50px 30px;
+    width: 100%;
+    padding: 40px 20px;
 }
 
 .awards-container {
     display: flex;
-    width: 1179px;
+    width: 1200px;
     max-width: 100%;
-    max-width: 1400px;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    /* 제목과 내용 간 간격 */
-    margin-top: 150px;
-    margin-bottom: 250px;
+    justify-content: start;
 }
 
-.timeline-grid {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    /* 연도와 분기를 상단 기준으로 정렬 */
-}
-
-.year-column {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    /* 항목 간격 균일화 */
-    width: 50%;
-    /* 열 비율 */
-    align-items: flex-end;
-    /* 텍스트 우측 정렬 */
-}
-
-.year-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    /* 연도와 분기 우측 정렬 */
-    font-family: Pretendard, sans-serif;
-    color: #000;
-    white-space: nowrap;
-
-}
-
-.year-header {
-    display: flex;
-    align-items: center;
-    /* 연도와 분기 수직 정렬 */
-    gap: 15px;
-    margin-top: 6px;
-}
-
-.year-header2 {
-    display: flex;
-    align-items: center;
-    /* 연도와 분기 수직 정렬 */
-    gap: 30px;
-    margin-top: 275px;
-}
-
-
-.year-number,
-.year-number2 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #FF5520;
-}
-
-.quarter {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    /* 불필요한 여백 제거 */
-    color: #000;
-}
-
-
-.quarter-3 {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    /* 불필요한 여백 제거 */
-    color: #000;
-    margin-top: 240px;
-}
-
-.awards-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* 항목 간 간격 균일화 */
-    width: 75%;
-    /* 열 비율 */
-}
-
-.awards-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #000;
-    font-family: Pretendard, sans-serif;
-    gap: 25px;
-    /* 각 수상 항목 간 간격 추가 */
-}
-
-.section-title {
-    font-size: 32px;
+.awards-title {
+    align-self: center;
+    gap: 8px;
+    font-size: 48px;
     font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
+    padding: 16px 40px;
+    margin: 0;
 }
 
-.award-item {
-    font-size: 18px;
+.timeline-container {
+    display: flex;
+    margin-top: 64px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 32px;
+    justify-content: start;
+}
+
+.year-quarter-group {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    gap: 32px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.year-quarter-group:last-child {
+    margin-bottom: 0;
+}
+
+.year-quarter-header {
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
     white-space: nowrap;
-    line-height: 1.4;
-    /* 줄 간격 확대 */
-    color: #000;
-    padding: 10px 0;
-    /* 항목 위아래 여백 추가 */
+    justify-content: center;
+    flex-grow: 1;
+    width: 112px;
+}
+
+.quarter-label,
+.year-label {
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.achievements-list {
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    font-weight: 400;
+    justify-content: start;
+    flex-grow: 1;
+    width: 1000px;
+}
+
+.achievement-item {
+    margin-top: 22px;
+}
+
+.achievement-item:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 991px) {
+    .awards-title {
+        font-size: 40px;
+        padding: 0 20px;
+    }
+
+    .timeline-container {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .year-quarter-group {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .year-quarter-header {
+        white-space: initial;
+    }
+
+    .achievements-list {
+        max-width: 100%;
+    }
+
+    .achievement-item {
+        max-width: 100%;
+    }
 }
 
 /*about- 수상 및 연혁 end */
@@ -535,15 +509,16 @@
     margin-top: 250px;
     margin-bottom: 500px;
 
+
 }
 
 .press-title {
     align-self: center;
-    font-size: 36px;
+    font-size: 48px;
     color: #000;
     font-weight: 700;
     padding: 8px 20px;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
 }
 
 .press-item {

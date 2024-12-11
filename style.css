@@ -537,6 +537,7 @@
     align-self: center;
     gap: 15px;
     padding: 16px;
+    line-height: 72px;
     white-space: nowrap;
 }
 
@@ -672,8 +673,7 @@
     padding: 2px;
     margin: -20px 80px 80px;
     font-size: 48px;
-    line-height: 1.8;
-    /* 행간 늘림 */
+    line-height: 72px;
     max-width: 80%;
     /* 제목 너비 제한 */
 }
@@ -720,6 +720,7 @@
     text-align: center;
     align-self: center;
     font: 700 40px/64px Pretendard, sans-serif;
+    line-height: 72px;
 }
 
 
