@@ -475,9 +475,11 @@
 .kakao-button {
     position: relative;
     background-color: rgba(254, 228, 0, 1);
-    color: rgba(0, 0, 0, 1);
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
     padding: 19px 70px;
     cursor: pointer;
+    border: none;
 }
 
 .idblock-button {
@@ -485,7 +487,10 @@
     background-color: rgba(0, 0, 0, 1);
     margin-top: 16px;
     color: rgba(255, 255, 255, 1);
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
     padding: 19px 70px;
+    border: none;
     cursor: pointer;
 }
 
