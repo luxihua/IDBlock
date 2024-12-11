@@ -524,10 +524,10 @@
 .press-item {
     display: flex;
     width: 100%;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 5px;
     position: relative;
     align-items: center;
     /* 항목 중앙 정렬 */

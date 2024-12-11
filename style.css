@@ -534,11 +534,11 @@
 }
 
 .travel-heading {
-    align-self: center;
-    gap: 15px;
-    padding: 16px;
+    font-size: 48px;
+    font-weight: 700;
     line-height: 72px;
-    white-space: nowrap;
+    margin-top: 7px;
+    margin-bottom: 0;
 }
 
 .highlight-text {
@@ -610,6 +610,7 @@
     line-height: 72px;
     margin-top: 7px;
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .certificate-image-container {
@@ -669,12 +670,11 @@
 }
 
 .earth-title {
-    align-self: center;
-    padding: 2px;
-    margin: -20px 80px 80px;
     font-size: 48px;
+    font-weight: 700;
     line-height: 72px;
-    max-width: 80%;
+    margin-top: 7px;
+    margin-bottom: 0;
     /* 제목 너비 제한 */
 }
 
@@ -719,8 +719,11 @@
     color: rgba(0, 0, 0, 1);
     text-align: center;
     align-self: center;
-    font: 700 40px/64px Pretendard, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
     line-height: 72px;
+    margin-top: 7px;
+    margin-bottom: 0;
 }
 
 
