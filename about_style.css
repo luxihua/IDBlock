@@ -1,10 +1,12 @@
-vision-section {
+
+.vision-section {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     font-family: Pretendard, sans-serif;
     color: rgba(255, 255, 255, 1);
+    margin-top: 80px;
 }
 
 .vision-container {
@@ -31,17 +33,20 @@ vision-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 382px 80px;
+    padding: 382px 80px 382px 80px;
+    top: -50px;
 }
 
 .vision-text-container {
     display: flex;
-    margin-bottom: -76px;
+    margin-top: -76px;
     width: 1000px;
     max-width: 100%;
     flex-direction: column;
     justify-content: center;
     color:#fff;
+    position: relative;
+    top: -30px;
 }
 
 .vision-heading {
@@ -133,6 +138,8 @@ vision-section {
     width: 1193px;
     max-width: 100%;
     flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 250px;
 }
 
 .overview-title {
@@ -264,17 +271,6 @@ vision-section {
     z-index: 0;
 }
 
-.core-background-image {
-    position: absolute; /* 부모인 .core-values 기준으로 위치를 조정 */
-    top: 0; /* 상단에 위치 */
-    left: 0; /* 좌측 정렬 */
-    width: 100%; /* 너비를 부모에 맞게 확장 */
-    height: 100%; /* 높이를 부모에 맞게 확장 */
-    object-fit: cover; /* 이미지를 비율에 맞게 채움 */
-    z-index: 1; /* 배경 이미지가 콘텐츠 뒤로 가도록 설정 */
-}
-
-
 
 .core-values-container {
     display: flex;
@@ -282,6 +278,7 @@ vision-section {
     max-width: 100%;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 .section-title-en {
@@ -293,13 +290,13 @@ vision-section {
 .section-title-kr {
     color: rgb(255, 85, 32);
     text-align: center;
-    margin-top: 26px;
+    margin-top: 20px;
     font: 700 48px Pretendard, sans-serif;
 }
 
 .values-grid {
     align-self: stretch;
-    margin-top: 128px;
+    margin-top: 150px;
 }
 
 .values-row {
@@ -389,7 +386,7 @@ vision-section {
     align-items: center;
     /* 중앙 정렬 */
     justify-content: center;
-    padding: 100px 60px;
+    padding: 50px 30px;
 }
 
 .awards-container {
@@ -399,13 +396,15 @@ vision-section {
     max-width: 1400px;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     /* 제목과 내용 간 간격 */
+    margin-top: 150px;
+    margin-bottom: 250px;
 }
 
 .timeline-grid {
     display: flex;
-    gap: 80px;
+    gap: 40px;
     align-items: flex-start;
     /* 연도와 분기를 상단 기준으로 정렬 */
 }
@@ -413,7 +412,7 @@ vision-section {
 .year-column {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 35px;
     /* 항목 간격 균일화 */
     width: 50%;
     /* 열 비율 */
@@ -436,8 +435,8 @@ vision-section {
     display: flex;
     align-items: center;
     /* 연도와 분기 수직 정렬 */
-    gap: 30px;
-    margin-top: 20px;
+    gap: 15px;
+    margin-top: 6px;
 }
 
 .year-header2 {
@@ -445,19 +444,19 @@ vision-section {
     align-items: center;
     /* 연도와 분기 수직 정렬 */
     gap: 30px;
-    margin-top: 560px;
+    margin-top: 275px;
 }
 
 
 .year-number,
 .year-number2 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     color: #FF5520;
 }
 
 .quarter {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
     margin: 0;
     /* 불필요한 여백 제거 */
@@ -466,18 +465,18 @@ vision-section {
 
 
 .quarter-3 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
     margin: 0;
     /* 불필요한 여백 제거 */
     color: #000;
-    margin-top: 520px;
+    margin-top: 240px;
 }
 
 .awards-column {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     /* 항목 간 간격 균일화 */
     width: 75%;
     /* 열 비율 */
@@ -489,24 +488,24 @@ vision-section {
     align-items: flex-start;
     color: #000;
     font-family: Pretendard, sans-serif;
-    gap: 50px;
+    gap: 25px;
     /* 각 수상 항목 간 간격 추가 */
 }
 
 .section-title {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .award-item {
-    font-size: 33px;
+    font-size: 18px;
     white-space: nowrap;
-    line-height: 1.8;
+    line-height: 1.4;
     /* 줄 간격 확대 */
     color: #000;
-    padding: 15px 0;
+    padding: 10px 0;
     /* 항목 위아래 여백 추가 */
 }
 
@@ -523,35 +522,37 @@ vision-section {
     /* 수직 정렬 */
     flex-direction: column;
     font-family: Pretendard, sans-serif;
-    padding: 91px 80px 224px;
+    padding: 50px 40px;
 }
 
 .press-container {
     display: flex;
-    width: 1200px;
+    width: 1000px;
     align-items: center;
     /* 내부 중앙 정렬 */
     max-width: 100%;
     flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 500px;
 
 }
 
 .press-title {
     align-self: center;
-    font-size: 48px;
+    font-size: 36px;
     color: #000;
     font-weight: 700;
-    padding: 16px 40px;
-    margin-bottom: 150px;
+    padding: 8px 20px;
+    margin-bottom: 50px;
 }
 
 .press-item {
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 20px;
     position: relative;
     align-items: center;
     /* 항목 중앙 정렬 */
@@ -559,7 +560,7 @@ vision-section {
 
 .press-item-title {
     color: #000;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     /* 밑줄 제거 */
@@ -584,9 +585,9 @@ a {
     /* 수평 정렬 */
     align-items: center;
     /* 수직 중앙 정렬 */
-    gap: 10px;
+    gap: 5px;
     /* 날짜와 소스 간 간격 */
-    font-size: 24px;
+    font-size: 18px;
     justify-content: flex-start;
     /* 왼쪽 정렬 */
     flex-wrap: nowrap;
@@ -609,21 +610,21 @@ a {
     background-color: #D9D9D9;
     width: 100%;
     height: 1px;
-    margin: 46px 0;
+    margin: 20px 0;
 }
 
 @media (max-width: 991px) {
     .press-releases {
-        padding: 0 20px 100px;
+        padding: 20px;
     }
 
     .press-title {
-        font-size: 40px;
+        font-size: 28px;
         padding: 0 20px;
     }
 
     .press-item {
-        margin: 40px 2px 0 0;
+        margin: 10px;
     }
 
     .press-item-title,

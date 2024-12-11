@@ -1,23 +1,30 @@
 /* service_intro1 start */
 .service-guide {
     display: flex;
-    align-items: center; /* 세로 중앙 정렬 */
-    justify-content: space-between; /* 좌우 균형 배치 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    /* 좌우 균형 배치 */
     flex-wrap: wrap;
     background-color: #fff;
     overflow: hidden;
     padding: 250px 70px;
-    max-width: 1200px; /* 전체 너비 제한 */
-    margin: 0 auto; /* 화면 중앙 정렬 */
+    max-width: 1200px;
+    /* 전체 너비 제한 */
+    margin: 0 auto;
+    /* 화면 중앙 정렬 */
     margin-top: -100px;
 }
 
 .image-gallery {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 이미지가 왼쪽 정렬되도록 */
-    width: 50%; /* 절반 너비 사용 */
-    margin-right: 20px; /* 텍스트와 간격 추가 */
+    align-items: flex-start;
+    /* 이미지가 왼쪽 정렬되도록 */
+    width: 50%;
+    /* 절반 너비 사용 */
+    margin-right: 20px;
+    /* 텍스트와 간격 추가 */
 }
 
 .gallery-grid {
@@ -36,7 +43,7 @@
     position: relative;
     aspect-ratio: 0.498;
     justify-content: center;
-    transform: translateY(-100px); 
+    transform: translateY(-100px);
 }
 
 .gallery-image1 {
@@ -352,7 +359,7 @@
     aspect-ratio: 0.5;
     justify-content: center;
     padding: 16px;
-    transform: translateY(-100px); 
+    transform: translateY(-100px);
 }
 
 @media (max-width: 991px) {
@@ -590,9 +597,12 @@
     width: 1099px;
     max-width: 100%;
     gap: 40px;
-    flex-wrap: nowrap; /* 줄바꿈 방지 */
-    justify-content: space-between; /* 좌우 정렬 */
-    align-items: center; /* 수직 정렬 */
+    flex-wrap: nowrap;
+    /* 줄바꿈 방지 */
+    justify-content: space-between;
+    /* 좌우 정렬 */
+    align-items: center;
+    /* 수직 정렬 */
 }
 
 .payment-content {
@@ -600,7 +610,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin: auto 0;
-    flex: 1; /* 공간 분배 */
+    flex: 1;
+    /* 공간 분배 */
 }
 
 .payment-label {
@@ -628,9 +639,12 @@
     aspect-ratio: 1.06;
     object-fit: contain;
     object-position: center;
-    width: 50%; /* 이미지 크기를 적절히 줄임 */
-    max-width: 400px; /* 최대 크기 제한 */
-    flex: 1; /* 공간 분배 */
+    width: 50%;
+    /* 이미지 크기를 적절히 줄임 */
+    max-width: 400px;
+    /* 최대 크기 제한 */
+    flex: 1;
+    /* 공간 분배 */
 }
 
 @media (max-width: 991px) {
@@ -665,111 +679,138 @@
 
 
 /*service_intro5 start */
-
-/* 서비스 섹션 스타일 */
-.services-container {
-    background: #fff;
+.service-section {
+    padding: 14rem 5rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 150px 40px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    margin-bottom: 250px;
 }
 
-.services-content {
+.service-container {
+    max-width: 1198px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-header {
     text-align: center;
-    max-width: 1200px;
+    max-width: 693px;
+    margin: 0 auto;
 }
 
-.services-title {
-    font-size: 40px;
+.service-heading {
+    font-size: 48px;
     font-weight: 700;
-    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 1rem;
 }
 
-.services-subtitle {
-    font-size: 20px;
-    color: #888E95;
-    margin-bottom: 40px;
+.service-description {
+    font-size: 1.5rem;
+    color: #666666;
 }
 
-.services-grid {
+.service-features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.service-feature-card {
+    flex: none;
+    width: 287px;
+    height: 282px;
+    background-color: #F5F5F5;
+    border-radius: 1rem;
+    padding: 3rem;
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-.service-card {
+.service-feature-card:hover,
+.service-feature-card:focus-within {
+    transform: translateY(-4px);
+}
+
+.service-feature-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #f3f3f3;
-    border-radius: 16px;
-    padding: 20px;
-    width: 300px;
-    height: 350px;
     text-align: center;
 }
 
-.service-card h3 {
-    font: 600 24px Pretendard, sans-serif;
-    margin: 16px 0;
+.service-feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 2.25rem;
 }
 
-.auth-icon,
-.app-icon {
-    width: 100px;
-    height: auto;
-    aspect-ratio: 1;
-    /* Ensures the icon maintains its aspect ratio */
+.service-feature-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-.payment-icon {
-    width: 100px;
-    height: auto;
-    aspect-ratio: 0.7;
-    /* Custom ratio for unique icon dimensions */
-    background-color: #40e799;
-    display: block;
-    margin-top: 16px;
-}
-
-/* 반응형 스타일 */
-@media (max-width: 991px) {
-    .services-container {
-        padding: 100px 20px;
-    }
-
-    .services-title {
-        font-size: 32px;
-    }
-
-    .services-grid {
-        gap: 15px;
-    }
-
-    .service-card {
-        flex: 1 1 calc(50% - 20px);
-    }
+.service-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 @media (max-width: 768px) {
-    .service-card {
-        flex: 1 1 100%;
+    .service-section {
+        padding: 6rem 1.25rem;
     }
 
-    .auth-icon,
-    .app-icon {
-        width: 70px;
+    .service-heading {
+        font-size: 2.5rem;
     }
 
-    .payment-icon {
-        width: 40px;
-        height: 60px;
+    .service-features-grid {
+        margin-top: 2.5rem;
+    }
+
+    .service-feature-card {
+        padding: 1.25rem;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .service-feature-card {
+        transition: none;
+    }
+}
+
+@media (forced-colors: active) {
+    .service-feature-card {
+        border: 1px solid CanvasText;
+    }
+}
+
+@media (prefers-contrast: more) {
+    .service-description {
+        color: #404040;
+    }
+}
+
 
 
 /* service_intro5 end */

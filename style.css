@@ -59,6 +59,7 @@
     flex-wrap: wrap;
     padding: 250px 70px;
     margin-top: -80px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 991px) {
@@ -216,6 +217,7 @@
     flex-direction: column;
     overflow: hidden;
     padding: 250px 70px;
+    margin-bottom: 100px;
 }
 
 .features-container {
@@ -326,6 +328,7 @@
     overflow: hidden;
     justify-content: center;
     padding: 250px 70px;
+    margin-bottom: 100px;
 }
 
 .passport-container {
@@ -446,6 +449,7 @@
     background-color: #fff;
     overflow: hidden;
     padding: 250px 70px;
+    margin-bottom: 100px;
 }
 
 .payment-container {
@@ -615,6 +619,7 @@
     text-align: center;
     padding: 250px 70px;
     font: 700 36px/54px Pretendard, sans-serif;
+    margin-bottom: 100px;
 }
 
 .travel-content {
@@ -682,168 +687,136 @@
 /* intro4 end * - 단일화 그래픽/
 
 /* intro5 start - 특허 증명*/
-.certification-container {
+.certificate-section {
     justify-content: center;
     align-items: center;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    font-family: Pretendard, sans-serif;
-    padding: 250px 70px;
-    margin-bottom: 100px;
-}
+    padding: 169px 80px;
+    margin-top: 100px;
+    margin-bottom: 250px;
+  }
 
-.certification-wrapper {
+  .certificate-wrapper {
     display: flex;
     width: 867px;
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
-}
+  }
 
-.certification-header {
+  .certificate-text-content {
     display: flex;
     width: 100%;
     flex-direction: column;
+    font-family: Pretendard, sans-serif;
     color: rgba(0, 0, 0, 1);
     text-align: center;
     justify-content: start;
-}
+  }
 
-.certification-subtitle {
+  .certificate-subtitle {
     font-size: 24px;
     font-weight: 400;
-}
+    margin: 0;
+  }
 
-.certification-title {
+  .certificate-title {
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
-    margin-top: 8px;
-}
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
 
-.certification-content {
+  .certificate-image-container {
     align-self: center;
     display: flex;
-    margin-top: 80px;
+    margin-top: 84px;
     align-items: center;
     gap: 40px 64px;
-    font-size: 28px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 600;
-    line-height: 38px;
     justify-content: start;
     flex-wrap: wrap;
-}
+  }
 
-.certification-card {
-    border-radius: 0;
-    align-self: stretch;
-    display: flex;
-    min-width: 240px;
-    flex-direction: column;
-    width: 339px;
-    margin: auto 0;
-}
-
-.card-inner {
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2px 1px;
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
+  .certificate-image-left,
+  .certificate-image-right {
+    object-fit: contain;
+    object-position: center;
     border-radius: 24px;
     box-shadow: 10px 4px 27px 6px rgba(0, 0, 0, 0.25);
-    position: relative;
-    aspect-ratio: 0.707;
-    align-items: start;
-    padding: 27px 0 27px 27px;
-}
-
-.card-background {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.card-title {
-    position: relative;
-}
-
-.certification-logo {
-    aspect-ratio: 1.35;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    margin: 132px 0 0 20px;
-}
-
-.certification-image {
-    aspect-ratio: 0.7;
-    object-fit: contain;
-    object-position: center;
-    width: 339px;
-    border-radius: 0;
     align-self: stretch;
     min-width: 240px;
     margin: auto 0;
-}
+  }
 
-@media (max-width: 991px) {
-    .certification-container {
-        padding: 100px 20px;
+  .certificate-image-left {
+    aspect-ratio: 0.71;
+    width: 338px;
+  }
+
+  .certificate-image-right {
+    aspect-ratio: 0.7;
+    width: 336px;
+  }
+
+  @media (max-width: 991px) {
+    .certificate-section {
+      padding: 100px 20px;
     }
 
-    .certification-header {
-        max-width: 100%;
+    .certificate-text-content {
+      max-width: 100%;
     }
 
-    .certification-subtitle {
-        max-width: 100%;
+    .certificate-subtitle {
+      max-width: 100%;
     }
 
-    .certification-title {
-        max-width: 100%;
-        font-size: 40px;
-        line-height: 67px;
+    .certificate-title {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 67px;
     }
 
-    .certification-content {
-        max-width: 100%;
-        margin-top: 40px;
+    .certificate-image-container {
+      max-width: 100%;
+      margin-top: 40px;
     }
+  }
 
-    .card-content {
-        padding-left: 20px;
+  @media screen and (prefers-reduced-motion: reduce) {
+    .certificate-image-left,
+    .certificate-image-right {
+      transition: none;
     }
+  }
 
-    .certification-logo {
-        margin: 40px 0 0 10px;
+  @media screen and (forced-colors: active) {
+    .certificate-image-left,
+    .certificate-image-right {
+      border: 2px solid CanvasText;
     }
-}
+  }
+
+
 
 /* intro5 end  - 특허 증명*/
 
 /* intro6 start - earth */
-.earth {
+.earth-section {
     justify-content: center;
     background-color: #60a5ff;
     display: flex;
-    padding: 250px 0 0;
+    padding: 150px 0 0;
     flex-direction: column;
     overflow: hidden;
     color: #fff;
     text-align: center;
     font: 700 48px/72px Pretendard, sans-serif;
+    margin-bottom: 250px;
 }
 
 .earth-content {
@@ -856,26 +829,33 @@
 
 .earth-title {
     align-self: center;
-    padding: 8px;
-    margin: 0;
+    padding: 2px;
+    margin: -20px 80px 80px;
     font-size: 48px;
-    line-height: 1.8; /* 행간 늘림 */
-    max-width: 80%; /* 제목 너비 제한 */
+    line-height: 1.8;
+    /* 행간 늘림 */
+    max-width: 80%;
+    /* 제목 너비 제한 */
 }
 
 .earth-image {
-    aspect-ratio: auto;/* 비율 유지 */
-    object-fit: cover; /* 이미지가 내용 전체를 덮도록 설정 */
+    aspect-ratio: auto;
+    /* 비율 유지 */
+    object-fit: cover;
+    /* 이미지가 내용 전체를 덮도록 설정 */
     object-position: center bottom;
-    width: 200%; /* 콘텐츠 너비에 맞게 확장 */
-    max-width: 1920px; /* 최대 너비 제한 */
-    margin: 0; /* 상단 여백 조정 */
+    width: 200%;
+    /* 콘텐츠 너비에 맞게 확장 */
+    max-width: 1920px;
+    /* 최대 너비 제한 */
+    margin: 0;
+    /* 상단 여백 조정 */
 }
 
 @media (max-width: 991px) {
     .earth {
-        padding-top: 100px;
-        font-size: 40px;
+        padding-top: 50px;
+        font-size: 35px;
         line-height: 67px;
     }
 
@@ -885,7 +865,7 @@
 
     .earth-title {
         max-width: 100%;
-        font-size: 40px;
+        font-size: 35px;
         line-height: 1.5;
     }
 
@@ -915,6 +895,7 @@
     flex-direction: column;
     overflow: hidden;
     padding: 250px 70px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 991px) {
@@ -934,7 +915,7 @@
     color: rgba(0, 0, 0, 1);
     text-align: center;
     align-self: center;
-    font: 700 48px/72px Pretendard, sans-serif;
+    font: 700 40px/64px Pretendard, sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -1350,6 +1331,7 @@
     flex-direction: column;
     overflow: hidden;
     padding: 300px 70px;
+    margin-bottom: 100px;
 }
 
 .info-content-wrapper {
