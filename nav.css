@@ -29,13 +29,13 @@
 }
 .navbar_menu {
     display: flex;
-    gap: 35px;
+    gap: 50px; /* 메뉴 간격 조정, 기존 35px에서 50px로 넓힘 */
     align-items: center;
     font-size: 18px;
     line-height: 80px;
     color: #4e5968;
-    margin-right: 40px;
-    padding-left: 80px;
+    margin-right: 80px; /* 전체 메뉴를 왼쪽으로 옮기기 위해 오른쪽 마진을 더 크게 조정 */
+    padding-left: 40px; /* 좌측 패딩 줄여서 메뉴를 왼쪽으로 이동 */
 }
 
 .navbar_item_dropdown {
