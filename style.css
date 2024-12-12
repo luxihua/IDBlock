@@ -441,7 +441,7 @@
     white-space: nowrap;
 }
 
-.description {
+.payment-description {
     color: rgba(136, 142, 149, 1);
     font-size: 24px;
     font-weight: 500;
@@ -557,6 +557,11 @@
 
 .highlight-text {
     color: rgba(255, 85, 32, 1);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-top: 7px;
+    margin-bottom: 0;
 }
 
 .travel-image {
@@ -1071,10 +1076,10 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 500px;
-  }
-  
-  .info-content-wrapper {
+    margin-bottom: 250px;
+}
+
+.info-content-wrapper {
     align-self: stretch;
     display: flex;
     min-width: 240px;
@@ -1082,45 +1087,45 @@
     flex-grow: 1;
     width: 457px;
     margin: auto 0;
-  }
-  
-  .info-content-inner {
+}
+
+.info-content-inner {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  
-  .info-logo {
+}
+
+.info-logo {
     aspect-ratio: 3.09;
     object-fit: contain;
     object-position: center;
     width: 222px;
     max-width: 100%;
-  }
-  
-  .info-hero-text {
+}
+
+.info-hero-text {
     color: #000;
     align-self: stretch;
     margin: 48px 0 0;
     font: 700 48px/72px Pretendard, sans-serif;
     white-space: nowrap;
-  }
-  
-  .info-highlight-text {
+}
+
+.info-highlight-text {
     color: #FF5520;
-  }
-  
-  .info-download-buttons {
+}
+
+.info-download-buttons {
     display: flex;
     margin-top: 48px;
     align-items: center;
     gap: 24px;
     justify-content: flex-start;
-  }
-  
-  .info-store-button {
+}
+
+.info-store-button {
     border-radius: 10px;
     background-color: #464E61;
     display: flex;
@@ -1131,42 +1136,42 @@
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
-  }
-  
-  .info-store-button:hover,
-  .info-store-button:focus {
+}
+
+.info-store-button:hover,
+.info-store-button:focus {
     background-color: #5A6275;
     outline: none;
-  }
-  
-  .info-store-button:focus-visible {
+}
+
+.info-store-button:focus-visible {
     outline: 3px solid #007AFF;
     outline-offset: 2px;
-  }
-  
-  .info-store-icon-wrapper {
+}
+
+.info-store-icon-wrapper {
     display: flex;
     min-height: 32px;
     align-items: center;
     justify-content: center;
     width: 32px;
     padding: 3px 4px;
-  }
-  
-  .info-store-icon {
+}
+
+.info-store-icon {
     aspect-ratio: 0.92;
     object-fit: contain;
     object-position: center;
     width: 24px;
-  }
-  
-  .info-store-text {
+}
+
+.info-store-text {
     color: #FFF;
     text-align: center;
     font: 600 18px Pretendard, sans-serif;
-  }
-  
-  .info-app-preview {
+}
+
+.info-app-preview {
     aspect-ratio: 0.98;
     object-fit: contain;
     object-position: center;
@@ -1175,49 +1180,50 @@
     min-width: 240px;
     flex-grow: 1;
     margin: auto 0;
-  }
-  
-  @media (max-width: 991px) {
+}
+
+@media (max-width: 991px) {
+
     .info-content-wrapper,
     .info-content-inner,
     .info-app-preview {
-      max-width: 100%;
+        max-width: 100%;
     }
-    
+
     .info-hero-text {
-      margin-top: 40px;
-      font-size: 40px;
-      line-height: 67px;
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 67px;
     }
-    
+
     .info-download-buttons {
-      margin-top: 40px;
-      flex-direction: column;
-      width: 100%;
+        margin-top: 40px;
+        flex-direction: column;
+        width: 100%;
     }
-    
+
     .info-store-button {
-      width: 100%;
-      padding: 16px 20px;
+        width: 100%;
+        padding: 16px 20px;
     }
-  }
-  
-  @media screen and (prefers-reduced-motion: reduce) {
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
     .info-store-button {
-      transition: none;
+        transition: none;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .info-hero-text {
-      font-size: 32px;
-      line-height: 48px;
+        font-size: 32px;
+        line-height: 48px;
     }
-    
+
     .info-store-text {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
+}
 
 
 /* intro8 end
