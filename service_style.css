@@ -627,7 +627,8 @@
 
 .payment-label {
     color: rgb(255, 85, 32);
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .payment-title {
