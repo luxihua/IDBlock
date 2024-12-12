@@ -237,13 +237,11 @@
 }
 
 .text-content {
-    align-self: stretch;
     display: flex;
-    min-width: 240px;
     flex-direction: column;
+    align-self: stretch;
     font-family: Pretendard, sans-serif;
-    justify-content: flex-start;
-    width: 479px;
+    justify-content: start;
     margin: auto 0;
 }
 
@@ -391,11 +389,13 @@
         max-width: 100%;
         font-size: 40px;
         line-height: 67px;
+        white-space: nowrap;
     }
 
     .description {
         max-width: 100%;
         margin-top: 40px;
+        white-space: nowrap;
     }
 
     .images-container {
