@@ -1,21 +1,20 @@
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        file = elmnt.getAttribute("include-html");
+async function includeHTML() {
+    let allElements = document.getElementsByTagName("*");
+    for (let elem of allElements) {
+        let file = elem.getAttribute("include-html");
         if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    elmnt.innerHTML = this.responseText;
-                    elmnt.removeAttribute("include-html");
+            try {
+                let response = await fetch(file);
+                if (response.ok) {
+                    elem.innerHTML = await response.text();
+                    elem.removeAttribute("include-html");
                     includeHTML();
+                } else {
+                    throw new Error('Failed to load file ' + file);
                 }
-            };
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;  // 이 부분은 모든 요소를 처리하기 위해 재검토 필요
+            } catch (error) {
+                console.error('Error loading the include HTML.', error);
+            }
         }
     }
 }
