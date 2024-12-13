@@ -8,7 +8,7 @@
     padding: 250px 70px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .section h2 {
@@ -53,8 +53,8 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 250px 70px;
-    margin-top: -80px;
-    margin-bottom: 50px;
+    width: 100vw; /* 전체 뷰포트 너비 */
+    margin-bottom: 25px;
 }
 
 
@@ -196,7 +196,7 @@
     flex-direction: column;
     overflow: hidden;
     padding: 250px 70px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .features-container {
@@ -308,7 +308,7 @@
     overflow: hidden;
     justify-content: center;
     padding: 250px 70px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .passport-container {

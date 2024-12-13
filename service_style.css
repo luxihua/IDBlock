@@ -702,7 +702,7 @@
   
   .service-card {
     border-radius: 16px;
-    background-color: rgba(243, 243, 243, 1);
+    background-color: #F3F3F3;
     align-self: stretch;
     display: flex;
     min-width: 240px;

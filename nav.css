@@ -36,6 +36,7 @@
     color: #4e5968;
     margin-right: 80px; /* 전체 메뉴를 왼쪽으로 옮기기 위해 오른쪽 마진을 더 크게 조정 */
     padding-left: 40px; /* 좌측 패딩 줄여서 메뉴를 왼쪽으로 이동 */
+    list-style-type: none; 
 }
 
 .navbar_item_dropdown {
@@ -46,6 +47,7 @@
 .navbar_item_dropdown a {
     color: #4e5968;
 }
+
 
 .dropdown_menu {
     display: none;
@@ -59,6 +61,7 @@
     padding: 3px 0;
     z-index: 1000;
     min-width: 120px; /* 크기 조정 */
+    list-style-type: none; 
 }
 
 .dropdown_menu li a {
@@ -85,6 +88,39 @@
     font-weight: 1000;
     color: #4e5968;
     text-decoration: none;
+}
+
+.navbar_lang_dropdown {
+    position: relative;
+    white-space: nowrap;
+}
+
+.dropdown_lang {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%; /* 중앙에서 시작하도록 설정 */
+    transform: translateX(-50%); /* 중앙 정렬을 위해 자신의 폭의 반만큼 왼쪽으로 이동 */
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 3px 0;
+    z-index: 1000;
+    min-width: 120px; /* 크기 조정 */
+    list-style-type: none; 
+}
+
+.dropdown_lang li a {
+    text-decoration: none;
+    color: #4e5968;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    padding: 3px 8px; /* 패딩 조정으로 내부 아이템의 크기 조정 */
+}
+
+.navbar_lang_dropdown:hover .dropdown_lang {
+    display: block;
 }
 
 
