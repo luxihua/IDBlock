@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../IDBlock_homepage"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "IDBlock"
+	}
+}

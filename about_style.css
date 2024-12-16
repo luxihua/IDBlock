@@ -68,60 +68,6 @@
     white-space: nowrap;
 }
 
-@media (max-width: 991px) {
-    .vision-container {
-        max-width: 100%;
-    }
-
-    .vision-content {
-        max-width: 100%;
-        padding: 100px 20px;
-    }
-
-    .vision-text-container {
-        margin-bottom: 10px;
-    }
-
-    .vision-heading {
-        max-width: 100%;
-        font-size: 40px;
-    }
-
-    .vision-description {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .vision-background {
-        animation: none;
-    }
-}
-
-@media screen and (forced-colors: active) {
-    .vision-section {
-        border: 1px solid CanvasText;
-    }
-}
-
-@media (prefers-contrast: more) {
-    .vision-section {
-        color: #ffffff;
-        background: #000000;
-    }
-}
-
-@media print {
-    .vision-section {
-        color: #000000;
-        background: #ffffff;
-    }
-
-    .vision-background {
-        display: none;
-    }
-}
 
 /* about - intro2 start */
 .overview-company {
@@ -184,19 +130,6 @@
     width: 100%;
 }
 
-@media (max-width: 991px) {
-    .overview-company {
-        padding: 100px 20px;
-    }
-
-    .overview-section-title {
-        padding: 0 20px;
-    }
-
-    .overview-image-grid {
-        max-width: 100%;
-    }
-}
 
 .overview-visually-hidden {
     position: absolute;
@@ -301,40 +234,6 @@
     white-space: nowrap;
 }
 
-@media (max-width: 991px) {
-    .core-values {
-        padding: 100px 20px;
-    }
-
-    .section-title-en,
-    .section-title-kr {
-        font-size: 40px;
-    }
-
-    .values-grid {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-
-    .values-row {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-    }
-
-    .value-card {
-        width: 100%;
-        margin: 40px 0 0;
-    }
-
-    .value-content {
-        padding: 0 20px 100px;
-    }
-
-    .value-description {
-        margin-top: 40px;
-    }
-}
 
 /* about - intro3 end */
 
@@ -385,6 +284,7 @@
     margin-bottom: 48px;
 
 }
+
 .year-quarter-group2 {
     display: flex;
     width: 100%;
@@ -394,6 +294,7 @@
     margin-bottom: 48px;
 
 }
+
 .year-quarter-group3 {
     display: flex;
     width: 100%;
@@ -403,6 +304,7 @@
     margin-bottom: 48px;
 
 }
+
 .year-quarter-group4 {
     display: flex;
     width: 100%;
@@ -457,6 +359,7 @@
     width: 1000px;
     white-space: nowrap;
 }
+
 .achievements-list2 {
     display: flex;
     min-width: 240px;
@@ -478,6 +381,7 @@
     white-space: nowrap;
     margin-left: -97px;
 }
+
 .achievements-list4 {
     display: flex;
     min-width: 240px;
@@ -496,33 +400,6 @@
 
 .achievement-item:first-child {
     margin-top: 0;
-}
-
-@media (max-width: 991px) {
-    .awards-history {
-        padding: 100px 20px;
-    }
-
-    .section-title {
-        font-size: 40px;
-        padding: 0 20px;
-    }
-
-    .timeline-container {
-        margin-top: 40px;
-    }
-
-    .year-quarter-group {
-        max-width: 100%;
-    }
-
-    .achievements-list {
-        max-width: 100%;
-    }
-
-    .year-quarter {
-        white-space: normal;
-    }
 }
 
 /*about- 수상 및 연혁 end */
@@ -593,8 +470,6 @@ a {
 .press-item-title a:hover {
     color: #FF5520;
     /* 호버 시 색상 */
-    text-decoration: underline;
-    /* 호버 시 밑줄 추가 */
 }
 
 .press-meta {
@@ -630,43 +505,178 @@ a {
     margin: 20px 0;
 }
 
-@media (max-width: 991px) {
-    .press-releases {
+
+/* about- 보도자료 end */
+
+/* 991px 이하 화면 (Tablet) */
+@media screen and (max-width: 991px) {
+    .vision-container {
+        min-height: 600px;
+    }
+
+    .vision-content {
+        padding: 150px 40px;
+    }
+
+    .vision-heading {
+        font-size: 40px;
+    }
+
+    .vision-description {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 40px;
+    }
+
+    .overview-container {
         padding: 20px;
     }
 
-    .press-title {
-        font-size: 28px;
-        padding: 0 20px;
+    .values-row {
+        flex-direction: row;
+        gap: 30px;
     }
 
-    .press-item {
-        margin: 10px;
+    .value-card {
+        width: 100%;
     }
 
-    .press-item-title,
-    .press-meta {
-        max-width: 100%;
+    .awards-container,
+    .press-container {
+        width: 100%;
+        padding: 20px;
+        margin: 100px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .year-quarter-group1,
+    .year-quarter-group2,
+    .year-quarter-group3,
+    .year-quarter-group4 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .achievements-list1,
+    .achievements-list2,
+    .achievements-list3,
+    .achievements-list4 {
+        margin-left: 0;
     }
 }
 
-/* about- 보도자료 end */
+/* 320px 이하 화면 (Mobile) */
+@media screen and (max-width: 320px) {
+    .vision-container {
+        min-height: 400px;
+    }
+
+    .vision-content {
+        padding: 50px 20px;
+    }
+
+    .vision-heading {
+        font-size: 24px;
+    }
+
+    .vision-description {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .overview-section-title {
+        font-size: 20px;
+    }
+
+    .overview-image-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .overview-image-wrapper {
+        width: 100%;
+    }
+
+    .section-title-en,
+    .section-title-kr {
+        font-size: 24px;
+    }
+
+    .value-content {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .value-title-kr,
+    .value-title-en {
+        font-size: 20px;
+    }
+
+    .value-description {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+
+    .awards-container,
+    .press-container {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .timeline-container,
+    .year-quarter-group1,
+    .year-quarter-group2,
+    .year-quarter-group3,
+    .year-quarter-group4 {
+        gap: 10px;
+    }
+
+    .achievement-item {
+        font-size: 14px;
+    }
+
+    .press-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .press-item-title {
+        font-size: 16px;
+    }
+
+    .press-meta {
+        font-size: 12px;
+    }
+}
 
 /* 초기 상태 - 숨김 */
 .vision-section,
 .overview-company,
 .core-values {
-    opacity: 0; /* 투명 상태 */
-    transform: translateY(50px); /* 아래로 이동 */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* 부드러운 전환 효과 */
+    opacity: 0;
+    /* 투명 상태 */
+    transform: translateY(50px);
+    /* 아래로 이동 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    /* 부드러운 전환 효과 */
 }
 
 /* 애니메이션 활성화 상태 */
 .vision-section.animate,
 .overview-company.animate,
 .core-values.animate {
-    opacity: 1; /* 완전 표시 */
-    transform: translateY(0); /* 제자리 */
+    opacity: 1;
+    /* 완전 표시 */
+    transform: translateY(0);
+    /* 제자리 */
 }
 
 /* 하위 요소별 추가 애니메이션 */

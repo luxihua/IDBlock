@@ -1,3 +1,28 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("main > section");
+  const footer = document.querySelector("footer");
+  let isSnapping = true;
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              const target = entry.target;
+
+              // info-app-container 이후로 스크롤 스냅 비활성화
+              if (target.classList.contains("partners-section")) {
+                  document.querySelector("main").style.scrollSnapType = "none";
+                  isSnapping = false;
+              }
+          }
+      });
+  });
+
+  // 각 섹션 관찰
+  sections.forEach((section) => observer.observe(section));
+  observer.observe(footer);
+});
+
+
 /* 초기화 */
 let windowHeight = window.innerHeight;
 
@@ -108,27 +133,47 @@ const observer3 = new IntersectionObserver(
 /* home6 스크롤 width 조절 이벤트 */
 window.addEventListener("resize", initialize);
 
-/* 스크롤 이벤트 - earth-image width 조정 */
-const walls = document.querySelectorAll(".earth-image");
-const home6Wall = document.querySelector(".earth-content");
 
-const home6WidthControlHandler = () => {
-  const difference = windowHeight - home6Wall.getBoundingClientRect().top;
 
-  walls.forEach((item) => {
-    // 스크롤 위치에 따라 width 계산
-    if (difference > 0 && difference <= 700) {
-      const newWidth = 1000 + (difference / 700) * 1800; // 200px에서 2000px까지 비례 증가
-      item.style.width = `${newWidth}px`;
-    } else if (difference > 700) {
-      item.style.width = "2000px"; // 최대 너비
-    } else {
-      item.style.width = "1000px"; // 초기 너비
-    }
+
+
+// 특허 증명 이벤트
+document.addEventListener("DOMContentLoaded", () => {
+  const certificateImageLeft = document.querySelector(".certificate-image-left");
+  const certificateImageRight = document.querySelector(".certificate-image-right");
+
+  // 원본 이미지와 대체 이미지 경로
+  const originalLeftSrc = certificateImageLeft.src;
+  const originalRightSrc = certificateImageRight.src;
+  const alternateLeftSrc = "static/cert_image1.png"; // 대체 이미지 1 경로
+  const alternateRightSrc = "static/cert_image2.png"; // 대체 이미지 2 경로
+
+  // 이미지 교체 함수 (애니메이션 포함)
+  const changeImageWithEffect = (imageElement, newSrc) => {
+      imageElement.classList.add("flip-animation"); // 애니메이션 클래스 추가
+      setTimeout(() => {
+          imageElement.src = newSrc; // 애니메이션 중간에 이미지 교체
+      }, 300); // 0.3초 후에 이미지 변경
+      setTimeout(() => {
+          imageElement.classList.remove("flip-animation"); // 애니메이션 클래스 제거
+      }, 600); // 0.6초 후 애니메이션 종료
+  };
+
+  // 클릭 이벤트: 대체 이미지로 변경
+  certificateImageLeft.addEventListener("click", () => {
+      changeImageWithEffect(certificateImageLeft, alternateLeftSrc);
   });
 
-  // 디버깅용 로그
-  console.log("Difference:", difference);
-};
+  certificateImageRight.addEventListener("click", () => {
+      changeImageWithEffect(certificateImageRight, alternateRightSrc);
+  });
 
-window.addEventListener("scroll", home6WidthControlHandler);
+  // 커서가 이미지에서 벗어날 때: 원래 이미지로 복구
+  certificateImageLeft.addEventListener("mouseleave", () => {
+      changeImageWithEffect(certificateImageLeft, originalLeftSrc);
+  });
+
+  certificateImageRight.addEventListener("mouseleave", () => {
+      changeImageWithEffect(certificateImageRight, originalRightSrc);
+  });
+});

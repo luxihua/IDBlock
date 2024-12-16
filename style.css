@@ -1,3 +1,37 @@
+/* 부모 컨테이너에 스크롤 스냅 활성화 */
+main {
+    scroll-snap-type: y mandatory;
+    /* 수직 방향으로 강제 스냅 */
+    overflow-y: scroll;
+    /* 스크롤 가능 */
+    height: 100vh;
+    /* 전체 화면 높이 */
+}
+
+/* 각 섹션에 스냅 정렬 및 높이 설정 */
+section {
+    scroll-snap-align: start;
+    /* 섹션이 스크롤 시 상단에 정렬 */
+    height: 100vh;
+    /* 화면 높이만큼 설정 */
+    width: 100%;
+    /* 전체 화면 너비 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 70px;
+}
+
+.info-app-container, 
+.info-app-container ~ section,
+footer{
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+}
+
+
+
 .section {
     display: flex;
     flex-direction: column;
@@ -5,7 +39,7 @@
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-    padding: 250px 70px;
+
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
@@ -46,29 +80,27 @@
 
 
 .hero-section {
-    align-self: center;
-    display: flex;
-    align-items: center;
-    gap: 40px 117px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 250px 70px;
-    width: 100vw; /* 전체 뷰포트 너비 */
-    margin-bottom: 25px;
+    display: flex; /* 가로 정렬 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    flex-direction: row; /* 가로 방향 정렬 */
+    height: 100vh; /* 화면 전체 높이 */
+    padding: 0 70px; /* 좌우 여백 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
 }
+
 
 
 .hero-content {
-    align-self: stretch;
+    flex: 1; /* hero-content가 가능한 공간을 차지 */
     display: flex;
-    min-width: 240px;
-    flex-direction: column;
-    align-items: start;
-    width: 508px;
-    margin: auto 0;
-    padding: 0 2px;
-    animation: appear ease-out 2.5s;
+    flex-direction: column; /* 내용 수직 정렬 */
+    justify-content: center; /* 세로 가운데 정렬 */
+    align-items: flex-start; /* 텍스트 왼쪽 정렬 */
+    gap: 20px; /* 요소 간 간격 */
+    max-width: 600px; /* 최대 너비 제한 */
 }
+
 
 
 
@@ -142,13 +174,12 @@
 }
 
 .hero-image {
-    aspect-ratio: 0.91;
-    object-fit: contain;
-    object-position: center;
-    width: 576px;
-    align-self: stretch;
-    min-width: 240px;
-    margin: auto 0;
+    flex: 1; /* hero-image가 가능한 공간을 차지 */
+    max-width: 30%;
+    height: auto; /* 높이는 비율 유지 */
+    object-fit: contain; /* 이미지가 영역을 벗어나지 않도록 */
+    object-position: center; /* 이미지 중앙 정렬 */
+    margin-left: 40px; /* hero-content와 간격 추가 */
 }
 
 
@@ -697,6 +728,17 @@
     width: 336px;
 }
 
+.certificate-image-left,
+.certificate-image-right {
+    cursor: pointer; /* 마우스 올렸을 때 손 모양으로 변경 */
+    transition: transform 0.2s ease; /* 마우스 올릴 때 살짝 확대 효과 */
+}
+
+.certificate-image-left:hover,
+.certificate-image-right:hover {
+    transform: scale(1.05); /* 살짝 확대 */
+}
+
 
 /* intro5 end  - 특허 증명*/
 
@@ -705,7 +747,6 @@
 
 .earth-section {
     justify-content: center;
-    background-color: #60a5ff;
     display: flex;
     padding: 150px 0 0;
     flex-direction: column;
@@ -719,17 +760,17 @@
 .earth-content {
     display: flex;
     width: 100%;
+    background-color: #60a5ff;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 200px; 
 }
 
 .earth-title {
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
-    margin-top: 7px;
-    margin-bottom: 0;
     text-align: center;
     align-self: center;
     /* 제목 너비 제한 */
@@ -747,7 +788,6 @@
     /* 최대 너비 제한 */
     margin: 0;
     /* 상단 여백 조정 */
-    transition: width 0.5s ease-in-out; /* 부드러운 width 변화 */
 }
 
 /* intro6 end - earth* /
@@ -1098,8 +1138,8 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
     margin-bottom: 250px;
+    flex-direction: row;
 }
 
 .info-content-wrapper {

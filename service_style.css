@@ -190,7 +190,8 @@
     font-size: 24px;
     font-weight: 700;
     white-space: nowrap;
-    margin-bottom: 16px;;
+    margin-bottom: 16px;
+    ;
 }
 
 .text-wrapper {
@@ -225,7 +226,7 @@
     width: 468px;
     margin: auto 0;
     margin-left: 100px;
-    
+
 }
 
 .images-grid {
@@ -519,17 +520,17 @@
     flex-direction: column;
     overflow: hidden;
     padding: 225px 80px;
-  }
-  
-  .services-wrapper {
+}
+
+.services-wrapper {
     display: flex;
     width: 1198px;
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
-  }
-  
-  .header-content {
+}
+
+.header-content {
     align-self: center;
     display: flex;
     width: 693px;
@@ -538,21 +539,21 @@
     font-family: Pretendard, sans-serif;
     text-align: center;
     justify-content: start;
-  }
-  
-  .services-title {
+}
+
+.services-title {
     color: #000;
     font: 700 48px/72px Pretendard, sans-serif;
     white-space: nowrap;
-  }
-  
-  .services-subtitle {
+}
+
+.services-subtitle {
     color: #888e95;
     font: 400 24px Pretendard, sans-serif;
     margin-top: 17px;
-  }
-  
-  .features-grid {
+}
+
+.features-grid {
     display: flex;
     margin-top: 152px;
     width: 100%;
@@ -560,9 +561,9 @@
     gap: 40px 61px;
     justify-content: start;
     flex-wrap: wrap;
-  }
-  
-  .feature-card {
+}
+
+.feature-card {
     border-radius: 16px;
     background-color: #f3f3f3;
     min-width: 240px;
@@ -574,54 +575,71 @@
     width: 287px;
     margin: auto 0;
     padding: 48px;
-  }
-  
-  .feature-content {
+}
+
+
+.feature-card {
+    cursor: pointer;
+    /* 마우스 올렸을 때 손 모양으로 변경 */
+    transition: transform 0.2s ease;
+    /* 마우스 올릴 때 살짝 확대 효과 */
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    /* 살짝 확대 */
+}
+
+
+.feature-content {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto 0;
-  }
-  
-  .feature-title {
+}
+
+.feature-title {
     color: #000;
     text-align: center;
     align-items: center;
     font: 600 24px Pretendard, sans-serif;
     white-space: nowrap;
-  }
-  
-  .feature-image1 {
+}
+
+.feature-image1 {
     margin-top: 36px;
     max-width: 100%;
-  }
-  .feature-image2 {
+}
+
+.feature-image2 {
     margin-top: 10px;
     max-width: 100%;
-  }
-  .feature-image3 {
+}
+
+.feature-image3 {
     margin-top: 0px;
     max-width: 100%;
-  }
-  .feature-image4 {
+}
+
+.feature-image4 {
     margin-top: 25px;
     max-width: 100%;
-  }
-  
-  .app-services {
+}
+
+.app-services {
     padding: 45px 80px;
-  }
-  
-  .app-content {
+}
+
+.app-content {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .app-images {
+}
+
+.app-images {
     align-self: center;
     display: flex;
     margin-top: 8px;
@@ -631,21 +649,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .payment-card {
+}
+
+.payment-card {
     padding: 49px 84px;
-  }
-  
-  .payment-content {
+}
+
+.payment-content {
     display: flex;
     max-width: 100%;
     width: 190px;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .visually-hidden {
+}
+
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -654,7 +672,7 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-  }
+}
 
 /* service_intro5 end */
 
@@ -720,8 +738,10 @@
 .services-container,
 .block-pay-container {
     opacity: 0;
-    transform: translateY(50px); /* 아래로 이동 */
-    transition: opacity 1.0s ease-out, transform 1.0s ease-out; /* 부드러운 전환 효과 */
+    transform: translateY(50px);
+    /* 아래로 이동 */
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+    /* 부드러운 전환 효과 */
 }
 
 /* 활성화 상태 */
@@ -732,7 +752,8 @@
 .services-container.animate,
 .block-pay-container.animate {
     opacity: 1;
-    transform: translateY(0); /* 원래 위치 */
+    transform: translateY(0);
+    /* 원래 위치 */
 }
 
 
@@ -743,7 +764,8 @@
 .services-container .features-grid,
 .block-pay-container .content-wrapper {
     opacity: 0;
-    transform: translateY(30px); /* 조금 더 낮게 이동 */
+    transform: translateY(30px);
+    /* 조금 더 낮게 이동 */
     transition: opacity 1.0s ease-out, transform 1.0s ease-out;
 }
 
