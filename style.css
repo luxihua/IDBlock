@@ -403,6 +403,26 @@
 
 
 /* intro3 start */
+
+/* 초기 상태 */
+.main-title,
+.payment-description,
+.image-column,
+.image-column-secondary {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 활성화 상태 */
+.main-title.active,
+.payment-description.active,
+.image-column.active,
+.image-column-secondary.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .payment-section {
     display: flex;
     flex-direction: column;
@@ -681,6 +701,8 @@
 /* intro5 end  - 특허 증명*/
 
 /* intro6 start - earth */
+
+
 .earth-section {
     justify-content: center;
     background-color: #60a5ff;
@@ -725,6 +747,7 @@
     /* 최대 너비 제한 */
     margin: 0;
     /* 상단 여백 조정 */
+    transition: width 0.5s ease-in-out; /* 부드러운 width 변화 */
 }
 
 /* intro6 end - earth* /

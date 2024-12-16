@@ -660,7 +660,7 @@
 
 
 /* service_intro 6 start */
-.block-pay-container {
+.blockpay-container {
     background: #ff5520;
     display: flex;
     flex-direction: column;
@@ -674,7 +674,7 @@
     padding: 141px 80px;
 }
 
-.content-wrapper {
+.blockpay-content-wrapper {
     display: flex;
     width: 889px;
     max-width: 100%;
@@ -682,14 +682,14 @@
     align-items: center;
 }
 
-.subtitle {
+.blockpay-subtitle {
     font-weight: 500;
     font-size: 32px;
     color: #fff;
     white-space: nowrap;
 }
 
-.main-title {
+.blockpay-main-title {
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
@@ -699,7 +699,7 @@
     white-space: nowrap;
 }
 
-.hero-image {
+.blockpay-hero-image {
     aspect-ratio: 1.4;
     object-fit: contain;
     object-position: center;
@@ -710,3 +710,49 @@
 
 
 /* service_intro 6 end */
+
+
+/* 초기 상태 - 숨김 */
+.service-guide,
+.identity-verification,
+.auth-container,
+.payment-section,
+.services-container,
+.block-pay-container {
+    opacity: 0;
+    transform: translateY(50px); /* 아래로 이동 */
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out; /* 부드러운 전환 효과 */
+}
+
+/* 활성화 상태 */
+.service-guide.animate,
+.identity-verification.animate,
+.auth-container.animate,
+.payment-section.animate,
+.services-container.animate,
+.block-pay-container.animate {
+    opacity: 1;
+    transform: translateY(0); /* 원래 위치 */
+}
+
+
+.service-guide .gallery-column,
+.identity-verification .images-grid,
+.auth-container .auth-content,
+.payment-section .payment-content,
+.services-container .features-grid,
+.block-pay-container .content-wrapper {
+    opacity: 0;
+    transform: translateY(30px); /* 조금 더 낮게 이동 */
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+}
+
+.service-guide.animate .gallery-column,
+.identity-verification.animate .images-grid,
+.auth-container.animate .auth-content,
+.payment-section.animate .payment-content,
+.services-container.animate .features-grid,
+.block-pay-container.animate .content-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+}

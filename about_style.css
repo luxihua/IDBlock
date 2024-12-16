@@ -340,12 +340,12 @@
 
 
 /*about - 수상 및 연혁 start */
+
 .awards-history {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    overflow: hidden;
     font-family: Pretendard, sans-serif;
     color: rgba(0, 0, 0, 1);
     padding: 165px 80px;
@@ -651,3 +651,44 @@ a {
 }
 
 /* about- 보도자료 end */
+
+/* 초기 상태 - 숨김 */
+.vision-section,
+.overview-company,
+.core-values {
+    opacity: 0; /* 투명 상태 */
+    transform: translateY(50px); /* 아래로 이동 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* 부드러운 전환 효과 */
+}
+
+/* 애니메이션 활성화 상태 */
+.vision-section.animate,
+.overview-company.animate,
+.core-values.animate {
+    opacity: 1; /* 완전 표시 */
+    transform: translateY(0); /* 제자리 */
+}
+
+/* 하위 요소별 추가 애니메이션 */
+.vision-heading,
+.vision-description,
+.overview-section-title,
+.overview-image,
+.section-title-en,
+.section-title-kr,
+.value-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate .vision-heading,
+.animate .vision-description,
+.animate .overview-section-title,
+.animate .overview-image,
+.animate .section-title-en,
+.animate .section-title-kr,
+.animate .value-card {
+    opacity: 1;
+    transform: translateY(0);
+}

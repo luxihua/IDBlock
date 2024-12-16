@@ -1,115 +1,134 @@
-/* load나 resize, reset 시에 초기화 부분 */
+/* 초기화 */
+let windowHeight = window.innerHeight;
 
-addEventListener('load',()=>{
-    initalize()
-})
-addEventListener('resize',()=>{
-    initalize()
-})
-addEventListener('reset',()=>{
-    initalize()
-})
-
-const initalize = ()=>{
-  windowHeight = window.outerHeight
-  history.scrollRestoration = "manual";
-}
+const initialize = () => {
+  windowHeight = window.innerHeight;
+};
 
 
+addEventListener("load", initialize);
+addEventListener("resize", initialize);
 
-/* intro 애니메이션 */
-
-// delay를 주기 위하여 설정, css 단독으로는 animation delay를 줄 수 없음
-
-// netify로 배포를 하였는데, 배경 이미지를 다 불러오기 전에 애니메이션이 실행되는 경우가 있었다. 해결하기위해 window.onload 도입하였으나,
-// window 자체를 다 불러오는데도 로컬환경고 다르게 배포 환경은 매우 느려서, window가 준비되는데 10초이상이 소요돼서 빼버림
-
-window.onload = ()=>{
-    setTimeout(()=>{
-        const introContainer = document.querySelector('.hero-content')
-        introContainer.style.display="block"
-    },400)
-}
-
-
-const introWrap = document.querySelector('.hero-section')
-const introContainer = document.querySelector('.hero-content')
-
-setTimeout(()=>{
-    introContainer.style.display="block"
-}, 400)
-
-
-let windowHeight = window.innerHeight
-initalize()
-/* home 스크롤 이벤트 */
-const homeText = document.querySelector('.content-wrapper')
-const homeTextH2 = document.querySelector('.content-wrapper h2')
-const homeTextH3 = document.querySelector('.content-wrapper h3')
-
-const homeIphone1 = document.querySelector('.image-container .image-wrapper')
-
-
-
-// homeText가 50% 정도 뷰포트에 나왔을 경우 아래 함수를 실행시키고 싶다
-
-let observer1 = new IntersectionObserver(entries=>{
-    observer1cb(entries[0])
-  },{root: null,threshold:0.5})
-  
-  const observer1cb = entry=>{
-    if(entry.isIntersecting){
-      homeTextH2.style.opacity = 1
-      homeTextH2.style.animation = `appear_from_bottom ease 1.5s`
-      // 화면에 시간간격마다 차례대로 화면에 요소를 띄움, 띄어지는 요소는 CSS animation 이 걸려있어서 부드럽게 동작
-      setTimeout(()=>{
-          homeIphone1.style.opacity = 1
-          homeIphone1.style.animation = `appear_from_bottom ease 1.5s`
-        setTimeout(()=>{
-            homeTextH3.style.opacity = 1
-            homeTextH3.style.animation = `appear_from_bottom ease 1.5s`
-        },600)
-      },600)
-    }
+/* 공통 애니메이션 함수 */
+const applyAnimation = (element, animation, delay = 0) => {
+  if (element) {
+    setTimeout(() => {
+      element.style.opacity = 1;
+      element.style.animation = animation;
+    }, delay);
   }
-  observer1.observe(homeText)
+};
 
+/* home 스크롤 이벤트 */
+const homeTextH2 = document.querySelector(".content-wrapper h2");
+const homeTextH3 = document.querySelector(".content-wrapper h3");
+const homeIphone1 = document.querySelector(".image-container .image-wrapper");
+
+let observer1 = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+      applyAnimation(homeTextH2, "appear_from_bottom ease 1.0s");
+      applyAnimation(homeIphone1, "appear_from_bottom ease 1.0s", 600);
+      applyAnimation(homeTextH3, "appear_from_bottom ease 1.0s", 1200);
+      observer1.unobserve(homeTextH2);
+    }
+  },
+  { root: null, threshold: 0.4 }
+);
+observer1.observe(homeTextH2);
 
 /* home2 스크롤 이벤트 */
-const home2Text = document.querySelector('.content-container h2')
-const home2Content = document.querySelectorAll('.content-container p')
-const home2Images = document.querySelectorAll('.image-wrapper')
+const home2Text = document.querySelector(".content-container h2");
+const home2Content = document.querySelectorAll(".content-container p");
+const home2Images = document.querySelectorAll(".image-wrapper");
+
+let observer2 = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+      applyAnimation(home2Text, "appear_from_bottom ease 1.0s");
+      home2Images.forEach((item, index) =>
+        applyAnimation(item, "appear_from_bottom ease 1.0s", 600)
+      );
+      home2Content.forEach((item, index) =>
+        applyAnimation(item, "appear_from_bottom ease 1.0s", 1200)
+      );
+      observer2.unobserve(home2Text);
+    }
+  },
+  { threshold: 0.4 }
+);
+observer2.observe(home2Text);
+
+/* home3 스크롤 이벤트 */
+const home3Texth2 = document.querySelector(".payment-container .content-wrapper h2");
+const home3Textp = document.querySelector(".payment-container .content-wrapper p");
+const home3Iphone1 = document.querySelector(".image-section .image-grid .image-column");
+const home3Iphone2 = document.querySelector(".image-section .image-grid .image-column-secondary");
+
+const observer3 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const target = entry.target;
+
+        // 각 요소별로 active 클래스 추가
+        if ((target === home3Texth2 || target === home3Textp) && !target.classList.contains("active")) {
+          target.classList.add("active");
+        }
+
+        // image-column은 600ms 후 활성화
+        if (target === home3Iphone1 && !target.classList.contains("active")) {
+          setTimeout(() => {
+            target.classList.add("active");
+          }, 600);
+        }
+
+        // image-column-secondary는 1200ms 후 활성화
+        if (target === home3Iphone2 && !target.classList.contains("active")) {
+          setTimeout(() => {
+            target.classList.add("active");
+          }, 1200);
+        }
+
+        // 한 번 활성화된 요소는 더 이상 관찰하지 않음
+        observer3.unobserve(target);
+      }
+    });
+  },
+  { root: null, threshold: 0.4 } // 40% 뷰포트에서 트리거
+);
+
+// 각 요소를 관찰
+[home3Texth2, home3Textp, home3Iphone1, home3Iphone2].forEach((element) => {
+  observer3.observe(element);
+});
 
 
-let observer2 = new IntersectionObserver(entries=>{
-  observer2cb(entries[0])
-},{threshold:0.5})
 
-const observer2cb = entry=>{
-  if(entry.isIntersecting){
-    home2Text.style.animation = 'appear_from_bottom ease 1.5s'
-    home2Text.style.opacity = 1
-    
-    setTimeout(()=>{
-      home2Images.forEach(item=>{
-        item.style.animation = 'appear_from_bottom ease 1.5s'
-        item.style.opacity = 1
-      })
-      
-      setTimeout(()=>{
-        home2Content.forEach(item=>{
-          item.style.animation = 'appear_from_bottom ease 1.5s'
-          item.style.opacity = 1
-        })
-      },600)
-    },600)
-    observer2.unobserve(home2Text)
-  }
-}
-observer2.observe(home2Text)
+/* home6 스크롤 width 조절 이벤트 */
+window.addEventListener("resize", initialize);
 
-  
+/* 스크롤 이벤트 - earth-image width 조정 */
+const walls = document.querySelectorAll(".earth-image");
+const home6Wall = document.querySelector(".earth-content");
 
+const home6WidthControlHandler = () => {
+  const difference = windowHeight - home6Wall.getBoundingClientRect().top;
 
+  walls.forEach((item) => {
+    // 스크롤 위치에 따라 width 계산
+    if (difference > 0 && difference <= 700) {
+      const newWidth = 1000 + (difference / 700) * 1800; // 200px에서 2000px까지 비례 증가
+      item.style.width = `${newWidth}px`;
+    } else if (difference > 700) {
+      item.style.width = "2000px"; // 최대 너비
+    } else {
+      item.style.width = "1000px"; // 초기 너비
+    }
+  });
 
+  // 디버깅용 로그
+  console.log("Difference:", difference);
+};
 
+window.addEventListener("scroll", home6WidthControlHandler);
