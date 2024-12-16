@@ -9,13 +9,23 @@
         content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
     <title>IDBlock - Connecting the World Through Authentication</title>
 
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script_main.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/splitting.min.js"></script>
+
     <script type="module" defer src="index.js"></script>
 
     <script type="module" defer src="nav.js"></script>
+    <script type="module" defer src="footer.js"></script>
     <script src="includeHTML.js?version-1.1"></script>
+
+    <link rel="stylesheet" href="animate.min.css">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediastyle.css">
+    <link rel="stylesheet" href="mediaglobalstyle.css">  
     <link rel="stylesheet" href="global.css">
 
 
@@ -173,14 +183,15 @@
 
         <section class="travel-section" role="region" aria-label="Travel Identity Authentication">
             <div class="travel-container">
-                <h1 class="travel-heading">
-                    어느 국가를 가든
-                    <br />
-                    <span class="highlight-text">단일화된 신원인증</span>으로 여행을 편리하게!
-                </h1>
-                <img loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c91b11f06282f18138c0cfe398a994b0dc83cfa6a36858b10a857a12509414d6?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                    class="travel-image" alt="Unified identity authentication system for international travel" />
+                    <h1 class="travel-heading animate" data-animate="motion">
+                        어느 국가를 가든
+                        <br />
+                        <span class="highlight-text">단일화된 신원인증</span>으로 여행을 편리하게!
+                    </h1>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c91b11f06282f18138c0cfe398a994b0dc83cfa6a36858b10a857a12509414d6?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        class="travel-image" alt="Unified identity authentication system for international travel" />
+                    </div>
             </div>
         </section>
         <!-- intro4 end-->
