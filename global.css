@@ -94,13 +94,9 @@ a {
 }
 
 body {
-    font-family: PretendardFont, Noto Sans, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-    line-height: 1.4;
-    color: var(--text-color);
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-
+    font-family: 'Pretendard', 'Noto Sans', Arial, sans-serif; /* 기본 폰트 및 대체 폰트 */
+    font-style: normal; 
+    
 }
 
 

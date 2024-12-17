@@ -153,10 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
       imageElement.classList.add("flip-animation"); // 애니메이션 클래스 추가
       setTimeout(() => {
           imageElement.src = newSrc; // 애니메이션 중간에 이미지 교체
-      }, 300); // 0.3초 후에 이미지 변경
+      }, 200); // 0.3초 후에 이미지 변경
       setTimeout(() => {
           imageElement.classList.remove("flip-animation"); // 애니메이션 클래스 제거
-      }, 600); // 0.6초 후 애니메이션 종료
+      }, 500); // 0.6초 후 애니메이션 종료
   };
 
   // 클릭 이벤트: 대체 이미지로 변경

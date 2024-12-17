@@ -1,0 +1,312 @@
+@media all and (max-width:479px) {
+
+  .vision-section {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+    padding: 54px 0;
+  }
+
+
+  .vision-container {
+    align-self: center;
+    z-index: 0;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .vision-background {
+    aspect-ratio: 0.85;
+    object-position: center;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    right: -63px;
+    height: 650px;
+    bottom: 0;
+  }
+
+
+  .vision-heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 241px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .vision-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 48px 0 0;
+    text-align: center;
+    white-space: normal;
+  }
+
+
+  /* section 2 start */
+  .overview-section-title {
+    align-self: stretch;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font: 700 24px/36px Pretendard, sans-serif;
+  }
+
+
+  /* section 2 end */
+
+  /* section 3 start */
+
+  /* section 3 end */
+
+  /* section 4 start */
+  .awards-history {
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: Pretendard, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    justify-content: center;
+    margin: 0 auto;
+    padding: 150px 16px;
+  }
+
+  .awards-container {
+    display: flex;
+    width: 333px;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .section-title {
+    align-self: center;
+    width: 155px;
+    max-width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin-bottom: 24px;
+  }
+
+  .timeline-container {
+    margin-top: 0px;
+    ;
+  }
+
+  .year-quarter1 {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 7px 0;
+    align-items: start;
+  }
+
+  .year-quarter2 {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 7px 0;
+    align-items: start;
+  }
+
+  .year-quarter3 {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 7px 0;
+    align-items: start;
+  }
+
+
+  .year-quarter4 {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 7px 0;
+    align-items: start;
+  }
+
+
+  .year-quarter-group1 {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 0px;
+  }
+
+  .year-quarter-group2 {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    gap: 13px;
+    margin-bottom: 0px;
+  }
+
+  .year-quarter-group3 {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    gap: 13px;
+    margin-bottom: 0px;
+  }
+
+  .year-quarter-group4 {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 0px;
+  }
+
+
+  .year-text {
+    font-size: 17px;
+  }
+
+  .quarter {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .achievements-list1 {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: start;
+    white-space: inherit;
+  }
+
+  .achievements-list2 {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: start;
+    margin-left: 0px;
+    white-space: inherit;
+  }
+
+  .achievements-list3 {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: start;
+    margin-left: 0px;
+    white-space: inherit;
+  }
+
+  .achievements-list4 {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: start;
+    margin-left: 0px;
+    white-space: inherit;
+  }
+
+  .achievement-item {
+    margin-top: 11px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .award-item:first-child {
+    margin-top: 13px;
+  }
+
+  /* section 4 end */
+
+  /* section 5 start */
+
+  .press-title {
+    align-self: center;
+    width: 155px;
+    max-width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin-bottom: 64px;
+  }
+
+  .press-item-title {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+  .press-source {
+    font-size: 14px;
+    position: static; /* position 제거 */
+    margin-left: auto; /* 오른쪽으로 밀기 */
+    bottom: 0;
+
+  }
+
+  .press-meta {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between; /* 양 끝으로 정렬 */
+    align-items: center;
+    width: 100%;
+}
+
+
+      /* section 5 end */
+}

@@ -147,93 +147,71 @@
 
 /* about - intro3 start */
 .core-values {
-    background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/d3fd628a9e486cf7cbd61e905ee3b1defec9627212f22afa097543e8e5d2b0e7?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d') no-repeat center center;
-    background-size: cover;
-    position: relative;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
-    padding: 148px 80px;
-    margin-bottom: 150px;
+    position: relative; /* 수정: 절대 위치 대신 상대 위치 */
+    background-color: #1e1e1e;
+    overflow: hidden;
+    padding: 100px 40px; /* 여백 조정 */
+}
+
+.core-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 배경 이미지 비율 유지 */
     z-index: 0;
 }
 
-
-.core-values-container {
+.core-content-wrapper {
+    position: relative; /* 수정: 부모 요소에 맞게 배치 */
+    z-index: 1;
     display: flex;
-    width: 1200px;
-    max-width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-}
-
-.section-title-en {
-    color: rgb(255, 85, 32);
-    text-align: center;
-    font: 200 48px Pretendard, sans-serif;
-    white-space: nowrap;
-}
-
-.section-title-kr {
-    color: rgb(255, 85, 32);
-    text-align: center;
-    margin-top: 20px;
-    font: 700 48px Pretendard, sans-serif;
-    white-space: nowrap;
-}
-
-.values-grid {
-    align-self: stretch;
-    margin-top: 150px;
-}
-
-.values-row {
-    gap: 20px;
-    display: flex;
-}
-
-.value-card {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 33%;
-}
-
-.value-content {
-    border-radius: 33px;
-    background: rgb(255, 85, 32);
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: start;
-    color: #fff;
+    justify-content: center;
     width: 100%;
-    padding: 43px 37px 96px;
-    font: 400 34px Pretendard, sans-serif;
+    max-width: 1200px; /* 최대 너비 설정 */
+    padding: 20px;
+    text-align: center;
 }
 
-.value-title-kr {
-    font-size: 33px;
-    white-space: nowrap;
+.core-title-wrapper {
+    color: rgba(255, 85, 32, 1);
+    margin-bottom: 40px;
+    font-family: Pretendard, sans-serif;
 }
 
-.value-title-en {
-    font-size: 41px;
-    margin-top: 26px;
-    white-space: nowrap;
+.core-title-en {
+    font-size: 48px;
+    font-weight: 300;
 }
 
-.value-description {
+.core-title-kor {
+    font-size: 32px;
     font-weight: 700;
-    font-size: 33px;
-    line-height: 50px;
-    margin-top: 73px;
-    white-space: nowrap;
+    margin-top: 10px;
 }
 
+.core-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* 이미지 사이 여백 */
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+.core-image-grid img {
+    flex: 1 1 calc(33.333% - 40px); /* 3개의 이미지가 한 줄에 표시되도록 설정 */
+    max-width: 350px; /* 최대 너비 설정 */
+    height: auto;
+    object-fit: contain;
+}
 
 /* about - intro3 end */
 
@@ -507,155 +485,6 @@ a {
 
 
 /* about- 보도자료 end */
-
-/* 991px 이하 화면 (Tablet) */
-@media screen and (max-width: 991px) {
-    .vision-container {
-        min-height: 600px;
-    }
-
-    .vision-content {
-        padding: 150px 40px;
-    }
-
-    .vision-heading {
-        font-size: 40px;
-    }
-
-    .vision-description {
-        font-size: 18px;
-        line-height: 28px;
-        margin-top: 40px;
-    }
-
-    .overview-container {
-        padding: 20px;
-    }
-
-    .values-row {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .value-card {
-        width: 100%;
-    }
-
-    .awards-container,
-    .press-container {
-        width: 100%;
-        padding: 20px;
-        margin: 100px 0;
-    }
-
-    .section-title {
-        font-size: 32px;
-    }
-
-    .year-quarter-group1,
-    .year-quarter-group2,
-    .year-quarter-group3,
-    .year-quarter-group4 {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .achievements-list1,
-    .achievements-list2,
-    .achievements-list3,
-    .achievements-list4 {
-        margin-left: 0;
-    }
-}
-
-/* 320px 이하 화면 (Mobile) */
-@media screen and (max-width: 320px) {
-    .vision-container {
-        min-height: 400px;
-    }
-
-    .vision-content {
-        padding: 50px 20px;
-    }
-
-    .vision-heading {
-        font-size: 24px;
-    }
-
-    .vision-description {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 20px;
-    }
-
-    .overview-section-title {
-        font-size: 20px;
-    }
-
-    .overview-image-grid {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .overview-image-wrapper {
-        width: 100%;
-    }
-
-    .section-title-en,
-    .section-title-kr {
-        font-size: 24px;
-    }
-
-    .value-content {
-        font-size: 18px;
-        padding: 20px;
-    }
-
-    .value-title-kr,
-    .value-title-en {
-        font-size: 20px;
-    }
-
-    .value-description {
-        font-size: 16px;
-        line-height: 22px;
-        margin-top: 20px;
-    }
-
-    .awards-container,
-    .press-container {
-        padding: 10px;
-    }
-
-    .section-title {
-        font-size: 24px;
-    }
-
-    .timeline-container,
-    .year-quarter-group1,
-    .year-quarter-group2,
-    .year-quarter-group3,
-    .year-quarter-group4 {
-        gap: 10px;
-    }
-
-    .achievement-item {
-        font-size: 14px;
-    }
-
-    .press-title {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .press-item-title {
-        font-size: 16px;
-    }
-
-    .press-meta {
-        font-size: 12px;
-    }
-}
 
 /* 초기 상태 - 숨김 */
 .vision-section,
