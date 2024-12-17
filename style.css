@@ -11,16 +11,14 @@ main {
 /* 각 섹션에 스냅 정렬 및 높이 설정 */
 section {
     scroll-snap-align: start;
-    /* 섹션이 스크롤 시 상단에 정렬 */
-    height: 100vh;
-    /* 화면 높이만큼 설정 */
-    width: 100%;
-    /* 전체 화면 너비 */
+    height: 110vh; /* 섹션 높이 고정 */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 250px 70px;
+    box-sizing: border-box; /* 패딩 포함 */
+    padding: 50px 20px; /* 섹션 내부 여백 조정 */
+    margin: 0; /* 마진 제거 */
 }
 
 .info-app-container, 
@@ -657,14 +655,14 @@ footer{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 250px 70px;
+    padding: 211px 80px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
 .certificate-wrapper {
     display: flex;
-    width: 867px;
+    width: 750px;
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
@@ -803,13 +801,13 @@ footer{
     overflow: hidden;
     color: rgba(0, 0, 0, 1);
     text-align: center;
-    padding: 250px 70px;
+    padding: 211px 80px;
     font: 700 48px/72px Pretendard, sans-serif;
   }
 
   .partners-container {
     display: flex;
-    width: 867px;
+    width: 863px;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
