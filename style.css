@@ -657,7 +657,7 @@ footer{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 169px 80px;
+    padding: 250px 70px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -803,13 +803,13 @@ footer{
     overflow: hidden;
     color: rgba(0, 0, 0, 1);
     text-align: center;
-    padding: 102px 0;
+    padding: 250px 70px;
     font: 700 48px/72px Pretendard, sans-serif;
   }
 
   .partners-container {
     display: flex;
-    width: 1359px;
+    width: 867px;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
@@ -828,11 +828,12 @@ footer{
   }
 
   .partners-image {
-    aspect-ratio: 2.22;
+    aspect-ratio: 2.22; /* 기존 비율 유지 */
     object-fit: contain;
     object-position: center;
-    width: 100%;
-    margin-top: 120px;
+    width: 150%; /* 기존보다 너비를 20% 더 크게 */
+    max-width: 1200px; /* 최대 너비 제한 */
+    margin-top: 80px; /* 이미지 위 여백 줄이기 */
   }
 
   .visually-hidden {
@@ -856,6 +857,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 250px;
     flex-direction: row;
