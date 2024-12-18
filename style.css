@@ -1,3 +1,37 @@
+/* 부모 컨테이너에 스크롤 스냅 활성화 */
+main {
+    scroll-snap-type: y mandatory;
+    /* 수직 방향으로 강제 스냅 */
+    overflow-y: scroll;
+    /* 스크롤 가능 */
+    height: 100vh;
+    /* 전체 화면 높이 */
+}
+
+/* 각 섹션에 스냅 정렬 및 높이 설정 */
+section {
+    scroll-snap-align: start;
+    /* 섹션이 스크롤 시 상단에 정렬 */
+    height: 100vh;
+    /* 화면 높이만큼 설정 */
+    width: 100%;
+    /* 전체 화면 너비 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 70px;
+}
+
+.info-app-container, 
+.info-app-container ~ section,
+footer{
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+}
+
+
+
 
 
 .section {
@@ -7,7 +41,6 @@
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
@@ -694,6 +727,10 @@
 .certificate-image-left:hover,
 .certificate-image-right:hover {
     transform: scale(1.05); /* 살짝 확대 */
+}
+
+.flip-animation {
+    transition: transform 0.3s ease-in-out;
 }
 
 

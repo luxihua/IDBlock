@@ -1,3 +1,4 @@
+
 /* service_intro1 start */
 .service-guide {
     display: flex;
@@ -6,11 +7,11 @@
     flex-wrap: wrap;
     background-color: #fff;
     overflow: hidden;
-    padding: 250px 70px;
+    padding: 150px 70px;
     /* 전체 너비 제한 */
     margin: 0 auto;
     /* 화면 중앙 정렬 */
-    margin-top: -50px;
+    margin-top: -150px;
 }
 
 .image-gallery {
@@ -93,11 +94,10 @@
     align-items: center;
     background-color: #fff;
     overflow: hidden;
-    padding: 250px 70px;
+    padding: 150px 70px;
     /* 전체 너비 제한 */
     margin: 0 auto;
     /* 화면 중앙 정렬 */
-    margin-top: -50px;
 }
 
 .text-content {
@@ -179,7 +179,7 @@
     /* 전체 너비 제한 */
     margin: 0 auto;
     /* 화면 중앙 정렬 */
-    margin-top: -50px;
+    margin-bottom: 200px;
 }
 
 .auth-wrapper {
@@ -304,7 +304,7 @@
     /* 전체 너비 제한 */
     margin: 0 auto;
     /* 화면 중앙 정렬 */
-    margin-top: -50px;
+    margin-bottom: 200px;
 }
 
 .payment-container {
