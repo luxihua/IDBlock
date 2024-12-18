@@ -1,5 +1,5 @@
 /* 모바일 가로, 테블릿 세로(해상도 ~479px) */
-@media all and (max-width:479px){
+@media all and (max-width:479px) {
 
   /* intro start */
 
@@ -10,7 +10,7 @@
     justify-content: center;
     margin: 0 auto;
     padding: 96px 16px;
-    margin-top: 96px;
+    margin-top: 55px;
     margin-bottom: 96px;
   }
 
@@ -92,6 +92,7 @@
     margin: 0 auto;
     padding: 96px 16px;
     margin-top: 96px;
+
   }
 
   .features-container {
@@ -99,6 +100,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    gap: 0 100px;
   }
 
   .content-wrapper {
@@ -122,24 +124,30 @@
     margin-top: 32px;
   }
 
-  .images-container {
+  .image-container {
     border-radius: 0;
     align-self: center;
     display: flex;
-    margin-top: 64px;
-    width: 287px;
+    width: 164px;
     max-width: 100%;
     align-items: flex-start;
     gap: 20px;
     justify-content: space-between;
   }
 
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .feature-image {
     aspect-ratio: 0.47;
     object-fit: contain;
     object-position: center;
-    align-self: stretch;
+    align-self: center;
+    width: 164px;
+    height: auto;
   }
 
   /* section 1 end */
@@ -155,6 +163,14 @@
     padding: 96px 16px;
     margin-top: 96px;
     margin-bottom: 150px;
+  }
+
+  .passport-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 100px;
   }
 
   .content-container {
@@ -181,36 +197,23 @@
   }
 
   .image-container {
-    display: block;
-    flex-direction: column;
+    border-radius: 0;
     align-self: center;
-    position: relative;
-    aspect-ratio: 0.498;
-    margin-top: 64px;
-    min-height: 329px;
+    display: flex;
     width: 164px;
     max-width: 100%;
     align-items: center;
-    gap: 8px;
-    justify-content: center;
-    padding: 7px 8px;
-  }
-
-  .background-image {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+    gap: 20px;
+    justify-content: space-between;
   }
 
   .passport-image {
     aspect-ratio: 0.47;
     object-fit: contain;
     object-position: center;
-    align-self: stretch;
-    margin: auto 0;
+    align-self: center;
+    width: 164px;
+    height: auto;
   }
 
 
@@ -222,10 +225,10 @@
     display: flex;
     max-width: 393px;
     flex-direction: column;
+    font-family: Pretendard, sans-serif;
     justify-content: center;
     margin: 0 auto;
-    padding: 96px 16px;
-    margin-top: 96px;
+    padding: 56px 16px;
   }
 
   .payment-container {
@@ -233,91 +236,52 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    gap: 0 116px;
   }
 
   .content-wrapper {
     display: flex;
     width: 100%;
     flex-direction: column;
-    font-family: Pretendard, sans-serif;
     justify-content: start;
   }
 
   .main-title {
     color: rgba(0, 0, 0, 1);
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 36px;
   }
 
   .payment-description {
     color: rgba(136, 142, 149, 1);
-    font: 500 16px/24px Pretendard, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
     margin-top: 32px;
   }
 
-  .images-section {
+  .image-section {
     border-radius: 0;
     align-self: center;
     display: flex;
-    margin-top: 64px;
     width: 287px;
     max-width: 100%;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
     justify-content: space-between;
   }
 
-  .image-column {
-    aspect-ratio: 0.5;
-    object-fit: contain;
-    object-position: center;
-    width: 133px;
-    border-radius: 0;
-    align-self: end;
-    margin-top: 49px;
-    max-width: 100%;
-  }
-
-  .image-column-secondary {
+  .image-wrapper {
     display: flex;
     flex-direction: column;
-    align-self: start;
-    position: relative;
-    aspect-ratio: 0.496;
-    width: 133px;
     justify-content: center;
-    padding: 7px;
   }
 
-  .background-image {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+  .primary-image {
+    aspect-ratio: 1;
+    margin-top: 64px;
+}
 
-  .overlay-image {
-    aspect-ratio: 0.46;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
 
 
   /* section 3 end */
@@ -438,7 +402,6 @@
   }
 
   .certificate-image-left {
-    aspect-ratio: 0.7;
     object-fit: contain;
     object-position: center;
     width: 120px;
@@ -448,7 +411,6 @@
   }
 
   .certificate-image-right {
-    aspect-ratio: 0.7;
     object-fit: contain;
     object-position: center;
     width: 120px;
@@ -537,219 +499,15 @@
     line-height: 48px;
   }
 
-  .partners-grid {
-    display: flex;
-    margin-top: 70px;
-    align-items: center;
-    gap: 6px;
-    justify-content: center;
-  }
-
-  .partners-column-1 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    width: 72px;
-    margin: auto 0;
-  }
-
-  .partners-column-2 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 66px;
-    margin: auto 0;
-  }
-
-  .partners-column-3 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 79px;
-    margin: auto 0;
-  }
-
-  .partners-column-4 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    width: 59px;
-    margin: auto 0;
-  }
-
-  .partners-column-5 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    width: 56px;
-    margin: auto 0;
-  }
-
-  .logo-pair {
-    display: flex;
-    margin-top: 19px;
-    gap: 2px;
-  }
-
-  .partner-logo {
+  .partners-image {
+    aspect-ratio: 2.22;
     object-fit: contain;
     object-position: center;
-  }
-
-  .partner-logo {
-    width: 72px;
-    aspect-ratio: 2.88;
-  }
-
-  .partner-logo-2 {
-    width: 68px;
-    aspect-ratio: 3.58;
-    margin-top: 20px;
-  }
-
-  .partner-logo-3 {
-    width: 55px;
-    aspect-ratio: 2.62;
-    margin-top: 21px;
-  }
-
-  .partner-logo-4 {
-    width: 67px;
-    aspect-ratio: 6.71;
-    margin-top: 23px;
-  }
-
-  .partner-logo-5 {
-    width: 26px;
-    aspect-ratio: 1.63;
-    align-self: center;
-    margin-top: 27px;
-  }
-
-  .partner-logo-6 {
-    width: 37px;
-    aspect-ratio: 1;
-  }
-
-  .partner-logo-7 {
-    width: 39px;
-    aspect-ratio: 2.6;
-    margin-top: 18px;
-  }
-
-  .partner-logo-8 {
-    width: 47px;
-    aspect-ratio: 2.35;
-    margin-top: 22px;
-  }
-
-  .partner-logo-9 {
-    width: 48px;
-    aspect-ratio: 4;
-    margin-top: 22px;
-  }
-
-  .partner-logo-10 {
     width: 100%;
-    aspect-ratio: 2.68;
-    align-self: stretch;
-    margin-top: 20px;
+    margin-top: 80px;
+    padding: 5px 0;
   }
 
-  .partner-logo-11 {
-    width: 24px;
-    aspect-ratio: 1.04;
-  }
-
-  .partner-logo-12 {
-    width: 100%;
-    aspect-ratio: 3;
-    align-self: stretch;
-    margin-top: 18px;
-  }
-
-  .partner-logo-13 {
-    width: 48px;
-    aspect-ratio: 3.42;
-    margin-top: 21px;
-  }
-
-  .partner-logo-14 {
-    width: 45px;
-    aspect-ratio: 1.67;
-    margin-top: 19px;
-  }
-
-  .partner-logo-15 {
-    width: 100%;
-    aspect-ratio: 2.63;
-    align-self: stretch;
-    margin-top: 11px;
-  }
-
-  .partner-logo-16 {
-    width: 59px;
-    aspect-ratio: 4.22;
-  }
-
-  .partner-logo-17 {
-    width: 55px;
-    aspect-ratio: 1.77;
-    margin-top: 21px;
-  }
-
-  .partner-logo-18 {
-    width: 52px;
-    aspect-ratio: 2.08;
-    margin-top: 10px;
-  }
-
-  .partner-logo-19 {
-    width: 23px;
-    aspect-ratio: 1.77;
-  }
-
-  .partner-logo-20 {
-    width: 23px;
-    aspect-ratio: 1.77;
-  }
-
-  .partner-logo-21 {
-    width: 56px;
-    aspect-ratio: 2.95;
-    margin-top: 23px;
-  }
-
-  .partner-logo-22 {
-    width: 38px;
-    aspect-ratio: 2.53;
-  }
-
-  .partner-logo-23 {
-    width: 56px;
-    aspect-ratio: 3.5;
-    margin-top: 28px;
-  }
-
-  .partner-logo-24 {
-    width: 56px;
-    aspect-ratio: 3.5;
-    margin-top: 18px;
-  }
-
-  .partner-logo-25 {
-    width: 52px;
-    aspect-ratio: 2.26;
-    margin-top: 23px;
-  }
-
-  .partner-logo-26 {
-    width: 48px;
-    aspect-ratio: 1.92;
-    margin-top: 12px;
-  }
 
   /* section 7 end */
 
@@ -871,7 +629,7 @@
 
 
 /* 테블릿 세로(해상도 768px ~ 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
   /* main intro start */
   .hero-section {

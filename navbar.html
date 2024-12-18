@@ -9,8 +9,10 @@
         content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
     <title>IDBlock - Connecting the World Through Authentication</title>
 
-    <script type="module" defer src="index.js"></script>
-    <script type="module" defer src="nav.js"></script>
+
+    <script type="module" defer src="nav.js" defer></script>
+    <script type="module" defer src="index.js" defer></script>
+
 
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="global.css">
@@ -21,50 +23,80 @@
 <body>
     <!-- 네비게이션 start-->
     <header class="header">
-        <a href="index.html">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0502d47e1f76bf21b8c31cfd8d4401892aa984ccdfec82df92c89b4d77bc52f4?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                alt="IDBlock Logo" class="logo" width="132" height="57">
-        </a>
-        <ul class="navbar_menu">
-            <li class="navbar_item_dropdown">
-                <a href="service.html">서비스소개</a>
-                <ul class="dropdown_menu">
-                    <li><a href="service.html#service-section">IDBlock</a></li>
-                    <li><a href="service.html#blockpay-section">Bpay</a></li>
-                </ul>
-            </li>
-            <li class="navbar_item_dropdown">
-                <a href="about.html">회사소개</a>
-                <ul class="dropdown_menu">
-                    <li><a href="about.html#vision-section">개요</a></li>
-                    <li><a href="about.html#awards-section">연혁</a></li>
-                    <li><a href="about.html#press-section">보도자료</a></li>
-                </ul>
-            </li>
+        <nav class="pcMenu">
+            <a href="index.html">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0502d47e1f76bf21b8c31cfd8d4401892aa984ccdfec82df92c89b4d77bc52f4?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                    alt="IDBlock Logo" class="logo" width="132" height="57">
+            </a>
+            <ul class="navbar_menu">
+                <li class="navbar_item_dropdown">
+                    <a href="service.html">서비스소개</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="service.html#service-section">IDBlock</a></li>
+                        <li><a href="service.html#blockpay-section">Bpay</a></li>
+                    </ul>
+                </li>
+                <li class="navbar_item_dropdown">
+                    <a href="about.html">회사소개</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="about.html#vision-section">개요</a></li>
+                        <li><a href="about.html#awards-section">연혁</a></li>
+                        <li><a href="about.html#press-section">보도자료</a></li>
+                    </ul>
+                </li>
 
-            <li class="navbar_item_dropdown">
-                <a href="contact.html">문의사항</a>
-                <ul class="dropdown_menu">
-                    <li><a href="contact.html">협업 문의</a></li>
-                    <li><a href="maps.html">오시는길</a></li>
-                </ul>
-            </li>
+                <li class="navbar_item_dropdown">
+                    <a href="contact.html">문의사항</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="contact.html">협업 문의</a></li>
+                        <li><a href="maps.html">오시는길</a></li>
+                    </ul>
+                </li>
 
-            <li class="navbar_item_dropdown">
-                <a href="#download" class="nav-item nav-item-download" role="menuitem">다운로드</a>
-            </li>
+                <li class="navbar_item_dropdown">
+                    <a href="#download" class="nav-item nav-item-download" role="menuitem">다운로드</a>
+                </li>
 
-            <li class="navbar_lang_dropdown">
-                <button class="language-toggle" aria-label="Change language" type="button" tabindex="0">
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6389dc316151fa8fbd909e09d7f3f311ca3ad38a5b4424e51a0d4c36e00b1da?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                        alt="Language selection icon" width="30" height="30">
+                <li class="navbar_lang_dropdown">
+                    <button class="language-toggle" aria-label="Change language" type="button" tabindex="0">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6389dc316151fa8fbd909e09d7f3f311ca3ad38a5b4424e51a0d4c36e00b1da?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                            alt="Language selection icon" width="30" height="30">
+                    </button>
+                    <ul class="dropdown_lang">
+                        <li><a href="index.html">KOR</a></li>
+                        <li> <a href="index.html">ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="mobileMenu">
+            <a href="index.html">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce22c64fcd5be639f70e780f631ef45a69ae8aeb46dda888612979e15ccd9ac1?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                    class="mobile-logo" alt="Company logo" />
+            </a>
+            <button class="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0ee22eb126ebc1390c8ade5d582f4850f749319377ad1e2460b87d2b294b11b?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                    alt="Open Menu" />
+            </button>
+
+            <div class="mobile-menu-container" id="mobile-menu-container" aria-hidden="true">
+                <button class="menu-close" aria-label="Close menu">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0ae4ed20d3799af6f7da01b151523ac665b5292fac8b37bc748acd30a86e285?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                        alt="Close menu" />
                 </button>
-                <ul class="dropdown_lang">
-                    <li><a href="index.html">KOR</a></li>
-                    <li> <a href="index.html">ENG</a></li>
-                </ul>
-            </li>
-        </ul>
+
+                <div class="mobile-nav-menu">
+                    <a href="#">서비스 소개</a>
+                    <a href="#">회사 소개</a>
+                    <a href="#">문의사항</a>
+                </div>
+            </div>
+
+
+        </nav>
     </header>
 
 </body>

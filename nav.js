@@ -47,3 +47,42 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".mobile-menu-button");
+    const menuContainer = document.querySelector(".mobile-menu-container");
+    const closeButton = document.querySelector(".menu-close");
+
+    // 요소가 선택되지 않을 경우 에러 출력
+    if (!menuButton || !menuContainer || !closeButton) {
+        console.error("Menu button, container, or close button not found");
+        return; // 실행 중단
+    }
+
+    // 메뉴 열기
+    menuButton.addEventListener("click", () => {
+        console.log("Menu button clicked");
+        menuContainer.classList.add("active");
+        menuButton.setAttribute("aria-expanded", "true");
+        menuContainer.setAttribute("aria-hidden", "false");
+    });
+
+    // 메뉴 닫기
+    closeButton.addEventListener("click", () => {
+        console.log("Close button clicked");
+        menuContainer.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuContainer.setAttribute("aria-hidden", "true");
+    });
+
+    // 외부 클릭 시 메뉴 닫기
+    document.addEventListener("click", (e) => {
+        if (!menuContainer.contains(e.target) && !menuButton.contains(e.target)) {
+            console.log("Clicked outside menu");
+            menuContainer.classList.remove("active");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuContainer.setAttribute("aria-hidden", "true");
+        }
+    });
+});

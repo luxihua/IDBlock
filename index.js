@@ -1,26 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("main > section");
-  const footer = document.querySelector("footer");
-  let isSnapping = true;
-
-  const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-              const target = entry.target;
-
-              // info-app-container 이후로 스크롤 스냅 비활성화
-              if (target.classList.contains("partners-section")) {
-                  document.querySelector("main").style.scrollSnapType = "none";
-                  isSnapping = false;
-              }
-          }
-      });
-  });
-
-  // 각 섹션 관찰
-  sections.forEach((section) => observer.observe(section));
-  observer.observe(footer);
-});
 
 
 /* 초기화 */
@@ -159,14 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 500); // 0.5초 후 애니메이션 종료
   };
 
-  // 클릭 이벤트: 대체 이미지로 변경
-  certificateImageLeft.addEventListener("click", () => {
-      changeImageWithEffect(certificateImageLeft, alternateLeftSrc);
-  });
+ // 마우스를 올렸을 때: 대체 이미지로 변경
+ certificateImageLeft.addEventListener("mouseenter", () => {
+  changeImageWithEffect(certificateImageLeft, alternateLeftSrc);
+});
 
-  certificateImageRight.addEventListener("click", () => {
-      changeImageWithEffect(certificateImageRight, alternateRightSrc);
-  });
+certificateImageRight.addEventListener("mouseenter", () => {
+  changeImageWithEffect(certificateImageRight, alternateRightSrc);
+});
 
   // 커서가 이미지에서 벗어날 때: 원래 이미지로 복구
   certificateImageLeft.addEventListener("mouseleave", () => {

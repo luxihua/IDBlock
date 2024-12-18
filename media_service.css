@@ -1,6 +1,9 @@
 /* 모바일 가로, 테블릿 세로(해상도 ~479px) */
 @media all and (max-width:479px) {
 
+
+    /* section 1 start */
+
     .service-guide {
         display: flex;
         max-width: 393px;
@@ -9,6 +12,7 @@
         justify-content: start;
         margin: 0 auto;
         padding: 54px 0;
+        margin-bottom: 250px;
     }
 
     .content-section {
@@ -16,13 +20,12 @@
         width: 100%;
         flex-direction: column;
         align-items: start;
-        font-family: Pretendard, sans-serif;
         justify-content: start;
-        padding: 0 16px;
+        padding: 43px 16px;
+        margin-left: 0px;
     }
 
     .service-title {
-        gap: 8px;
         font-size: 32px;
         color: rgba(0, 0, 0, 1);
         font-weight: 700;
@@ -34,82 +37,23 @@
     }
 
     .download-button {
-        width: 100%;
         border-radius: 4px;
         background-color: rgba(240, 240, 240, 1);
         margin-top: 32px;
-        gap: 4px;
         font-size: 12px;
         color: rgba(30, 30, 30, 1);
         font-weight: 600;
         padding: 8px 20px;
-    }
-
-    .image-gallery {
-        border-radius: 0;
-        display: flex;
-        margin-top: 83px;
-        width: 252px;
-        max-width: 100%;
-        align-items: flex-start;
-        gap: 13px;
-    }
-
-    .image-wrapper-left {
-        display: flex;
-        flex-direction: column;
-        align-self: start;
-        position: relative;
-        aspect-ratio: 0.498;
-        width: 120px;
-        justify-content: center;
-        padding: 7px 8px;
-    }
-
-    .gallery-image1 {
-        position: absolute;
-        inset: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .gallery-image2 {
-        position: absolute;
-        inset: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .passport-image {
-        aspect-ratio: 0.46;
-        object-fit: contain;
-        object-position: center;
-        width: 100%;
-        border-radius: 10px;
+        cursor: pointer;
     }
 
     .facial-recognition-image {
-        aspect-ratio: 0.46;
+        aspect-ratio: 0.83;
         object-fit: contain;
         object-position: center;
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .image-wrapper-delayed {
-        display: flex;
-        flex-direction: column;
-        align-self: end;
-        position: relative;
-        aspect-ratio: 0.498;
-        margin-top: 64px;
-        width: 120px;
-        justify-content: center;
-        padding: 7px 8px;
+        width: 253px;
+        margin-top: 83px;
+        max-width: 100%;
     }
 
     .visually-hidden {
@@ -120,9 +64,76 @@
         margin: -1px;
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
         border: 0;
     }
+
+    /* section 1 end */
+
+    /* section 2 start */
+
+    .identity-verification {
+        display: flex;
+        max-width: 393px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin: 0 auto;
+        padding: 54px 0;
+      }
+      
+      .text-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 0 16px;
+        margin-left: 0px;
+      }
+      
+      .verification-badge {
+        color: rgba(255, 85, 32, 1);
+        font-size: 16px;
+        font-weight: 700;
+      }
+      
+      .text-wrapper {
+        display: flex;
+        margin-top: 8px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+      }
+      
+      .main-heading {
+        color: rgba(0, 0, 0, 1);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+      }
+      
+      .description {
+        color: rgba(136, 142, 149, 1);
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 32px;
+      }
+
+      .images-grid {
+        width:  100%;
+        align-items:center;
+      }
+      
+      .id-image {
+        aspect-ratio: 0.83;
+        object-fit: contain;
+        object-position: center;
+        margin-top: 83px;
+        width: 257px;
+        max-width: 100%;
+      }
+
+    /* section 2 end */
 
     /* section 3 start */
     .auth-container {
@@ -295,8 +306,10 @@
         font: 700 32px Pretendard, sans-serif;
         line-height: 48px;
         text-align: center;
-        white-space: normal; /* 기본 줄바꿈 허용 */
-        overflow-wrap: break-word; /* 넘칠 경우 줄바꿈 */
+        white-space: normal;
+        /* 기본 줄바꿈 허용 */
+        overflow-wrap: break-word;
+        /* 넘칠 경우 줄바꿈 */
         max-width: 100%;
 
     }
@@ -421,34 +434,35 @@
         color: rgba(255, 255, 255, 1);
         justify-content: center;
         margin: 0 auto;
-      }
-      
-      .blockpay-content-wrapper {
+    }
+
+    .blockpay-content-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 393px;
         font: 700 32px/48px Pretendard, sans-serif;
         text-align: center;
-      }
-      
-      .blockpay-subtitle {
+    }
+
+    .blockpay-subtitle {
         font-size: 16px;
         font-weight: 500;
-      }
-      
-      .blockpay-main-title {
+    }
+
+    .blockpay-main-title {
         color: #F3F3F3;
         font: 700 24px Pretendard, sans-serif;
         line-height: 36px;
         text-align: center;
-        white-space: normal; /* 기본 줄바꿈 허용 */
-        overflow-wrap:break-word;
+        white-space: normal;
+        /* 기본 줄바꿈 허용 */
+        overflow-wrap: break-word;
         max-width: 100%;
         margin-top: 0px;
-      }
-      
-      .blockpay-hero-image {
+    }
+
+    .blockpay-hero-image {
         aspect-ratio: 1.4;
         object-fit: contain;
         object-position: center;
@@ -456,7 +470,7 @@
         align-self: center;
         margin-top: 64px;
         max-width: 100%;
-      }
+    }
 
     /* section 6 end */
 
