@@ -156,4 +156,3 @@ function initializeAfterIncludeHTML() {
 }
 
 document.addEventListener("DOMContentLoaded", initializeAfterIncludeHTML);
-
