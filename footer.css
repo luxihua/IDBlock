@@ -150,7 +150,7 @@
     align-self: stretch;
     background-color: #1a1f27;
     display: flex;
-    max-width: 479px;
+    max-width: 100%;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
@@ -180,11 +180,13 @@
   .terms-link {
     align-self: stretch;
     margin: auto 0;
+    color: #696969;
   }
 
   .privacy-link {
     align-self: stretch;
     margin: auto 0;
+    color: #696969;
   }
 
   .social-icons {
@@ -192,7 +194,7 @@
     align-items: center;
     gap: 4px;
     justify-content: start;
-    margin-right: 20px;
+    margin-right: 1px;
   }
 
   .social-icon {
@@ -210,19 +212,18 @@
   }
 
   .social-icon img {
-    aspect-ratio: 1;
+    aspect-ratio: 1.5;
     object-fit: contain;
     object-position: center;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     align-self: stretch;
     margin: 0 auto;
   }
 
   .divider {
-    background-color: #696969;
-    height: 1px;
-    width: 450px;
+    border-top: 1px solid #696969;
+    width: 479px;
     margin : 15px 0;
   }
 

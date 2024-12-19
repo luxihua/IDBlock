@@ -152,12 +152,13 @@
 
   .section-title {
     align-self: center;
-    width: 155px;
+    width: 160px;
     max-width: 100%;
     font-size: 24px;
     font-weight: 700;
     padding: 8px 20px;
     margin-bottom: 24px;
+    white-space: nowrap;
   }
 
   .timeline-container {
@@ -327,7 +328,6 @@
 
   .press-title {
     align-self: center;
-    width: 155px;
     max-width: 100%;
     font-size: 24px;
     font-weight: 700;
@@ -340,6 +340,13 @@
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
+  }
+
+  .press-divider {
+    background-color: var(--dark-gray, #696969);
+    height: 1px;
+    margin: 25px 0;
+    width: 100%;
   }
 
   .press-source {
