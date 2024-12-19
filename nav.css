@@ -1,22 +1,4 @@
 /* 네비게이션 바 start */
-.header {
-    /* width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* 네비게이션 아이템들 수직 중앙 정렬 */
-    /* height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0 20px; */
-    /* 좌우 여백 줄이기 */
-    /* margin: 0 auto; */
-    /* 중앙 정렬 */
-}
 
 /* pc용 네비게이션 */
 .pcMenu {
@@ -303,7 +285,7 @@
     right: -100%;
     /* Start hidden off-screen */
     height: 100%;
-    min-width: 393px;
+    width: 100%;
     /* Adjust width as needed */
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
