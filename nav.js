@@ -102,6 +102,13 @@ function initializeMobileMenu() {
                         top: targetElement.offsetTop,
                         behavior: "smooth",
                     });
+                    // 선택된 섹션에 효과 추가 (선택 사항)
+                    targetElement.classList.add("fade-in");
+                    setTimeout(() => {
+                        targetElement.classList.remove("fade-in");
+                    }, 1000);
+                } else {
+                    console.error(`Element with ID '${targetId}' not found.`);
                 }
             }
         });
