@@ -1,27 +1,4 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("main > section");
-  const footer = document.querySelector("footer");
-  let isSnapping = true;
-
-  const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-              const target = entry.target;
-
-              // info-app-container 이후로 스크롤 스냅 비활성화
-              if (target.classList.contains("partners-section")) {
-                  document.querySelector("main").style.scrollSnapType = "none";
-                  isSnapping = false;
-              }
-          }
-      });
-  });
-
-  // 각 섹션 관찰
-  sections.forEach((section) => observer.observe(section));
-  observer.observe(footer);
-});
 /* 초기화 */
 let windowHeight = window.innerHeight;
 
@@ -85,8 +62,8 @@ observer2.observe(home2Text);
 
 /* home3 스크롤 이벤트 */
 document.addEventListener("DOMContentLoaded", () => {
-  const home3Texth2 = document.querySelector(".payment-container .content-wrapper h2");
-  const home3Textp = document.querySelector(".payment-container .content-wrapper p");
+  const home3Texth2 = document.querySelector(".payment-container .payment-content-wrapper h2");
+  const home3Textp = document.querySelector(".payment-container .payment-content-wrapper p");
   const home3Iphone = document.querySelector(".image-section .image-grid .image-column");
 
   // 요소가 null인지 확인
