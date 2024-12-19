@@ -18,6 +18,7 @@
     max-width: 100%;
     flex-direction: column;
     align-items: center;
+    min-height: auto;
   }
 
   .visually-hidden {
@@ -42,6 +43,15 @@
     bottom: 0;
   }
 
+  .vision-text-container {
+    top: -80px;
+  }
+
+  .vision-content {
+    padding-bottom: 95px;
+
+  }
+
 
   .vision-heading {
     font-size: 32px;
@@ -59,22 +69,61 @@
     margin: 48px 0 0;
     text-align: center;
     white-space: normal;
+    width: 305px;
   }
 
 
   /* section 2 start */
+
+  .overview-container {
+    width: 290px;
+    max-width: fit-content;
+  }
+
   .overview-section-title {
     align-self: stretch;
-    width: 100%;
+    width: 290px;
     color: #000;
     text-align: center;
     font: 700 24px/36px Pretendard, sans-serif;
+    padding: 16px 20px;
   }
 
 
   /* section 2 end */
 
   /* section 3 start */
+
+  .core-background-image {
+    min-width: 393px;
+    height: 1327px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  .core-title-en {
+    font-size: 24px;
+    font-weight: 200px;
+  }
+
+  .core-title-kor {
+    font-size: 24px;
+    font-weight: 700px;
+  }
+
+  .core-image-grid {
+    max-width: 220px;
+
+  }
+
+
+  .value-image1,
+  .value-image2,
+  .value-imag3 {
+    width: 220px;
+
+  }
 
   /* section 3 end */
 
@@ -98,6 +147,7 @@
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
+    margin-top: 0px;
   }
 
   .section-title {
@@ -111,6 +161,7 @@
   }
 
   .timeline-container {
+    min-width: 350px;
     margin-top: 0px;
     ;
   }
@@ -289,12 +340,14 @@
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
-}
+  }
 
   .press-source {
     font-size: 14px;
-    position: static; /* position 제거 */
-    margin-left: auto; /* 오른쪽으로 밀기 */
+    position: static;
+    /* position 제거 */
+    margin-left: auto;
+    /* 오른쪽으로 밀기 */
     bottom: 0;
 
   }
@@ -302,11 +355,12 @@
   .press-meta {
     display: flex;
     font-size: 14px;
-    justify-content: space-between; /* 양 끝으로 정렬 */
+    justify-content: space-between;
+    /* 양 끝으로 정렬 */
     align-items: center;
     width: 100%;
-}
+  }
 
 
-      /* section 5 end */
+  /* section 5 end */
 }

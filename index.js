@@ -112,7 +112,6 @@ window.addEventListener("resize", initialize);
 
 
 
-
 // 특허 증명 이벤트
 document.addEventListener("DOMContentLoaded", () => {
   const certificateImageLeft = document.querySelector(".certificate-image-left");
@@ -140,23 +139,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   };
 
-  certificateImageLeft.addEventListener("mouseenter", () => {
-    console.log("Mouse entered left image");
-    changeImageWithEffect(certificateImageLeft, alternateLeftSrc);
-  });
+  const isMobile = () => window.innerWidth <= 479;
 
-  certificateImageRight.addEventListener("mouseenter", () => {
-    console.log("Mouse entered right image");
-    changeImageWithEffect(certificateImageRight, alternateRightSrc);
-  });
+  // PC 이벤트
+  if (!isMobile()) {
+    certificateImageLeft.addEventListener("mouseenter", () => {
+      console.log("Mouse entered left image");
+      changeImageWithEffect(certificateImageLeft, alternateLeftSrc);
+    });
 
-  certificateImageLeft.addEventListener("mouseleave", () => {
-    console.log("Mouse left left image");
-    changeImageWithEffect(certificateImageLeft, originalLeftSrc);
-  });
+    certificateImageRight.addEventListener("mouseenter", () => {
+      console.log("Mouse entered right image");
+      changeImageWithEffect(certificateImageRight, alternateRightSrc);
+    });
 
-  certificateImageRight.addEventListener("mouseleave", () => {
-    console.log("Mouse left right image");
-    changeImageWithEffect(certificateImageRight, originalRightSrc);
-  });
+    certificateImageLeft.addEventListener("mouseleave", () => {
+      console.log("Mouse left left image");
+      changeImageWithEffect(certificateImageLeft, originalLeftSrc);
+    });
+
+    certificateImageRight.addEventListener("mouseleave", () => {
+      console.log("Mouse left right image");
+      changeImageWithEffect(certificateImageRight, originalRightSrc);
+    });
+  }
+
+  // 모바일 터치 이벤트
+  if (isMobile()) {
+    certificateImageLeft.addEventListener("touchstart", () => {
+      console.log("Touched left image");
+      const currentSrc = certificateImageLeft.src.trim();
+      const newSrc = currentSrc === originalLeftSrc ? alternateLeftSrc : originalLeftSrc;
+      changeImageWithEffect(certificateImageLeft, newSrc);
+    });
+
+    certificateImageRight.addEventListener("touchstart", () => {
+      console.log("Touched right image");
+      const currentSrc = certificateImageRight.src.trim();
+      const newSrc = currentSrc === originalRightSrc ? alternateRightSrc : originalRightSrc;
+      changeImageWithEffect(certificateImageRight, newSrc);
+    });
+  }
 });

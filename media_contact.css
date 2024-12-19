@@ -103,6 +103,8 @@
         margin-top: 90px;
         gap: 80px;
       }
+
+      
       .location-title {
         font-size: 24px;
         font-weight: 800;
@@ -139,11 +141,11 @@
         font-weight: 600;
       }
     
-      .info-icon {
+      .contact-icon {
         aspect-ratio: 1;
         object-fit: contain;
         object-position: center;
-        width: 11px;
+        width: 12px;
         align-self: stretch;
         margin: auto 0;
       }
@@ -154,6 +156,10 @@
         margin: auto 0;
         white-space: nowrap;
         font-size: 9px;
+      }
+
+      .contact-row {
+        margin-top: 9px;
       }
 
 
