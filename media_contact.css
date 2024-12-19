@@ -26,7 +26,7 @@
         letter-spacing: 0.32px;
         line-height: 26px;
         align-self: center;
-        white-space: inherit;
+        white-space: nowrap;
         padding: 10px;
         width: 268px;
     }
@@ -104,7 +104,7 @@
         gap: 80px;
       }
 
-      
+
       .location-title {
         font-size: 24px;
         font-weight: 800;
