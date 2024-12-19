@@ -1,5 +1,6 @@
 
-document.addEventListener('DOMContentLoaded', function () {
+
+window.onload = function () {
     const languageToggleButton = document.querySelector('.language-toggle');
     const languageDropdown = document.querySelector('.dropdown_lang');
 
@@ -14,75 +15,109 @@ document.addEventListener('DOMContentLoaded', function () {
             languageDropdown.style.display = 'none';
         }
     });
-});
+};
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdownLinks = document.querySelectorAll(".dropdown_menu li a");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const dropdownLinks = document.querySelectorAll(".dropdown_menu li a");
 
-    dropdownLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
-            if (this.hash) {
-                e.preventDefault(); // 기본 동작 방지
-                const targetId = this.hash.substring(1); // # 제거
-                const targetElement = document.getElementById(targetId);
+//     dropdownLinks.forEach((link) => {
+//         link.addEventListener("click", function (e) {
+//             if (this.hash) {
+//                 e.preventDefault(); // 기본 동작 방지
+//                 const targetId = this.hash.substring(1); // # 제거
+//                 const targetElement = document.getElementById(targetId);
 
-                if (targetElement) {
-                    // 부드럽게 스크롤 이동
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: "smooth",
-                    });
+//                 if (targetElement) {
+//                     // 부드럽게 스크롤 이동
+//                     window.scrollTo({
+//                         top: targetElement.offsetTop,
+//                         behavior: "smooth",
+//                     });
 
-                    // 페이드인 애니메이션 추가
-                    targetElement.classList.add("fade-in");
+//                     // 페이드인 애니메이션 추가
+//                     targetElement.classList.add("fade-in");
 
-                    // 1초 후 애니메이션 제거
-                    setTimeout(() => {
-                        targetElement.classList.remove("fade-in");
-                    }, 1000);
+//                     // 1초 후 애니메이션 제거
+//                     setTimeout(() => {
+//                         targetElement.classList.remove("fade-in");
+//                     }, 1000);
+//                 }
+//             }
+//         });
+//     });
+// });
+
+
+window.onload = function () {
+
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const sidebarNavMenu = document.querySelector('.sidebar-nav-menu');
+    const menuCloseButton = document.querySelector('.sidebar-menu-close');
+
+    // Toggle sidebar menu
+    const toggleSidebarMenu = () => {
+        if (sidebarNavMenu.style.right === '0px') {
+            sidebarNavMenu.style.right = '-100%'; // Hide menu
+        } else {
+            sidebarNavMenu.style.right = '0'; // Show menu
+        }
+    };
+
+    // Open menu on button click
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', toggleSidebarMenu);
+    } else {
+        console.error("mobile-menu-button not found.");
+    }
+
+    // Close menu on close button click
+    if (menuCloseButton) {
+        menuCloseButton.addEventListener('click', toggleSidebarMenu);
+    } else {
+        console.error("menuCloseButton not found.");
+    }
+
+
+    document.querySelectorAll('.sidebar-menu-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const dropdown = item.querySelector('.sidebar-dropdown');
+            if (!dropdown) {
+                console.error("Dropdown not found for", item);
+                return; // 해당 아이템에 드롭다운이 없으면 실행 중단
+            }
+    
+            const isActive = item.classList.contains('active');
+    
+            // 모든 드롭다운 닫기
+            document.querySelectorAll('.sidebar-menu-item').forEach(el => {
+                const elDropdown = el.querySelector('.sidebar-dropdown');
+                if (elDropdown) {
+                    el.classList.remove('active');
+                    elDropdown.style.display = 'none';
+                    el.style.marginBottom = '0';
                 }
+            });
+    
+            // 클릭한 드롭다운 열기/닫기
+            if (!isActive) {
+                item.classList.add('active');
+                dropdown.style.display = 'flex';
+    
+                //드롭다운 높이만큼 마진 조정
+                const dropdownHeight = dropdown.offsetHeight;
+                item.style.marginBottom = `${dropdownHeight}px`;
             }
         });
     });
-});
+
+};
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".mobile-menu-button");
-    const menuContainer = document.querySelector(".mobile-menu-container");
-    const closeButton = document.querySelector(".menu-close");
 
-    // 요소가 선택되지 않을 경우 에러 출력
-    if (!menuButton || !menuContainer || !closeButton) {
-        console.error("Menu button, container, or close button not found");
-        return; // 실행 중단
-    }
 
-    // 메뉴 열기
-    menuButton.addEventListener("click", () => {
-        console.log("Menu button clicked");
-        menuContainer.classList.add("active");
-        menuButton.setAttribute("aria-expanded", "true");
-        menuContainer.setAttribute("aria-hidden", "false");
-    });
 
-    // 메뉴 닫기
-    closeButton.addEventListener("click", () => {
-        console.log("Close button clicked");
-        menuContainer.classList.remove("active");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuContainer.setAttribute("aria-hidden", "true");
-    });
 
-    // 외부 클릭 시 메뉴 닫기
-    document.addEventListener("click", (e) => {
-        if (!menuContainer.contains(e.target) && !menuButton.contains(e.target)) {
-            console.log("Clicked outside menu");
-            menuContainer.classList.remove("active");
-            menuButton.setAttribute("aria-expanded", "false");
-            menuContainer.setAttribute("aria-hidden", "true");
-        }
-    });
-});
+
+

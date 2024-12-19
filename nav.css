@@ -246,6 +246,232 @@
     }
 }
 
+.mobileMenu {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* 네비게이션 아이템들 수직 중앙 정렬 */
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    /* 좌우 여백 줄이기 */
+    margin: 0 auto;
+    /* 중앙 정렬 */
+}
+
+.mobile-logo {
+    display: none;
+    aspect-ratio: 3;
+    object-fit: contain;
+    object-position: center;
+    width: 78px;
+    margin-left: 10px;
+}
+
+.mobile-menu-button {
+    display: none;
+    min-height: 24px;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 1px 5px 2px;
+    border: 0;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    object-fit: contain;
+    object-position: center;
+    width: 21px;
+}
+
+
+/* sidebar menu start */
+
+.sidebar-nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Start hidden off-screen */
+    height: 100%;
+    min-width: 393px;
+    /* Adjust width as needed */
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    /* Smooth sliding effect */
+    z-index: 2000;
+    /* Ensure it appears above other elements */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.sidebar-menu-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    min-height: 48px;
+    width: 100%;
+    padding: 18px 24px;
+    font: 700 16px Pretendard, sans-serif;
+    border: 0;
+    background-color: transparent;
+}
+
+
+
+.sidebar-close-icon {
+    margin-left: 50px;
+    /* Align to the left */
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+.sidebar-menu-item {
+    position: relative;
+    background-color: white;
+    display: flex;
+    min-height: 48px;
+    width: 100%;
+    align-items: center;
+    padding: 18px 15px;
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    /* Apply bold bottom border */
+    flex-direction: column;
+    /* 세로 정렬 */
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+    flex-direction: column; /* 자식 요소 수직 정렬 */
+}
+
+
+.sidebar-dropdown {
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-top: 1px solid #d9d9d9;
+    padding: 0;
+    z-index: 10; /* 드롭다운이 위로 표시되도록 설정 */
+}
+
+.sidebar-menu-item.active {
+    background-color: #FFD8CC;
+    color: white;
+}
+
+
+.sidebar-menu-item.active .sidebar-dropdown {
+    display: flex;
+    /* Show dropdown on hover */
+
+}
+
+
+.sidebar-dropdown-item {
+    font: 500 14px Pretendard, sans-serif;
+    text-align: left; /* 왼쪽 정렬 */
+    background-color: #F3F3F3;
+    color: #686868;
+    min-height: 48px;
+    padding: 15px 20px;
+    border-bottom: 1px solid white;
+}
+
+.sidebar-dropdown-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* 하얀색 구분선 */
+}
+
+.sidebar-dropdown-item:last-child::after {
+    display: none; /* 마지막 항목은 구분선 제거 */
+}
+
+.sidebar-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-dropdown-item:hover {
+    background-color: #f5f5f5;
+    color: #FF5520;
+}
+
+
+
+.sidebar-menu-content {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    width: 100%;
+    align-items: center;
+    gap: 0 100px;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.sidebar-menu-text {
+    align-self: stretch;
+    gap: 180px;
+    margin: auto 0;
+    color: #1E1E1E;
+    font: 700 16px Pretendard, sans-serif;
+
+}
+
+.sidebar-menu-arrow {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.sidebar-language-selector {
+    display: flex;
+    min-height: 28px;
+    align-items: center;
+    gap: 40px 180px;
+    justify-content: start;
+    width: 28px;
+    margin: auto 0;
+}
+
+.sidebar-language-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
 
 
 
@@ -255,81 +481,12 @@
     }
 
 
-    .mobileMenu {
+    .mobileMenu,
+    .mobile-logo,
+    .mobile-menu-button,
+    .sidebar-nav-menu {
         display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        /* 네비게이션 아이템들 수직 중앙 정렬 */
-        height: 56px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        background-color: white;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 0 20px;
-        /* 좌우 여백 줄이기 */
-        margin: 0 auto;
-        /* 중앙 정렬 */
     }
-
-
-    .mobile-logo-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .mobile-logo {
-        aspect-ratio: 3;
-        object-fit: contain;
-        object-position: center;
-        width: 78px;
-        margin-left: 10px;
-    }
-
-    .mobile-menu-button {
-        display: flex;
-        min-height: 24px;
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 1px 5px 2px;
-        border: 0;
-        background-color: transparent;
-        margin-right: 10px;
-    }
-
-    .mobile-menu-icon {
-        object-fit: contain;
-        object-position: center;
-        width: 21px;
-    }
-
-
-    .mobile-menu-container {
-        display: none;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        /* 초기에는 화면 밖으로 숨김 */
-        height: 100%;
-        background-color: #4e5968;
-        z-index: 1000;
-        transition: left 0.3s ease;
-        /* 슬라이드 애니메이션 */
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-
-    }
-
-    /* 메뉴가 보일 때 */
-    .mobile-menu-container.active {
-        right: 0;
-        /* 화면 안으로 들어옴 */
-    }
-
 
     /* 모바일용 네비게이션 end */
 }
