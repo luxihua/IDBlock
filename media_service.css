@@ -492,14 +492,13 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         flex-direction: row;
         /* 자식 요소를 가로 방향으로 배치 */
         align-items: center;
-        justify-content: space-between;
         flex-wrap: wrap;
         margin: 0 auto;
         padding: 0 16px;
     }
 
     .image-gallery {
-        width: 50%;
+        width: 55%;
         /* 이미지 크기 조정 */
         aspect-ratio: 0.83;
         object-fit: contain;
@@ -514,6 +513,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         justify-content: flex-start;
         padding: 0 16px;
         margin-left: 10px;
+        width: 30%;
     }
 
     .service-title {
@@ -555,8 +555,6 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
     .text-content {
         width: 50%;
-        margin-right: 30px;
-        /* 텍스트 영역 크기 고정 */
         padding: 72px;
     }
 
@@ -658,6 +656,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        margin-top: 15px;
 
     }
 
@@ -704,8 +703,12 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        margin-top: 32px;
+        margin-top: 15px
 
+    }
+
+    .payment-container {
+        gap: 80px;
     }
 
     .payment-content {
@@ -713,8 +716,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         /* 너비를 50%로 줄여서 더 오른쪽으로 이동 */
         max-width: 400px;
         /* 최대 크기를 제한 */
-        margin-left: 100px;
-        /* 왼쪽 여백을 최대화해 오른쪽으로 이동 */
+        margin-left: 40px;
         text-align: left;
         /* 텍스트 정렬은 왼쪽 유지 */
     }

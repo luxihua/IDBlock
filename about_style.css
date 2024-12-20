@@ -6,7 +6,8 @@
     font-family: Pretendard, sans-serif;
     color: rgba(255, 255, 255, 1);
     padding-top: 80px;
-    margin-top: 0; /* margin 제거 */
+    margin-top: 0;
+    /* margin 제거 */
 }
 
 .vision-container {
@@ -114,9 +115,10 @@
 
 .overview-image-grid {
     display: flex;
-    margin-top: 24px;
-    gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 100%;
 }
 
 .overview-image-wrapper {
@@ -152,10 +154,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; /* 수정: 절대 위치 대신 상대 위치 */
+    position: relative;
+    /* 수정: 절대 위치 대신 상대 위치 */
     background-color: #1e1e1e;
     overflow: hidden;
-    padding: 100px 40px; /* 여백 조정 */
+    padding: 100px 40px;
+    /* 여백 조정 */
 }
 
 .core-background-image {
@@ -164,19 +168,22 @@
     left: 0;
     width: 100%;
     height: auto;
-    object-fit: cover; /* 배경 이미지 비율 유지 */
+    object-fit: cover;
+    /* 배경 이미지 비율 유지 */
     z-index: 0;
 }
 
 .core-content-wrapper {
-    position: relative; /* 수정: 부모 요소에 맞게 배치 */
+    position: relative;
+    /* 수정: 부모 요소에 맞게 배치 */
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1200px; /* 최대 너비 설정 */
+    max-width: 1200px;
+    /* 최대 너비 설정 */
     padding: 20px;
     text-align: center;
 }
@@ -202,14 +209,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* 이미지 사이 여백 */
+    gap: 40px;
+    /* 이미지 사이 여백 */
     max-width: 100%;
     margin-top: 60px;
 }
 
 .core-image-grid img {
-    flex: 1 1 calc(33.333% - 40px); /* 3개의 이미지가 한 줄에 표시되도록 설정 */
-    max-width: 350px; /* 최대 너비 설정 */
+    flex: 1 1 calc(33.333% - 40px);
+    /* 3개의 이미지가 한 줄에 표시되도록 설정 */
+    max-width: 350px;
+    /* 최대 너비 설정 */
     height: auto;
     object-fit: contain;
 }
