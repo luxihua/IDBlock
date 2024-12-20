@@ -1,53 +1,63 @@
-window.onload = function () {
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const dropdownLinks = document.querySelectorAll(".dropdown_menu li a");
 
-        if (dropdownLinks) {
-            dropdownLinks.forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    if (this.hash) {
-                        e.preventDefault(); // 기본 동작 방지
-                        const targetId = this.hash.substring(1); // # 제거
-                        const targetElement = document.getElementById(targetId);
-
-                        if (targetElement) {
-                            // 부드럽게 스크롤 이동
-                            window.scrollTo({
-                                top: targetElement.offsetTop,
-                                behavior: "smooth",
-                            });
-
-                            // 페이드인 애니메이션 추가
-                            targetElement.classList.add("fade-in");
-
-                            // 1초 후 애니메이션 제거
-                            setTimeout(() => {
-                                targetElement.classList.remove("fade-in");
-                            }, 1000);
-                        }
-                    }
-                });
-            });
-        }
-    });
-};
-
-function initializeMobileMenu() {
+function initializeAfterIncludeHTML() {
     const languageToggleButton = document.querySelector('.language-toggle');
     const languageDropdown = document.querySelector('.dropdown_lang');
 
     if (languageToggleButton && languageDropdown) {
         languageToggleButton.addEventListener('click', function () {
-            // 드롭다운 메뉴의 표시 상태를 토글
             languageDropdown.style.display = languageDropdown.style.display === 'block' ? 'none' : 'block';
         });
 
-        // 다른 영역 클릭 시 드롭다운 메뉴 닫기
         document.addEventListener('click', function (e) {
             if (!languageToggleButton.contains(e.target) && !languageDropdown.contains(e.target)) {
                 languageDropdown.style.display = 'none';
             }
+        });
+    }
+
+    const pcDropdownLinks = document.querySelectorAll(".pc-menu .dropdown > a");
+
+    pcDropdownLinks.forEach((link) => {
+        link.addEventListener("mouseenter", function () {
+            const dropdownMenu = this.nextElementSibling;
+            if (dropdownMenu) {
+                dropdownMenu.style.display = 'block';
+            }
+        });
+
+        link.parentElement.addEventListener("mouseleave", function () {
+            const dropdownMenu = link.nextElementSibling;
+            if (dropdownMenu) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+    });
+
+    const mobileDropdownLinks = document.querySelectorAll('.sidebar-dropdown-item');
+
+    if (mobileDropdownLinks) {
+        mobileDropdownLinks.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                if (this.hash) {
+                    e.preventDefault();
+                    const targetId = this.hash.substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth",
+                        });
+
+                        targetElement.classList.add("fade-in");
+
+                        setTimeout(() => {
+                            targetElement.classList.remove("fade-in");
+                        }, 1000);
+                    }
+                }
+            });
         });
     }
 
@@ -56,9 +66,9 @@ function initializeMobileMenu() {
     const menuCloseButton = document.querySelector('.sidebar-menu-close');
 
     const toggleSidebarMenu = () => {
-        if (sidebarNavMenu && sidebarNavMenu.style.right === '0px') {
+        if (sidebarNavMenu.style.right === '0px') {
             sidebarNavMenu.style.right = '-100%';
-        } else if (sidebarNavMenu) {
+        } else {
             sidebarNavMenu.style.right = '0';
         }
     };
@@ -75,27 +85,12 @@ function initializeMobileMenu() {
         console.error("menuCloseButton not found.");
     }
 
-    const dropdownLinks = document.querySelectorAll(".sidebar-dropdown-item");
-    dropdownLinks.forEach((link) => {
+    const menuLinks = document.querySelectorAll(".sidebar-menu-item a, .pc-menu a");
+    menuLinks.forEach((link) => {
         link.addEventListener("click", function (e) {
-            if (this.hash) {
-                e.preventDefault();
-                const targetId = this.hash.substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: "smooth",
-                    });
-                    // 선택된 섹션에 효과 추가 (선택 사항)
-                    targetElement.classList.add("fade-in");
-                    setTimeout(() => {
-                        targetElement.classList.remove("fade-in");
-                    }, 1000);
-                } else {
-                    console.error(`Element with ID '${targetId}' not found.`);
-                }
+            const targetHref = this.getAttribute("href");
+            if (targetHref) {
+                window.location.href = targetHref;
             }
         });
     });
@@ -105,7 +100,7 @@ function initializeMobileMenu() {
             const dropdown = item.querySelector('.sidebar-dropdown');
             if (!dropdown) {
                 console.error("Dropdown not found for", item);
-                return;
+                return; // 해당 아이템에 드롭다운이 없으면 실행 중단
             }
 
             const isActive = item.classList.contains('active');
@@ -122,6 +117,7 @@ function initializeMobileMenu() {
             if (!isActive) {
                 item.classList.add('active');
                 dropdown.style.display = 'flex';
+
                 const dropdownHeight = dropdown.offsetHeight;
                 item.style.marginBottom = `${dropdownHeight}px`;
             }
@@ -129,16 +125,27 @@ function initializeMobileMenu() {
     });
 }
 
-// Ensure initializeMobileMenu runs after includeHTML is finished
-function initializeAfterIncludeHTML() {
-    if (typeof includeHTML === 'function') {
-        includeHTML(); // Ensure includeHTML executes
-        setTimeout(() => {
-            initializeMobileMenu();
-        }, 100); // Slight delay to allow DOM updates
-    } else {
-        console.error("includeHTML is not defined.");
-    }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    initializeAfterIncludeHTML(); // 직접 DOM 초기화
+});
 
-document.addEventListener("DOMContentLoaded", initializeAfterIncludeHTML);
+
+
+// function initializeMenusWithIncludeHTML() {
+//     if (typeof includeHTML === 'function') {
+//         includeHTML();
+//         document.addEventListener('includeHTMLComplete', () => {
+//             initializeAfterIncludeHTML();
+//         });
+//     } else {
+//         console.error("includeHTML is not defined.");
+//     }
+// }
+
+// document.addEventListener("DOMContentLoaded", initializeMenusWithIncludeHTML);
+// document.addEventListener("readystatechange", function () {
+//     if (document.readyState === "complete") {
+//         initializeMenusWithIncludeHTML();
+//     }
+// });
+
