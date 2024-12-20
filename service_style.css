@@ -455,12 +455,13 @@
     margin: auto 0;
 }
 
-.feature-title {
+.feature-title1, .feature-title2, .feature-title3, .feature-title4 {
     color: #000;
     text-align: center;
     align-items: center;
     font: 600 24px Pretendard, sans-serif;
     white-space: nowrap;
+    align-self: center;
 }
 
 .feature-image1 {
@@ -510,7 +511,7 @@
     padding: 49px 84px;
 }
 
-.payment-content {
+.payment-card-content {
     display: flex;
     max-width: 100%;
     width: 190px;

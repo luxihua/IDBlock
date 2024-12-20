@@ -269,7 +269,6 @@
     width: 100%;
     align-items: start;
     margin-left: 105px;
-    gap: 80px;
     margin-bottom: 48px;
 
 }
@@ -279,7 +278,6 @@
     width: 100%;
     align-items: start;
     margin-left: 105px;
-    gap: 80px;
     margin-bottom: 48px;
 
 }
@@ -308,7 +306,7 @@
     align-items: center;
     gap: 25px;
     font-weight: 700;
-    width: 112px;
+    width: 100px;
 }
 
 .year-quarter3 {
@@ -317,7 +315,7 @@
     align-items: center;
     gap: 25px;
     font-weight: 700;
-    width: 112px;
+    width: 100px;
 }
 
 .year-quarter4 {
@@ -347,7 +345,6 @@
     flex-grow: 1;
     width: 1000px;
     white-space: nowrap;
-    margin-left: -97px;
 }
 
 .achievements-list3 {
@@ -358,7 +355,6 @@
     flex-grow: 1;
     width: 1000px;
     white-space: nowrap;
-    margin-left: -97px;
 }
 
 .achievements-list4 {

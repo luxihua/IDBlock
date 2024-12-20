@@ -86,9 +86,9 @@
         justify-content: start;
         margin: 0 auto;
         padding: 180px 0;
-      }
-      
-      .text-content{
+    }
+
+    .text-content {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -96,49 +96,49 @@
         justify-content: start;
         padding: 0 16px;
         margin-left: 0px;
-      }
-      
-      .verification-badge {
+    }
+
+    .verification-badge {
         color: rgba(255, 85, 32, 1);
         font-size: 16px;
         font-weight: 700;
-      }
-      
-      .text-wrapper {
+    }
+
+    .text-wrapper {
         display: flex;
         margin-top: 8px;
         width: 100%;
         flex-direction: column;
         justify-content: start;
-      }
-      
-      .main-heading {
+    }
+
+    .main-heading {
         color: rgba(0, 0, 0, 1);
         font-size: 32px;
         font-weight: 700;
         line-height: 48px;
-      }
-      
-      .description {
+    }
+
+    .description {
         color: rgba(136, 142, 149, 1);
         font-size: 16px;
         font-weight: 400;
         margin-top: 32px;
-      }
+    }
 
-      .images-grid {
-        width:  100%;
-        align-items:center;
-      }
-      
-      .id-image {
+    .images-grid {
+        width: 100%;
+        align-items: center;
+    }
+
+    .id-image {
         aspect-ratio: 0.83;
         object-fit: contain;
         object-position: center;
         margin-top: 83px;
         width: 257px;
         max-width: 100%;
-      }
+    }
 
     /* section 2 end */
 
@@ -483,7 +483,428 @@
     /* section 6 end */
 
 
+}
 
+@media screen and (min-width: 768px) and (max-width: 1024px),
+screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .service-guide {
+        display: flex;
+        flex-direction: row;
+        /* 자식 요소를 가로 방향으로 배치 */
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .image-gallery {
+        width: 50%;
+        /* 이미지 크기 조정 */
+        aspect-ratio: 0.83;
+        object-fit: contain;
+        margin-right: 16px;
+        /* 오른쪽 여백 추가 */
+    }
+
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 16px;
+        margin-left: 10px;
+    }
+
+    .service-title {
+        gap: 8px;
+        font-size: 32px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    .highlight-text {
+        color: rgba(255, 85, 32, 1);
+    }
+
+    .download-button {
+        align-self: start;
+        border-radius: 4px;
+        background-color: rgba(240, 240, 240, 1);
+        margin-top: 32px;
+        gap: 4px;
+        font-size: 12px;
+        color: rgba(30, 30, 30, 1);
+        font-weight: 600;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+
+    .facial-recognition-image {
+        aspect-ratio: 0.34;
+    }
+
+    /* identity-verification */
+    .identity-verification {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 100px 50px;
+    }
+
+    .text-content {
+        width: 50%;
+        margin-right: 30px;
+        /* 텍스트 영역 크기 고정 */
+        padding: 72px;
+    }
+
+    .main-heading {
+        font-family: Pretendard;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .description {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-top: 32px;
+
+    }
+
+    .text-wrapper {
+        margin-right: 0px;
+    }
+
+    .verification-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+
+    .images-grid {
+        aspect-ratio: 0.83;
+        object-fit: contain;
+        padding-right: 20px;
+    }
+
+    .id-image {
+        aspect-ratio: 0.34;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 20px;
+        z-index: 1;
+    }
+
+    /* services-container */
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+        gap: 40px;
+    }
+
+    .features-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        margin-top: 72px;
+    }
+
+    .feature-card {
+        flex: 1;
+        min-width: 280px;
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+
+    .auth-title {
+        font-family: Pretendard;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .auth-description {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .auth-background {
+        position: absolute;
+        inset: 0;
+        /* 부모 요소의 크기에 맞춰 확장 */
+        width: 80%;
+        /* 이미지 크기를 줄임 */
+        height: auto;
+        /* 비율 유지 */
+        object-fit: contain;
+        object-position: center;
+        margin: auto;
+        /* 부모 요소 중심에 위치 */
+    }
+
+    .auth-content {
+        gap: 0px;
+    }
+
+    .payment-label {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+
+    .payment-title {
+        font-family: Pretendard;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .payment-description {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-top: 32px;
+
+    }
+
+    .payment-content {
+        width: 50%;
+        /* 너비를 50%로 줄여서 더 오른쪽으로 이동 */
+        max-width: 400px;
+        /* 최대 크기를 제한 */
+        margin-left: 100px;
+        /* 왼쪽 여백을 최대화해 오른쪽으로 이동 */
+        text-align: left;
+        /* 텍스트 정렬은 왼쪽 유지 */
+    }
+
+    .payment-image {
+        width: 50%;
+        /* 부모 요소의 50% 너비로 설정 */
+        max-width: 300px;
+        /* 최대 크기를 제한 */
+        height: auto;
+        /* 비율 유지 */
+        object-fit: contain;
+        /* 이미지를 비율에 맞게 조정 */
+        object-position: center;
+        /* 이미지를 중앙에 배치 */
+        margin-left: auto;
+        /* 오른쪽으로 정렬 */
+        margin-right: 100px;
+
+    }
+
+
+
+    .services-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .services-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .feature-card {
+        border-radius: 16px;
+        background-color: #f3f3f3;
+        min-width: 200px;
+        /* 최소 너비 */
+        max-width: 250px;
+        /* 최대 너비 */
+        min-height: 220px;
+        /* 최소 높이 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1;
+        width: auto;
+        /* 유동적 너비 */
+        margin: 16px;
+        /* 카드 간격 */
+        padding: 20px;
+        /* 내부 여백 */
+    }
+
+    .feature-grid {
+        margin-top: 152px;
+
+    }
+
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+        /* 세로 정렬 */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        /* 너비 축소 */
+        max-width: 200px;
+        /* 최대 너비 */
+        min-height: 180px;
+        /* 최소 높이 축소 */
+        margin: auto;
+    }
+
+    .app-content {
+        display: flex;
+        flex-direction: column;
+        /* 세로 정렬 */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        /* 너비 축소 */
+        max-width: 200px;
+        /* 최대 너비 */
+        min-height: 180px;
+        /* 최소 높이 축소 */
+        margin: auto;
+    }
+
+    .payment-card-content {
+
+        display: flex;
+        flex-direction: column;
+        /* 세로 정렬 */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        /* 너비 축소 */
+        max-width: 200px;
+        /* 최대 너비 */
+        min-height: 180px;
+        /* 최소 높이 축소 */
+        margin: auto;
+
+    }
+
+    .feature-title1 {
+        font-size: 16px;
+        /* 제목 폰트 크기 */
+        margin-bottom: 10px;
+        /* 제목과 이미지 간격 */
+    }
+
+
+    .feature-title2 {
+        font-size: 16px;
+        margin-top: 8px;
+        /* 제목 폰트 크기 */
+        /* 제목과 이미지 간격 */
+    }
+
+
+    .feature-title3 {
+        font-size: 16px;
+        /* 제목 폰트 크기 */
+        margin-bottom: 20px;
+        /* 제목과 이미지 간격 */
+    }
+
+    .feature-image1 {
+        width: 70%;
+        /* 이미지 크기 */
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .feature-image2 {
+        width: 70%;
+        /* 이미지 크기 */
+        height: auto;
+        margin-top: 0px
+    }
+
+    .feature-image3 {
+        width: 70%;
+        height: auto;
+
+    }
+
+    .feature-image4 {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .blockpay-subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+
+    .blockpay-main-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+
+
+    .blockpay-hero-image {
+        aspect-ratio: 1.9;
+    }
 
 
 
