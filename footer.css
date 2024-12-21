@@ -144,9 +144,10 @@
 
 
 /* 모바일 가로, 테블릿 세로(해상도 ~479px) */
-@media all and (max-width:479px) {
+@media all and (max-width:767px) {
 
   .footer {
+    min-width: 393px;
     align-self: stretch;
     background-color: #1a1f27;
     display: flex;
@@ -223,7 +224,8 @@
 
   .divider {
     border-top: 1px solid #696969;
-    width: 479px;
+    min-width: 450px;
+    max-width: 100%;
     margin : 15px 0;
   }
 

@@ -1,7 +1,8 @@
-@media all and (max-width:479px) {
+@media all and (max-width:767px) {
 
   .vision-section {
     display: flex;
+    min-width: 393px;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
@@ -75,13 +76,31 @@
 
   /* section 2 start */
 
+  .overview-company {
+    display: flex;
+    min-width: 393px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 16px;
+  }
+
   .overview-container {
-    width: 290px;
-    max-width: fit-content;
+    align-self: center;
+    display: flex;
+    margin-top: 24px;
+    width: 245px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: Pretendard, sans-serif;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
   }
 
   .overview-section-title {
-    align-self: stretch;
     width: 290px;
     color: #000;
     text-align: center;
@@ -89,10 +108,31 @@
     padding: 16px 20px;
   }
 
+  .overview-image-grid {    
+    align-self: center;
+    display: flex;
+    margin-top: 24px;
+    width: 245px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: Pretendard, sans-serif;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+  }
 
+  .overview-image-wrapper {
+    min-width: 245px;
+    width: 100%;
+  }
   /* section 2 end */
 
   /* section 3 start */
+
+  .core-values {
+    min-width: 393px;
+  }
 
   .core-background-image {
     min-width: 393px;
@@ -130,24 +170,24 @@
   /* section 4 start */
   .awards-history {
     display: flex;
-    max-width: 480px;
-    width: 100%;
+    min-width: 393px;
     flex-direction: column;
     align-items: center;
     font-family: Pretendard, sans-serif;
     color: rgba(0, 0, 0, 1);
     justify-content: center;
     margin: 0 auto;
-    padding: 150px 16px;
+    padding: 150px 25px;
   }
 
   .awards-container {
     display: flex;
-    width: 333px;
+    width: 60%;
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .section-title {
@@ -326,6 +366,15 @@
 
   /* section 5 start */
 
+  .press-releases {
+    min-width: 393px;
+    padding: 50px 25px;
+  }
+
+  .press-container {
+    margin-top: 0px;
+  }
+
   .press-title {
     align-self: center;
     max-width: 100%;
@@ -376,9 +425,6 @@
 @media screen and (min-width: 768px) and (max-width: 1024px),
 screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-
-
-
   .vision-background {
     position: absolute;
     inset: 0;
@@ -404,7 +450,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     font-weight: 700;
     line-height: 38.19px;
     text-align: left;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none;
 
 
@@ -415,7 +461,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none;
     margin-top: 46px;
 
@@ -427,7 +473,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     font-weight: 700;
     line-height: 30px;
     text-align: center;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none;
 
   }
@@ -488,22 +534,20 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
 
   .core-title-en {
-    font-family: Pretendard;
     font-size: 28px;
     font-weight: 200;
     line-height: 28.64px;
     text-align: center;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none
   }
 
   .core-title-kor {
-    font-family: Pretendard;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.64px;
     text-align: center;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none;
   }
 
@@ -517,7 +561,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     font-weight: 700;
     line-height: 28.64px;
     text-align: left;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none;
     margin-bottom: 0px;
 
@@ -587,7 +631,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   }
 
   .press-item-title {
-    font-family: Pretendard;
+    font-family: Pretendard, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.71px;
@@ -599,11 +643,11 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     justify-content: space-between;
     /* 양 끝으로 정렬 */
     align-items: center;
-    font-family: Pretendard;
+    font-family: Pretendard, sans-serif;
   }
 
   .press-date {
-    font-family: Pretendard;
+    font-family: Pretendard, sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 14.32px;
@@ -611,7 +655,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   }
 
   .press-source {
-    font-family: Pretendard;
+    font-family: Pretendard, sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 14.32px;
@@ -635,7 +679,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     font-weight: 700;
     line-height: 57.28px;
     text-align: left;
-    text-underline-position: from-font;
+    font-family: Pretendard, sans-serif;
     text-decoration-skip-ink: none;
     margin-bottom: 50px;
 

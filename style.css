@@ -456,7 +456,7 @@
         align-items: center;
         gap: 40px 100px;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .payment-content-wrapper {
@@ -482,6 +482,7 @@
         font-weight: 500;
         line-height: 36px;
         margin-top: 52px;
+        white-space: nowrap;
     }
 
     .image-section {
@@ -796,7 +797,6 @@
 
     .partners-container {
         display: flex;
-        width: 863px;
         max-width: 100%;
         flex-direction: column;
         align-items: center;
@@ -819,8 +819,7 @@
         /* 기존 비율 유지 */
         object-fit: contain;
         object-position: center;
-        width: 150%;
-        /* 기존보다 너비를 20% 더 크게 */
+        width: 100%;
         max-width: 1200px;
         /* 최대 너비 제한 */
         margin-top: 80px;
@@ -853,6 +852,7 @@
         margin-bottom: 250px;
         flex-direction: row;
         gap: 20px;
+        padding: 0  80px;
         /* 간격을 고정 */
     }
 
@@ -952,9 +952,9 @@
         aspect-ratio: 0.98;
         object-fit: contain;
         object-position: center;
-        width: 419px;
         align-self: stretch;
         min-width: 240px;
+        max-width: 350px;
         flex-grow: 1;
         margin: 0;
         /* 불필요한 마진 제거 */

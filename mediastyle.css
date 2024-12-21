@@ -1,6 +1,6 @@
 
 /* 모바일 가로, 테블릿 세로(해상도 ~479px) */
-@media all and (max-width:479px) {
+@media all and (max-width:767px) {
 
   /* intro start */
 
@@ -27,12 +27,14 @@
     color: rgba(255, 85, 32, 1);
     font: 700 32px/45px Pretendard, sans-serif;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   .hero-description {
     color: rgba(136, 142, 149, 1);
     font: 500 16px/24px Pretendard, sans-serif;
     margin-top: 32px;
+    white-space: nowrap;
   }
 
   .download-buttons {
@@ -77,7 +79,7 @@
     aspect-ratio: 0.9;
     object-fit: contain;
     object-position: center;
-    width: 288px;
+    width: 350px;
     align-self: center;
     max-width: 100%;
   }
@@ -117,12 +119,14 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
+    white-space: nowrap;
   }
 
   .feature-description {
     color: rgba(136, 142, 149, 1);
     font: 500 16px/24px Pretendard, sans-serif;
     margin-top: 32px;
+    white-space: nowrap;
   }
 
   .image-container {
@@ -134,6 +138,7 @@
     align-items: flex-start;
     gap: 20px;
     justify-content: space-between;
+    margin-top:25px;
   }
 
   .image-wrapper {
@@ -188,6 +193,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
+    white-space: nowrap;
   }
 
   .description {
@@ -196,6 +202,7 @@
     font-weight: 500;
     line-height: 24px;
     margin-top: 32px;
+    white-space: nowrap;
   }
 
   .image-container {
@@ -254,6 +261,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
+    white-space: nowrap;
   }
 
   .payment-description {
@@ -262,6 +270,7 @@
     font-weight: 500;
     line-height: 24px;
     margin-top: 32px;
+    white-space: nowrap;
   }
 
   .image-section {
@@ -282,6 +291,7 @@
 
   .primary-image {
     margin-top: 64px;
+    width: 100%;
   }
 
 
@@ -313,7 +323,7 @@
     color: rgba(0, 0, 0, 1);
     font-size: 32px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 48px;
     text-align: center;
     white-space: normal;
   }
@@ -349,7 +359,7 @@
   /* section 5 start */
   .certificate-section {
     display: flex;
-    max-width: 393px;
+    min-width: 393px;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -359,7 +369,6 @@
 
   .certificate-wrapper {
     display: flex;
-    width: 350px;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
@@ -383,12 +392,14 @@
   }
 
   .certificate-title {
+    width: 350px;
     color: rgba(0, 0, 0, 1);
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
     text-align: center;
     white-space: normal;
+    align-self: center;
   }
 
   .certificate-image-container {
@@ -434,12 +445,13 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 96px;
+    min-width: 393px;
   }
 
   .earth-content {
     position: relative;
     display: flex;
-    min-height: 580px;
+    min-height: 520px;
     width: 100%;
     background-color: #60a5ff;
     flex-direction: column;
@@ -455,7 +467,7 @@
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    height: 213px;
+    height: 330px;
   }
 
   .earth-title {
@@ -473,8 +485,6 @@
     white-space: normal;
     top: 20%;
     /* 상단에서 20% 위치에 배치 */
-    margin-top: -20px;
-    /* 세부 미세 조정 */
   }
 
 
@@ -484,7 +494,7 @@
 
   .partners-section {
     display: flex;
-    max-width: 393px;
+    min-width: 393px;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -518,12 +528,12 @@
 
   .info-app-container {
     display: flex;
-    max-width: 393px;
+    min-width: 393px;
     flex-direction: column;
     overflow: hidden;
     justify-content: center;
     margin: 0 auto;
-    padding: 48px 0;
+    padding: 211px 20px;
   }
 
   .info-content-wrapper {
@@ -618,7 +628,7 @@
     aspect-ratio: 0.99;
     object-fit: contain;
     object-position: center;
-    width: 262px;
+    width: 260px;
     align-self: center;
     margin-top: 64px;
     max-width: 100%;
