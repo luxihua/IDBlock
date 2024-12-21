@@ -1,55 +1,39 @@
 @media all and (max-width:767px) {
 
+
   .vision-section {
-    display: flex;
     min-width: 393px;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    margin: 0 auto;
-    padding: 54px 0;
+    margin-top: 0;
+    padding-top: 50px;
   }
 
-
-  .vision-container {
-    align-self: center;
-    z-index: 0;
-    display: flex;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    min-height: auto;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
 
   .vision-background {
-    aspect-ratio: 0.85;
-    object-position: center;
-    width: 100%;
     position: absolute;
-    z-index: 0;
-    right: -63px;
     height: 650px;
-    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
   }
 
   .vision-text-container {
-    top: -80px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    position: relative;
+    justify-content: center;
   }
 
   .vision-content {
-    padding-bottom: 95px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 210px 80px;
+    color: #fff;
 
   }
 
@@ -60,7 +44,9 @@
     line-height: 48px;
     width: 241px;
     text-align: center;
+    align-self: center;
     white-space: normal;
+
   }
 
   .vision-description {
@@ -71,6 +57,7 @@
     text-align: center;
     white-space: normal;
     width: 305px;
+    align-self: center;
   }
 
 
@@ -79,9 +66,9 @@
   .overview-company {
     display: flex;
     min-width: 393px;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     padding: 96px 16px;
   }
@@ -108,16 +95,28 @@
     padding: 16px 20px;
   }
 
-  .overview-image-grid {    
+  .overview-divider-container {
+    display: flex;
+    margin-top: 24px;
+    width: 1px;
+    align-items: center;
+  }
+
+  .overview-divider {
+    background-color: #FF7043;
+    min-height: 160px;
+    width: 100%;
+    flex: 1;
+    margin: auto 0;
+  }
+
+  .overview-image-grid {
     align-self: center;
     display: flex;
     margin-top: 24px;
-    width: 245px;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
-    font-family: Pretendard, sans-serif;
-    color: #fff;
     text-align: center;
     justify-content: center;
   }
@@ -126,25 +125,62 @@
     min-width: 245px;
     width: 100%;
   }
+
+  .overview-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+
   /* section 2 end */
 
   /* section 3 start */
 
   .core-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     min-width: 393px;
+    background-color: rgba(25, 25, 25, 1);
+    padding-top: 180px;
   }
 
   .core-background-image {
+    position: absolute;
     min-width: 393px;
+    width: 100%;
     height: 1327px;
     gap: 0px;
-    opacity: 0px;
+    object-fit: cover;
+    z-index: 0;
+  }
 
+  .core-content-wrapper {
+    position: relative;
+    /* 수정: 부모 요소에 맞게 배치 */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .core-title-wrapper {
+    color: rgba(255, 85, 32, 1);
+    margin-bottom: 40px;
+    font-family: Pretendard, sans-serif;
   }
 
   .core-title-en {
     font-size: 24px;
     font-weight: 200px;
+    padding-bottom: 12px;
   }
 
   .core-title-kor {
@@ -161,7 +197,8 @@
   .value-image1,
   .value-image2,
   .value-imag3 {
-    width: 220px;
+    width: 100%;
+    padding: 18px 0;
 
   }
 
@@ -182,7 +219,6 @@
 
   .awards-container {
     display: flex;
-    width: 60%;
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
@@ -202,7 +238,7 @@
   }
 
   .timeline-container {
-    min-width: 350px;
+    width: 100%;
     margin-top: 0px;
     ;
   }
@@ -367,13 +403,19 @@
   /* section 5 start */
 
   .press-releases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-width: 393px;
-    padding: 50px 25px;
+    padding: 150px 70px;
   }
 
   .press-container {
     margin-top: 0px;
+    width: 100%;
   }
+
 
   .press-title {
     align-self: center;
@@ -382,14 +424,36 @@
     font-weight: 700;
     padding: 8px 20px;
     margin-bottom: 64px;
+    font-family: Pretendard, sans-serif;
+    text-align: center;
   }
 
   .press-item-title {
+    font-family: Pretendard, sans-serif;
     color: #000;
     font-size: 14px;
-    text-decoration: none;
     font-weight: bold;
+    text-align: left;
+    margin-bottom: 8px;
   }
+
+  a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.press-item-title a:hover {
+  color: #FF5520;
+  /* 호버 시 색상 */
+}
+
+
+.press-source {
+  color: #FF5520;
+  bottom: 0;
+}
+
 
   .press-divider {
     background-color: var(--dark-gray, #696969);
@@ -399,7 +463,7 @@
   }
 
   .press-source {
-    font-size: 14px;
+    font-size: 12px;
     position: static;
     /* position 제거 */
     margin-left: auto;
@@ -410,7 +474,7 @@
 
   .press-meta {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: space-between;
     /* 양 끝으로 정렬 */
     align-items: center;
@@ -419,272 +483,4 @@
 
 
   /* section 5 end */
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px),
-screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-  .vision-background {
-    position: absolute;
-    inset: 0;
-    height: 90%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    z-index: -1;
-    /* 배경이 뒤로 가도록 설정 */
-  }
-
-  .vision-container {
-    min-height: 100%;
-  }
-
-
-  .vision-text-container {
-    top: 0px;
-  }
-
-  .vision-heading {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38.19px;
-    text-align: left;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none;
-
-
-  }
-
-  .vision-description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none;
-    margin-top: 46px;
-
-
-  }
-
-  .overview-section-title {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none;
-
-  }
-
-  .overview-image-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    /* 줄 바꿈 방지 */
-    justify-content: space-between;
-    /* 요소 간 간격 균등 */
-    gap: 16px;
-    /* 간격 조정 */
-    max-width: 100%;
-    /* 화면에 맞게 조정 */
-  }
-
-  .overview-image-wrapper {
-    flex: 1;
-    /* 유연한 크기 설정 */
-    max-width: 200px;
-    /* 최대 너비 설정 */
-    width: 100%;
-    /* 너비 조정 */
-  }
-
-  .overview-image {
-    width: 100%;
-    /* 부모 요소에 맞게 크기 조정 */
-    height: auto;
-    /* 비율 유지 */
-    object-fit: contain;
-  }
-
-  /* core-image-grid 스타일 */
-  .core-image-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    /* 줄 바꿈 방지 */
-    justify-content: space-between;
-    /* 요소 간 간격 균등 */
-    gap: 16px;
-    /* 간격 조정 */
-    max-width: 100%;
-    /* 화면에 맞게 조정 */
-  }
-
-  .core-image-grid img {
-    flex: 1;
-    /* 유연한 크기 설정 */
-    max-width: 200px;
-    /* 최대 너비 설정 */
-    width: 100%;
-    /* 너비 조정 */
-    height: auto;
-    /* 비율 유지 */
-    object-fit: contain;
-  }
-
-
-  .core-title-en {
-    font-size: 28px;
-    font-weight: 200;
-    line-height: 28.64px;
-    text-align: center;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none
-  }
-
-  .core-title-kor {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.64px;
-    text-align: center;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none;
-  }
-
-
-  .awards-history {
-    padding: 0px 88px;
-  }
-
-  .section-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.64px;
-    text-align: left;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none;
-    margin-bottom: 0px;
-
-  }
-
-  .year-text,
-  .quarter {
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-  }
-
-  .achievement-item {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.09px;
-    margin-top:  11px;
-  }
-
-
-  .achievements-list1, .achievements-list2, .achievements-list3, .achievements-list4 {
-    margin-top: 10px;
-  }
-  .year-quarter-group1 {
-    margin-left: 120px;
-    gap: 50px;
-    margin-bottom: 24px;
-  }
-
-  .year-quarter-group2{
-    margin-left: 180px;
-    margin-bottom: 24px;
-  }
-
-  .year-quarter-group3{
-    margin-left: 180px;
-    margin-bottom: 24px;
-  }
-
-  .year-quarter-group4 {
-    margin-left: 125px;
-    gap: 50px;
-    margin-bottom: 24px;
-  }
-
-  /* press-releases 섹션 수정 */
-  .press-releases {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    padding: 0 80px;
-    /* 여백 조정 */
-    max-width: 960px;
-    /* 섹션 최대 너비 */
-    margin: 0 auto;
-    /* 중앙 정렬 */
-  }
-
-  .press-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    /* 기사 간 간격 */
-    width: 100%;
-  }
-
-  .press-item-title {
-    font-family: Pretendard, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16.71px;
-    text-align: left;
-  }
-
-  .press-meta {
-    display: flex;
-    justify-content: space-between;
-    /* 양 끝으로 정렬 */
-    align-items: center;
-    font-family: Pretendard, sans-serif;
-  }
-
-  .press-date {
-    font-family: Pretendard, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.32px;
-    text-align: right;
-  }
-
-  .press-source {
-    font-family: Pretendard, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.32px;
-    text-align: right;
-  }
-
-  .press-divider {
-    background-color: #D9D9D9;
-    height: 1px;
-    margin: 16px 0;
-    /* 구분선 상하 간격 */
-    width: 100%;
-  }
-
-
-
-
-
-  .press-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 57.28px;
-    text-align: left;
-    font-family: Pretendard, sans-serif;
-    text-decoration-skip-ink: none;
-    margin-bottom: 50px;
-
-  }
-
-
-
 }

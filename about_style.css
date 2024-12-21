@@ -157,8 +157,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        /* 수정: 절대 위치 대신 상대 위치 */
-        background-color: #1e1e1e;
+        background-color: rgba(25, 25, 25, 1);
         overflow: hidden;
         padding: 100px 40px;
         /* 여백 조정 */
@@ -199,6 +198,7 @@
     .core-title-en {
         font-size: 48px;
         font-weight: 300;
+        row-gap: 12px;
     }
 
     .core-title-kor {
