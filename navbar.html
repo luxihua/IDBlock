@@ -49,12 +49,16 @@
                     </ul>
                 </li>
 
-                <li class="navbar_item_dropdown">
+                <li class="navbar_item_dropdown" id="navbar_item_download">
                     <a href="#download">다운로드</a>
-                    <ul class="dropdown_menu">
-                        <li><a href="#ios">iOS</a></li>
-                        <li><a href="andorid">Android</a></li>
-                    </ul>
+                    <div class="nav-item-download">
+                        <a href="https://example.com/ios-download">
+                            <img src="static/apple_download.png"class="ios-download">
+                        </a>
+                        <a href="https://example.com/android-download">
+                            <img src="static/android_download.png"class="android-download">
+                        </a>
+                    </div>
                 </li>
 
                 <li class="navbar_lang_dropdown">
@@ -90,24 +94,25 @@
                 <button class="sidebar-menu-item" tabindex="0" role="button">
                     <div class="sidebar-menu-content">
                         <div class="sidebar-menu-text">서비스 소개</div>
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/28e4907b4512f592ae4d76df1254b3285942e46a95415b5948cb556e924f2336?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
-                        class="sidebar-menu-arrow" alt="" />
+                        <a href="service.html">
+                            <img loading="lazy" src="static/arrow-side.png" class="no-dropdown" />
+                        </a>
                     </div>
                 </button>
 
                 <button class="sidebar-menu-item" tabindex="0" role="button">
                     <div class="sidebar-menu-content">
                         <div class="sidebar-menu-text">회사 소개</div>
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/28e4907b4512f592ae4d76df1254b3285942e46a95415b5948cb556e924f2336?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
-                        class="sidebar-menu-arrow" alt="" />
+                        <a href="about.html">
+                            <img loading="lazy" src="static/arrow-side.png" class="no-dropdown" />
+                        </a>
                     </div>
                 </button>
 
                 <button class="sidebar-menu-item" tabindex="0" role="button">
                     <div class="sidebar-menu-content">
                         <div class="sidebar-menu-text">문의사항</div>
-                        <img src="static/arrow.svg"
-                            class="sidebar-menu-arrow" alt="" />
+                        <img src="static/arrow.svg" class="sidebar-menu-arrow" alt="" />
                     </div>
                     <div class="sidebar-dropdown">
                         <a href="contact.html" class="sidebar-dropdown-item">협업문의</a>
@@ -118,8 +123,7 @@
                 <button class="sidebar-menu-item" tabindex="0" role="button">
                     <div class="sidebar-menu-content">
                         <div class="sidebar-menu-text">다운로드</div>
-                        <img src="static/arrow.svg"
-                            class="sidebar-menu-arrow" alt="" />
+                        <img src="static/arrow.svg" class="sidebar-menu-arrow" alt="" />
                     </div>
                     <div class="sidebar-dropdown">
                         <a href="#iOS" class="sidebar-dropdown-item">iOS</a>
@@ -134,8 +138,7 @@
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/417c11222a6e7ad884d8098880ee1ddecad75780dc36672a7e17b07ff57741d4?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
                                 class="sidebar-language-icon" alt="Language selection" />
                         </div>
-                        <img src="static/arrow.svg"
-                            class="sidebar-menu-arrow" alt="" />
+                        <img src="static/arrow.svg" class="sidebar-menu-arrow" alt="" />
                     </div>
                     <div class="sidebar-dropdown">
                         <div class="sidebar-dropdown-item">KOR</div>
@@ -146,10 +149,8 @@
             </div>
             </div>
         </nav>
-         <!-- mobileMenu nav start-->
+        <!-- mobileMenu nav end-->
     </header>
-
-
     <script type="module" defer src="nav.js"></script>
     <script type="module" defer src="index.js"></script>
 

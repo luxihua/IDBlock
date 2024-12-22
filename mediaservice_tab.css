@@ -5,27 +5,29 @@
     /* 좌우 균형 배치 */
     background-color: #fff;
     overflow: hidden;
-    padding: 150px 70px;
+    padding: 200px 50px;
     /* 전체 너비 제한 */
     margin: 0 auto;
-    /* 화면 중앙 정렬 */
-    margin-top: -150px;
 }
 
 .image-gallery {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     width: 50%;
+    padding-left: 72px;
+    max-height: 650px;
 }
 
 .facial-recognition-image {
     aspect-ratio: 0.46;
     object-fit: contain;
+    height: 100%;
     object-position: center;
     border-radius: 20px;
     z-index: 1;
+    align-items: flex-end;
 }
 
 
@@ -54,31 +56,37 @@
 
 .download-button {
     align-self: flex-start;
+    display: flex;
+    width: 228px;
+    height: 56px;
+    margin-top: 35px;
+    margin-left: 70px;
+    background-color: white;
     border-radius: 8px;
-    background-color: rgba(240, 240, 240, 1);
-    margin-top: 52px;
-    gap: 8px;
-    font-size: 24px;
-    color: rgba(30, 30, 30, 1);
-    font-weight: 600;
-    padding: 16px 40px;
+    flex-direction: row;
+    /* Arrange items horizontally */
+    gap: 20px;
+    /* Add spacing between images */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* 그림자 효과 */
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Image styles */
+.download-button img {
+    position: relative;
+    height: auto;
     cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-    margin-left: 20px;
+    transition: transform 0.2s ease;
+    /* Add hover effect */
 }
 
-.download-button:hover,
-.download-button:focus {
-    background-color: rgba(220, 220, 220, 1);
-    outline: 2px solid rgba(30, 30, 30, 1);
+.download-button img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
 }
-
-.download-button:focus-visible {
-    outline: 3px solid rgba(255, 85, 32, 1);
-    outline-offset: 2px;
-}
-
 
 /* service_intro1 end */
 
@@ -88,10 +96,8 @@
     align-items: center;
     background-color: #fff;
     overflow: hidden;
-    padding: 150px 70px;
-    /* 전체 너비 제한 */
+    padding: 250px 50px;
     margin: 0 auto;
-    /* 화면 중앙 정렬 */
 }
 
 .text-content {
@@ -119,7 +125,7 @@
     display: flex;
     margin-top: 16px;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .main-heading {
@@ -144,12 +150,16 @@
     align-items: flex-start;
     justify-content: center;
     width: 50%;
+    padding: 100px 0;
+    overflow: hidden;
+    max-height: 650px;
 
 }
 
 .id-image {
     aspect-ratio: 0.46;
     object-fit: contain;
+    height: 100%;
     border-radius: 20px;
     z-index: 1;
 }
@@ -656,7 +666,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
     .content-section {
         width: 50%;
-        padding: 55px;
+        padding: 10px;
     }
 
     .service-title {
@@ -672,19 +682,12 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     }
 
     .download-button {
-        align-self: start;
-        border-radius: 4px;
-        background-color: rgba(240, 240, 240, 1);
-        margin-top: 32px;
-        gap: 4px;
-        font-size: 12px;
-        color: rgba(30, 30, 30, 1);
-        font-weight: 600;
-        padding: 8px 20px;
-        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 15px;
     }
 
     .facial-recognition-image {
+        width: 100%;
         aspect-ratio: 0.34;
     }
 
@@ -698,7 +701,7 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
     .text-content {
         width: 50%;
-        padding: 72px;
+        padding: 42px;
     }
 
     .main-heading {
@@ -736,9 +739,11 @@ screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         aspect-ratio: 0.83;
         object-fit: contain;
         padding-right: 20px;
+        padding: 0 0;
     }
 
     .id-image {
+        width: 100%;
         aspect-ratio: 0.34;
         object-fit: contain;
         object-position: center;
