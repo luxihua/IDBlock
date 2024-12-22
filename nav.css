@@ -21,12 +21,10 @@
 }
 
 
-/* 모바일용 네비게이션 */
-
-
 
 .logo {
     height: 100%;
+    width: 116px;
     display: flex;
     align-items: center;
     margin-left: 100px;
@@ -228,9 +226,11 @@
     }
 }
 
+/* 모바일용 네비게이션 */
 .mobileMenu {
     display: none;
     width: 100%;
+    min-width: 375px;
     justify-content: space-between;
     align-items: center;
     /* 네비게이션 아이템들 수직 중앙 정렬 */
@@ -241,9 +241,9 @@
     z-index: 100;
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0 20px;
-    /* 좌우 여백 줄이기 */
     margin: 0 auto;
+    gap: 140px;
+    padding: 0 20px;
     /* 중앙 정렬 */
 }
 
@@ -252,8 +252,8 @@
     aspect-ratio: 3;
     object-fit: contain;
     object-position: center;
-    width: 78px;
-    margin-left: 10px;
+    width: 116px;
+    padding-right: 10px;
 }
 
 .mobile-menu-button {
@@ -263,10 +263,10 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    padding: 5px 1px 5px 2px;
+    padding: 8px 1px 5px 2px;
     border: 0;
     background-color: transparent;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .mobile-menu-icon {
@@ -306,7 +306,7 @@
     border-bottom: 1px solid #d9d9d9;
     min-height: 48px;
     width: 100%;
-    padding: 18px 24px;
+    padding: 18px 36px 18px 24px;
     font: 700 16px Pretendard, sans-serif;
     border: 0;
     background-color: transparent;
@@ -333,7 +333,7 @@
     min-height: 48px;
     width: 100%;
     align-items: center;
-    padding: 18px 15px;
+    padding: 18px 36px 18px 24px;
     border: 0;
     border-bottom: 1px solid #d9d9d9;
     /* Apply bold bottom border */
@@ -366,16 +366,17 @@
 
 .sidebar-menu-item.active .sidebar-menu-text {
     color: white;
+
 }
 
 
 .sidebar-dropdown-item {
-    font: 500 14px Pretendard, sans-serif;
+    font: 600 14px Pretendard, sans-serif;
     text-align: left; /* 왼쪽 정렬 */
     background-color: #F3F3F3;
     color: #686868;
     min-height: 48px;
-    padding: 15px 20px;
+    padding: 15px 32px;
     border-bottom: 1px solid white;
 }
 
@@ -422,17 +423,28 @@
     gap: 180px;
     margin: auto 0;
     color: #1E1E1E;
-    font: 700 16px Pretendard, sans-serif;
+    font: 600 16px Pretendard, sans-serif;
 
 }
 
 .sidebar-menu-arrow {
+    fill: #888E95;
     aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
     width: 24px;
     align-self: stretch;
     margin: auto 0;
+    transition: fill 0.1s ease; /* 색상 전환 효과 */
+}
+
+.sidebar-menu-arrow {
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.sidebar-menu-item.active .sidebar-menu-arrow {
+    transform: rotate(180deg); /* Rotate when active */
+    fill: white; /* 활성 상태에서의 색상 */
 }
 
 .sidebar-language-selector {
@@ -453,6 +465,8 @@
     align-self: stretch;
     margin: auto 0;
 }
+
+
 
 
 

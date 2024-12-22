@@ -6,7 +6,6 @@
 
   .hero-section {
     display: flex;
-    max-width: 393px;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -89,7 +88,6 @@
   /* section 1 start */
   .features-section {
     display: flex;
-    max-width: 393px;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -233,7 +231,6 @@
   /* section 3 start */
   .payment-section {
     display: flex;
-    max-width: 393px;
     flex-direction: column;
     font-family: Pretendard, sans-serif;
     justify-content: center;
@@ -301,7 +298,6 @@
   /* section 4 start */
   .travel-section {
     display: flex;
-    max-width: 393px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -359,7 +355,6 @@
   /* section 5 start */
   .certificate-section {
     display: flex;
-    min-width: 393px;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -445,7 +440,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 96px;
-    min-width: 393px;
+    min-width: 375px;
   }
 
   .earth-content {
@@ -494,12 +489,11 @@
 
   .partners-section {
     display: flex;
-    min-width: 393px;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     margin: 0 auto;
-    padding: 96px 0;
+    padding: 96px 10px;
     margin-top: 96px;
   }
 
@@ -517,7 +511,7 @@
     object-position: center;
     width: 100%;
     margin-top: 80px;
-    padding: 5px 0;
+    padding: 5px 0
   }
 
 
@@ -528,7 +522,7 @@
 
   .info-app-container {
     display: flex;
-    min-width: 393px;
+    min-width: 375px;
     flex-direction: column;
     overflow: hidden;
     justify-content: center;

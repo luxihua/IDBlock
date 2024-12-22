@@ -215,6 +215,7 @@
         /* 이미지 사이 여백 */
         max-width: 100%;
         margin-top: 60px;
+        flex-wrap: nowrap;
     }
 
     .core-image-grid img {

@@ -99,8 +99,7 @@ function initializeAfterIncludeHTML() {
         item.addEventListener('click', () => {
             const dropdown = item.querySelector('.sidebar-dropdown');
             if (!dropdown) {
-                console.error("Dropdown not found for", item);
-                return; // 해당 아이템에 드롭다운이 없으면 실행 중단
+                item.classList.add('no-dropdown');
             }
 
             const isActive = item.classList.contains('active');
