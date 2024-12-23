@@ -454,31 +454,51 @@
 }
 
 .sidebar-menu-arrow {
-    fill: #888E95;
+    background-image: url('static/arrow.svg'); /* 기본 이미지 */
     aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
     width: 24px;
     align-self: stretch;
     margin: auto 0;
-    transition: fill 0.1s ease;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.3s ease;
     /* 색상 전환 효과 */
 }
 
-.sidebar-menu-arrow {
+.sidebar-side-arrow {
+    background-image: url('static/arrow-side.png'); /* 기본 이미지 */
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     transition: transform 0.3s ease;
-    /* Smooth rotation transition */
-
+    /* 색상 전환 효과 */
 }
 
+
+
+/* 활성 상태: 기존 이미지를 새 이미지로 대체 */
 .sidebar-menu-item.active .sidebar-menu-arrow {
-    background-image: url('static/white-arrow.png');
-    /* 활성 상태 이미지 변경 */
+    background-image: url('static/white-arrow.png'); /* 새 이미지로 대체 */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
+
 
 .sidebar-menu-item.active .sidebar-side-arrow {
     background-image: url('static/white-side-arrow.png');
-    /* 활성 상태 이미지 변경 */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
 }
 
@@ -493,12 +513,17 @@
 }
 
 .sidebar-language-icon {
+    background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/417c11222a6e7ad884d8098880ee1ddecad75780dc36672a7e17b07ff57741d4?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9');
     aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
     width: 28px;
     align-self: stretch;
     margin: auto 0;
+}
+
+.sidebar-menu-item.active .sidebar-language-icon {
+     background-image: url('static/global.svg');
 }
 
 
