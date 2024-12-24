@@ -1,0 +1,80 @@
+/* 제휴문의 start */
+.partnership-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.hero-section {
+    background-color: rgba(255, 85, 32, 1);
+    display: flex;
+    min-height: 433px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    line-height: 26px;
+    align-self: center;
+    text-align: center;
+    white-space: inherit;
+    padding: 10px;
+    width: 450px;
+}
+
+.contact-section {
+    align-self: center;
+    display: flex;
+    margin-top: 64px;
+    min-height: 130px;
+    max-width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.contact-title {
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+
+}
+
+.contact-email {
+    color: rgba(255, 85, 32, 1);
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.contact-description {
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    align-self: center;
+    margin-top: 36px;
+    text-align: center;
+}
+
+/* 제휴뮨의 end */
+

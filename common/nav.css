@@ -1,0 +1,505 @@
+/* 네비게이션 바 start */
+
+/* pc용 네비게이션 */
+.pcMenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* 네비게이션 아이템들 수직 중앙 정렬 */
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    /* 좌우 여백 줄이기 */
+    margin: 0 auto;
+    /* 중앙 정렬 */
+}
+
+
+
+.logo {
+    height: 100%;
+    width: 116px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    transition: margin 0.3s ease-in-out;
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 50px;
+    /* 메뉴 간격 조정, 기존 35px에서 50px로 넓힘 */
+    align-items: center;
+    font-size: 18px;
+    line-height: 80px;
+    color: #4e5968;
+    margin-right: 80px;
+    /* 전체 메뉴를 왼쪽으로 옮기기 위해 오른쪽 마진을 더 크게 조정 */
+    padding-left: 40px;
+    /* 좌측 패딩 줄여서 메뉴를 왼쪽으로 이동 */
+    list-style-type: none;
+}
+
+.navbar_item_dropdown {
+    position: relative;
+    white-space: nowrap;
+}
+
+.navbar_item_dropdown a {
+    color: #4e5968;
+}
+
+.navbar_item_dropdown a:hover {
+    color: #FF5520;
+    /* 텍스트 색상 변경 */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* 부드러운 전환 효과 */
+}
+
+
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* 중앙에서 시작하도록 설정 */
+    transform: translateX(-50%);
+    /* 중앙 정렬을 위해 자신의 폭의 반만큼 왼쪽으로 이동 */
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 3px 0;
+    z-index: 1000;
+    min-width: 120px;
+    /* 크기 조정 */
+    list-style-type: none;
+}
+
+
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: #4e5968;
+    font-size: 15px;
+    font-weight: 500px;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    /* 패딩 줄여 높이 조정 */
+    line-height: 3;
+    /* 줄 간격 축소 */
+}
+
+.dropdown_menu li a:hover {
+    color: #FF5520;
+    /* 텍스트 색상 변경 */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* 부드러운 전환 효과 */
+}
+
+.navbar_item_dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.nav-item-download {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left:-80px;
+    width: 228px;
+    height: 56px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 100;
+    flex-direction: row; /* Arrange items horizontally */
+    gap: 20px; /* Add spacing between images */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+
+/* Show dropdown when active */
+.navbar_item_dropdown.active .nav-item-download {
+    display: flex; /* Display as flex to align icons */
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Image styles */
+.nav-item-download img {
+    position: relative;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.nav-item-download .ios-download:hover {
+    content: url('/static/apple_download.svg'); /* 새로운 이미지 URL */
+}
+
+
+.nav-item-download .android-download:hover {
+    content: url('/static/android_download.svg'); /* 새로운 이미지 URL */
+}
+
+/* Links */
+.nav-item-download a {
+    text-decoration: none;
+}
+
+.navbar_lang_dropdown {
+    position: relative;
+    white-space: nowrap;
+}
+
+.dropdown_lang {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* 중앙에서 시작하도록 설정 */
+    transform: translateX(-40%);
+    /* 중앙 정렬을 위해 자신의 폭의 반만큼 왼쪽으로 이동 */
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 1000;
+    min-width: 120px;
+    /* 크기 조정 */
+    list-style-type: none;
+    padding: 5px 10px;
+    /* 패딩 줄여 높이 조정 */
+    line-height: 3;
+    /* 줄 간격 축소 */
+}
+
+.dropdown_lang li a {
+    text-decoration: none;
+    color: #4e5968;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    padding: 3px 8px;
+    /* 패딩 조정으로 내부 아이템의 크기 조정 */
+}
+
+.dropdown_lang li a:hover {
+    color: #FF5520;
+    /* 텍스트 색상 변경 */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* 부드러운 전환 효과 */
+}
+
+
+
+.navbar_lang_dropdown:hover .dropdown_lang {
+    display: block;
+}
+
+
+
+.language-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-left: 25px;
+}
+
+
+.language-toggle img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    /* Ensure the icon aligns with text */
+}
+
+
+
+/* 네비게이션 바 end*/
+/* 페이드인 효과 */
+.fade-in {
+    opacity: 0;
+    /* 처음 상태 */
+    transform: translateY(20px);
+    /* 아래에서 올라오는 효과 */
+    animation: fadeIn 1s ease forwards;
+    /* 1초 동안 애니메이션 */
+}
+
+/* 페이드인 애니메이션 정의 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 모바일용 네비게이션 */
+.mobileMenu {
+    display: none;
+    width: 100%;
+    min-width: 375px;
+    justify-content: space-between;
+    align-items: center;
+    /* 네비게이션 아이템들 수직 중앙 정렬 */
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    gap: 140px;
+    padding: 0 20px;
+    /* 중앙 정렬 */
+}
+
+.mobile-logo {
+    display: none;
+    aspect-ratio: 3;
+    object-fit: contain;
+    object-position: center;
+    width: 116px;
+    padding-right: 10px;
+}
+
+.mobile-menu-button {
+    display: none;
+    min-height: 24px;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 1px 5px 2px;
+    border: 0;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    object-fit: contain;
+    object-position: center;
+    width: 21px;
+}
+
+
+/* sidebar menu start */
+
+.sidebar-nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Start hidden off-screen */
+    height: 100%;
+    width: 100%;
+    /* Adjust width as needed */
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    /* Smooth sliding effect */
+    z-index: 2000;
+    /* Ensure it appears above other elements */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.sidebar-menu-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    min-height: 48px;
+    width: 100%;
+    padding: 18px 36px 18px 24px;
+    font: 700 16px Pretendard, sans-serif;
+    border: 0;
+    background-color: transparent;
+}
+
+
+
+.sidebar-close-icon {
+    margin-left: 50px;
+    /* Align to the left */
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+.sidebar-menu-item {
+    position: relative;
+    background-color: white;
+    display: flex;
+    min-height: 48px;
+    width: 100%;
+    align-items: center;
+    padding: 18px 36px 18px 24px;
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    /* Apply bold bottom border */
+    flex-direction: column;
+    /* 세로 정렬 */
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+    flex-direction: column;
+    /* 자식 요소 수직 정렬 */
+}
+
+
+.sidebar-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-top: 1px solid #d9d9d9;
+    padding: 0;
+    z-index: 10;
+    /* 드롭다운이 위로 표시되도록 설정 */
+}
+
+.sidebar-menu-item.active {
+    background-color: #FF5520;
+    color: white;
+}
+
+
+.sidebar-menu-item.active .sidebar-menu-text {
+    color: white;
+
+}
+
+
+.sidebar-dropdown-item {
+    font: 600 14px Pretendard, sans-serif;
+    text-align: left;
+    /* 왼쪽 정렬 */
+    background-color: #F3F3F3;
+    color: #686868;
+    min-height: 48px;
+    padding: 15px 32px;
+    border-bottom: 1px solid white;
+}
+
+.sidebar-dropdown-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    /* 하얀색 구분선 */
+}
+
+.sidebar-dropdown-item:last-child::after {
+    display: none;
+    /* 마지막 항목은 구분선 제거 */
+}
+
+.sidebar-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-dropdown-item:hover {
+    background-color: #f5f5f5;
+    color: black;
+
+
+}
+
+
+
+.sidebar-menu-content {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    width: 100%;
+    align-items: center;
+    gap: 0 100px;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.sidebar-menu-text {
+    align-self: stretch;
+    gap: 180px;
+    margin: auto 0;
+    color: #1E1E1E;
+    font: 600 16px Pretendard, sans-serif;
+
+}
+
+
+.sidebar-language-selector {
+    display: flex;
+    min-height: 28px;
+    align-items: center;
+    gap: 40px 180px;
+    justify-content: start;
+    width: 28px;
+    margin: auto 0;
+}
+
+.sidebar-language-icon {
+    background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/417c11222a6e7ad884d8098880ee1ddecad75780dc36672a7e17b07ff57741d4?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9');
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.sidebar-menu-item.active .sidebar-language-icon {
+     background-image: url('/static/global.svg');
+}
+
+
+
+
+
+
+@media all and (max-width:962px) {
+    .pcMenu {
+        display: none;
+    }
+
+
+    .mobileMenu,
+    .mobile-logo,
+    .mobile-menu-button,
+    .sidebar-nav-menu {
+        display: flex;
+    }
+
+    /* 모바일용 네비게이션 end */
+}

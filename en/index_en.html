@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="description"
+        content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
+    <title>IDBlock - Connecting the World Through Authentication</title>
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/script_main.js"></script>
+    <script src="/js/scrolla.jquery.min.js"></script>
+    <script src="/js/splitting.min.js"></script>
+
+
+    <script src="/js/includeHTML.js?version-1.1"></script>
+
+    <link rel="stylesheet" href="animate.min.css">
+
+    <link rel="stylesheet" href="/common/nav.css">
+    <link rel="stylesheet" href="/common/footer.css">
+
+
+    <link rel="stylesheet" href="/common/mediaglobal.css">
+    <link rel="stylesheet" href="/common//global.css">
+
+    <link rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)"
+        href="en_mediastyle_tab.css">
+    <link rel="stylesheet" href="/kr/style.css">
+    <link rel="stylesheet" href="/kr/mediastyle.css">
+    <link rel="stylesheet" href="en_style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- 네비게이션 start-->
+    <header class="header">
+        <!-- pcMenu nav start-->
+        <nav class="pcMenu">
+            <a href="index_en.html">
+                <img src="/static/pc_logo.svg" alt="IDBlock Logo" class="logo" width="132" height="57">
+            </a>
+            <ul class="navbar_menu">
+                <li class="navbar_item_dropdown">
+                    <a href="service_en.html">Service Introduction</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="service_en.html#service-section">IDBlock</a></li>
+                        <li><a href="service_en.html#blockpay-section">Bpay</a></li>
+                    </ul>
+                </li>
+                <li class="navbar_item_dropdown">
+                    <a href="about_en.html">Company Introduction</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="about_en.html#vision-section">Overview</a></li>
+                        <li><a href="about_en.html#awards-section">History</a></li>
+                        <li><a href="about_en.html#press-section">News</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item_dropdown">
+                    <a href="contact_en.html">Inquiry</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="contact_en.html">Partnership</a></li>
+                        <li><a href="maps_en.html">Directions</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item_dropdown" id="navbar_item_download">
+                    <a href="#download">Download</a>
+                    <div class="nav-item-download">
+                        <a href="https://example.com/ios-download">
+                            <img src="/static/basic_apple_download.svg" class="ios-download">
+                        </a>
+                        <a href="https://example.com/android-download">
+                            <img src="/static/basic_android_download.svg" class="android-download">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="navbar_lang_dropdown">
+                    <button class="language-toggle" aria-label="Change language" type="button" tabindex="0">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6389dc316151fa8fbd909e09d7f3f311ca3ad38a5b4424e51a0d4c36e00b1da?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                            alt="Language selection icon" width="30" height="30">
+                    </button>
+                    <ul class="dropdown_lang">
+                        <li><a href="/kr/index.html">KOR</a></li>
+                        <li> <a href="index_en.html">ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- pcMenu nav end-->
+
+        <!-- mobileMenu nav start-->
+        <nav class="mobileMenu">
+            <a href="index_en.html">
+                <img loading="lazy" src="/static/mobile_logo.svg" class="mobile-logo" alt="Company logo" />
+            </a>
+            <button class="mobile-menu-button" aria-label="Toggle menu" role="button">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0ee22eb126ebc1390c8ade5d582f4850f749319377ad1e2460b87d2b294b11b?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                    class="sidebar-open-icon" alt="Open Menu">
+            </button>
+
+            <!--햄버거 메뉴 바-->
+            <div class="sidebar-nav-menu">
+                <button class="sidebar-menu-close">
+                    <img src="/static/close_icon.png" class="sidebar-close-icon" alt="Close menu" />
+                </button>
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Service Introduction</div>
+                        <a href="service_en.html">
+                        </a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Company Introduction</div>
+                        <a href="about_en.html">
+                        </a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Inquiry</div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="contact_en.html" class="sidebar-dropdown-item">Partnership</a>
+                        <a href="maps_en.html" class="sidebar-dropdown-item">Directions</a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Download</div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="#iOS" class="sidebar-dropdown-item">iOS</a>
+                        <a href="#andorid" class="sidebar-dropdown-item">Andorid</a>
+                    </div>
+
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-language-selector">
+                            <div class="sidebar-language-icon"></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="/kr/index.html" class="sidebar-dropdown-item">KOR</a>
+                        <a href="index_en.html" class="sidebar-dropdown-item">ENG</a>
+                    </div>
+                </button>
+            </div>
+            </div>
+            </div>
+        </nav>
+        <!-- mobileMenu nav start-->
+    </header>
+
+    <!-- main intro start-->
+    <main class="desktop-main" role="main">
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">CONNECTING <br />THE WORLD THROUGH <br />AUTHENTICATION</h1>
+                <p class="hero-description">
+                    ID Block provides a safe and convenient Korean <br />
+                    visit experience to all foreign tourists who do not <br />
+                    have a Korean mobile phone number and cannot <br />
+                    use the app service.
+                </p>
+                <div class="download-buttons">
+                    <a href="#google-play" class="store-button" role="button" tabindex="0">
+                        <span class="store-icon-wrapper">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/476919dd32b4dea35d3660183f5af1f661d0df7ec938991c38e805dd16a53266?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                                class="store-icon" alt="Google Play Store Icon" />
+                        </span>
+                        <span class="store-text">Google Play</span>
+                    </a>
+                    <a href="#app-store" class="store-button" role="button" tabindex="0">
+                        <span class="store-icon-wrapper">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3fed32c27d00431ff446ff1311fae3e1fb530ee3c3599bf27c32e3bc435ca678?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                                class="store-icon" alt="Apple App Store Icon" />
+                        </span>
+                        <span class="store-text">App Store</span>
+                    </a>
+                </div>
+            </div>
+            <img class="hero-image" src="/static/idblock_demo.gif" width="300%" height="200%"
+                alt="App Interface Preview">
+            <!-- <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/68e270f30d8af9b5de823225827d53ef771815e5d0c376d927d60baccde8094f?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                class="hero-image" alt="App Interface Preview" /> -->
+
+        </section>
+
+
+
+        <!-- main intro end-->
+
+
+        <!-- intro1 start-->
+
+        <section class="features-section" aria-labelledby="features-title">
+            <div class="features-container">
+                <div class="content-wrapper">
+                    <h2 id="features-title" class="feature-title">
+                        You can use Korean apps <br />
+                        even without a Korean number!
+                    </h2>
+                    <h3 id="feature-description" class="feature-description">
+                        Just verify your identity once through ID Block <br />
+                        and you can use all Korean app services!
+                    </h3>
+                </div>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img loading="lazy" src="/static/main_intro1_phone.png" class="feature-image"
+                            alt="Korean app service demonstration interface" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- intro1 end-->
+
+        <!-- intro2 start-->
+
+
+        <section class="passport-section" aria-label="Passport Information Security">
+            <div class="passport-container">
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img loading="lazy" src="/static/main_intro2_phone.png" class="passport-image"
+                            alt="Secure passport information visualization" />
+                    </div>
+                </div>
+                <div class="content-container">
+                    <h2 class="heading">
+                        My precious personal information,<br />
+                        No need to worry about it <br />
+                        being leaked!
+                    </h2>
+                    <p class="description">
+                        By applying zero-knowledge proof (zkp), <br />
+                        your personal information is kept safe. <br />
+                        Selective proof is possible with only minimal <br />
+                        identity information.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- intro2 end-->
+
+
+        <!-- intro3 start-->
+
+        <section class="payment-section" aria-label="Payment Features">
+            <div class="payment-container">
+                <div class="payment-content-wrapper">
+                    <h2 class="main-title">
+                        No more prepaid cards! <br />
+                        Pay freely with your card online
+                    </h2>
+                    <p class="payment-description">
+                        You can register on the platform and make <br />
+                        online payments using the same payment <br />
+                        methods you used in Korea!
+                    </p>
+                </div>
+                <div class="image-section">
+                    <div class="image-grid">
+                        <div class="image-column">
+                            <img src="/static/main_intro3_phone.png" class="primary-image"
+                                alt="Payment card illustration" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- intro3 end-->
+
+
+        <!-- intro4 start-->
+
+        <section class="travel-section" role="region" aria-label="Travel Identity Authentication">
+            <div class="travel-container">
+                <h1 class="travel-heading">
+                    No matter which country <br />
+                    you go to, Travel conveniently<br />
+                    <span class="highlight-text">with a single identity verification!</span>
+                </h1>
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c91b11f06282f18138c0cfe398a994b0dc83cfa6a36858b10a857a12509414d6?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                    class="travel-image" alt="Unified identity authentication system for international travel" />
+            </div>
+            </div>
+        </section>
+        <!-- intro4 end-->
+
+
+        <!-- intro5 start-->
+        <section class="certificate-section" aria-labelledby="certificate-title">
+            <div class="certificate-wrapper">
+                <div class="certificate-text-content">
+                    <p class="certificate-subtitle">ID BLOCK</p>
+                    <h2 id="certificate-title" class="certificate-title">
+                        have received certification for our technology, <br />
+                        including linked patents and venture business certification, <br />
+                        and corporate research institutes
+                    </h2>
+                </div>
+                <div class="certificate-image-container">
+                    <img loading="lazy" src="/static/cert_card1.png" class="certificate-image-left"
+                        alt="Company certification document showing technical achievements" />
+                    <img loading="lazy" src="/static/cert_card2.png" class="certificate-image-right"
+                        alt="Patent certification document displaying company innovations" />
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- intro5 end-->
+
+        <!-- intro6 start - earth-->
+
+        <section class="earth-section" role="banner" aria-labelledby="earth-heading">
+            <div class="earth-content">
+                <h1 id="earth-heading" class="earth-title">
+                    CrossHub, a global identity <br />
+                    and payment solution developer, <br />
+                    is leading innovation worldwide
+                </h1>
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a676ac048c174b0f2b38766d41b03a9a0b9101bc05ff999e84cd09c086f1f84?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                    class="earth-image" alt="크로스허브 글로벌 솔루션 이미지" role="img" />
+            </div>
+        </section>
+
+        <!-- intro6 end - earth-->
+
+        <!-- intro 7 partners start-->
+
+        <section class="partners-section">
+            <div class="partners-container">
+                <h2 class="partners-title">
+                    Crosshub is working <br />
+                    with various domestic <br />
+                    and international organizations
+                </h2>
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a3d6e2f2b2a6449fc4eb0b9c55d703ac62bc2d111d0155591e9e1597dacbdce?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                    class="partners-image" alt="Logos of CrossHub's domestic and international partner organizations" />
+            </div>
+        </section>
+
+        <!-- intro 7 partners end-->
+
+
+        <!-- intro8 start-->
+        <section class="info-app-container" role="main" aria-labelledby="hero-title">
+            <div class="info-content-wrapper">
+                <div class="info-content-inner">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d3432fd624f0b1d118feefe3832b0210cf797c9e9471105598b4b2669a5f2b0?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="ID Block Logo - Your Global Travel Companion" class="info-logo" />
+                    <h1 id="hero-title" class="info-hero-text">
+                        <span class="info-highlight-text">Travel freely around the world </span>
+                        <br />
+                        with ID Block
+                    </h1>
+                    <div class="info-download-buttons" role="group" aria-label="App Store Download Options">
+                        <a href="#" class="info-store-button" role="button" aria-label="Download from Google Play Store"
+                            tabindex="0">
+                            <div class="info-store-icon-wrapper">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/f32d792978edaae4aa071bd1a3c4c92b7b3520f07885839f14c2dc4712cf6723?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                                    alt="Google Play Store Icon" class="info-store-icon" />
+                            </div>
+                            <span class="info-store-text">Google Play</span>
+                        </a>
+                        <a href="#" class="info-store-button" role="button" aria-label="Download from Apple App Store"
+                            tabindex="0">
+                            <div class="info-store-icon-wrapper">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c873ac9c09ca19d837f12081b1eb371833f062994e6d4c6ae8fee562a9b89345?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                                    alt="Apple App Store Icon" class="info-store-icon" />
+                            </div>
+                            <span class="info-store-text">App Store</span>
+                        </a>
+                    </div>
+                </div>
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/27896576a45c4e3c7072cf0b5bf9128620ddbe170da301c3ea9846b0f2e259af?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                    alt="ID Block App Interface Preview" class="info-app-preview" />
+            </div>
+
+        </section>
+
+        <!-- intro8 end-->
+
+    </main>
+
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-top">
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="/static/아이디블록 서비스 이용약관(kor).pdf" class="terms-link" target="_blank"
+                    rel="noopener noreferrer">Terms of Service</a>
+                <a href="/static/아이디블록 개인정보처리방침(kor).pdf" class="privacy-link" target="_blank"
+                    rel="noopener noreferrer">Privacy policy</a>
+            </nav>
+
+            <div class="social-icons">
+
+                <a href="https://youtube.com/@idblock_official?si=z70GRlyOS5S4b2zb" class="social-icon"
+                    aria-label="Visit our Youtube" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/861d637e81f7223a2d07d0cccbb92f2d309f863127d6cefe861093464fd7a212?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="36" height="36" />
+                </a>
+                <a href="https://www.instagram.com/idblock_official/" class="social-icon"
+                    aria-label="Visit our Instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/65e5c622af372f46c0405260ff51230a8327fa37e11ad1f1d5ff7c4e651c4ca7?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="30" height="30" />
+                </a>
+                <a href="https://www.linkedin.com/company/crosshubkr/?viewAsMember=true" class="social-icon"
+                    aria-label="Visit our LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/081f4f0742b54af2239f31b6c4ecb526b691f9f14c279c72db2883824f943909?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="28" height="28" />
+                </a>
+                <a href="https://www.facebook.com/people/Cross-Hub/pfbid02TYF8D8RysK4VuJGKWvZ7oHnbWXtitDuhVWHCEtf2CyChjhSAPw5oWGkZNz9J4vg3l/"
+                    class="social-icon" aria-label="Visit our Facebook" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b6901f72b3c8c924baa5c20beb56349a7476f899884b431cea37e7549194934?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="35" height="35" />
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="divider" role="separator"></div>
+
+        <div class="footer-bottom">
+            <div class="company-info">
+                CrossHub Inc<br /><br />
+                Contact<br /><br />
+                TEL : +82 2-6975-9999<br />
+                FAX : +82 2-6008-5040<br />
+                E-mail : <a href="mailto:crosshub.kr@gmail.com"
+                    class="contact-link">crosshub.kr@gmail.com</a><br /><br />
+                Head office: 1161 Gyebaek-ro, Seo-gu, Daejeon, 404-D38 <br />
+                Seoul branch: 83 Uisadang-daero, Yeongdeungpo-gu, Seoul (O2 Tower), 5F <br />
+                Busan branch: 40 Munheongeumgeum-ro, Nam-gu, Busan, <br />
+                BIFC Busan International Finance Center, 9F
+                <br />
+                © 2024 CrossHub. All rights reserved.
+            </div>
+
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/30c04bf244a3634940b4f5fcab15de9934807001508d8dc8fde07902b1b65161?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                alt="CrossHub Logo" class="company-logo" width="128" height="108" />
+        </div>
+    </footer>
+
+
+
+
+    <script type="module" defer src="/js/nav.js"></script>
+    <script type="module" defer src="/js/index.js"></script>
+
+
+
+</body>
+
+</html>

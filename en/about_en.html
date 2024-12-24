@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="description"
+        content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
+    <title>IDBlock - Connecting the World Through Authentication</title>
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/script_main.js"></script>
+    <script src="/js/scrolla.jquery.min.js"></script>
+    <script src="/js/splitting.min.js"></script>
+
+    <script src="/js/includeHTML.js?version-1.1"></script>
+
+    <link rel="stylesheet" href="animate.min.css">
+
+    <link rel="stylesheet" href="/common/global.css">
+
+    <link rel="stylesheet" href="/common/nav.css">
+    <link rel="stylesheet" href="/common/footer.css">
+
+    <link rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)" href="en_mediaabout_tab.css">
+    <link rel="stylesheet" href="/kr/about_style.css">
+    <link rel="stylesheet" href="/kr/media_about.css">
+    <link rel="stylesheet" href="en_style.css">
+
+
+</head>
+
+<body>
+
+    <!-- 네비게이션 start-->
+    <header class="header">
+        <!-- pcMenu nav start-->
+        <nav class="pcMenu">
+            <a href="index_en.html">
+                <img src="/static/pc_logo.svg" alt="IDBlock Logo" class="logo" width="132" height="57">
+            </a>
+            <ul class="navbar_menu">
+                <li class="navbar_item_dropdown">
+                    <a href="service_en.html">Service Introduction</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="service_en.html#service-section">IDBlock</a></li>
+                        <li><a href="service_en.html#blockpay-section">Bpay</a></li>
+                    </ul>
+                </li>
+                <li class="navbar_item_dropdown">
+                    <a href="about_en.html">Company Introduction</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="about_en.html#vision-section">Overview</a></li>
+                        <li><a href="about_en.html#awards-section">History</a></li>
+                        <li><a href="about_en.html#press-section">News</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item_dropdown">
+                    <a href="contact_en.html">Inquiry</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="contact_en.html">Partnership</a></li>
+                        <li><a href="maps_en.html">Directions</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item_dropdown" id="navbar_item_download">
+                    <a href="#download">Download</a>
+                    <div class="nav-item-download">
+                        <a href="https://example.com/ios-download">
+                            <img src="/static/basic_apple_download.svg" class="ios-download">
+                        </a>
+                        <a href="https://example.com/android-download">
+                            <img src="/static/basic_android_download.svg" class="android-download">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="navbar_lang_dropdown">
+                    <button class="language-toggle" aria-label="Change language" type="button" tabindex="0">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6389dc316151fa8fbd909e09d7f3f311ca3ad38a5b4424e51a0d4c36e00b1da?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                            alt="Language selection icon" width="30" height="30">
+                    </button>
+                    <ul class="dropdown_lang">
+                        <li><a href="/kr/index.html">KOR</a></li>
+                        <li> <a href="index_en.html">ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- pcMenu nav end-->
+
+        <!-- mobileMenu nav start-->
+        <nav class="mobileMenu">
+            <a href="index_en.html">
+                <img loading="lazy" src="/static/mobile_logo.svg" class="mobile-logo" alt="Company logo" />
+            </a>
+            <button class="mobile-menu-button" aria-label="Toggle menu" role="button">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0ee22eb126ebc1390c8ade5d582f4850f749319377ad1e2460b87d2b294b11b?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                    class="sidebar-open-icon" alt="Open Menu">
+            </button>
+
+            <!--햄버거 메뉴 바-->
+            <div class="sidebar-nav-menu">
+                <button class="sidebar-menu-close">
+                    <img src="/static/close_icon.png" class="sidebar-close-icon" alt="Close menu" />
+                </button>
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Service Introduction</div>
+                        <a href="service_en.html">
+                        </a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Company Introduction</div>
+                        <a href="about_en.html">
+                        </a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Inquiry</div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="contact_en.html" class="sidebar-dropdown-item">Partnership</a>
+                        <a href="maps_en.html" class="sidebar-dropdown-item">Directions</a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">Download</div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="#iOS" class="sidebar-dropdown-item">iOS</a>
+                        <a href="#andorid" class="sidebar-dropdown-item">Andorid</a>
+                    </div>
+
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-language-selector">
+                            <div class="sidebar-language-icon"></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="/kr/index.html" class="sidebar-dropdown-item">KOR</a>
+                        <a href="index_en.html" class="sidebar-dropdown-item">ENG</a>
+                    </div>
+                </button>
+            </div>
+            </div>
+            </div>
+        </nav>
+        <!-- mobileMenu nav start-->
+    </header>
+
+    <!-- main intro start-->
+    <main class="desktop-main" role="main">
+        <section class="vision-section" id="vision-section" role="region" aria-labelledby="vision-title">
+            <div class="vision-container">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c386a39c27b595fa848123e09849b66ed404cc8042483bc7df0ac26c83f833d9?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                    class="vision-background" alt="Vision background showing technological innovation" />
+                <div class="vision-content">
+                    <div class="vision-text-container">
+                        <h2 id="vision-title" class="vision-heading">
+                            Realizing the value of everyday life <br />
+                            and technology
+                        </h2>
+                        <p class="vision-description">
+                            Based on blockchain and AI technology, <br />
+                            we lead digital transformation (DX) in the fintech field <br />
+                            and connect all aspects of daily life to realize <br />
+                            new experiences and the value of technology
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview-company" aria-labelledby="overview-company-title">
+            <div class="overview-container">
+                <h2 id="overview-company-title" class="overview-section-title">CrossHub has <br />
+                    the following identity</h2>
+                <div class="overview-divider-container" aria-hidden="true">
+                    <div class="overview-divider"></div>
+                </div>
+                <div class="overview-image-grid" role="group" aria-label="Company identity illustrations">
+                    <div class="overview-image-wrapper">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/65acb81ff2bd78e955c09f87a07c7cba571108efb0715336ebc704db1533d828?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                            alt="Company identity illustration 1" class="overview-image" loading="lazy" />
+                    </div>
+                    <div class="overview-image-wrapper">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/68108e4c14e2e3e250e50bd9166783233080bc95aea661341cef26029807ea8b?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                            alt="Company identity illustration 2" class="overview-image" loading="lazy" />
+                    </div>
+                    <div class="overview-image-wrapper">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b54802913aaabb056e3e998c3fe5d8b52409e5f88f02f6ea7971d57122a41e3b?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                            alt="Company identity illustration 3" class="overview-image" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="core-values" id="cores-section" aria-labelledby="core-values">
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3fd628a9e486cf7cbd61e905ee3b1defec9627212f22afa097543e8e5d2b0e7?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                class="core-background-image" alt="" />
+            <div class="core-content-wrapper">
+                <div class="core-overview-title">
+                    <div class="core-title-wrapper">
+                        <div class="core-title-en">Core Value</div>
+                    </div>
+                    <div class="core-image-grid">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d34b62b79be14f501fd52b5690f0f4ae973aaf9d804fe45efc30136832898bb?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                            class="value-image1" alt="Core value illustration 1" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c7526f2328696fe677e3a3f24c358d75e8468b373e99a622dfa7fd9784a6c1c?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                            class="value-image2" alt="Core value illustration 2" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/496e5a3a8a1cf96520f632ebfab56c26d893e6692eb67d0e7f3680fb82ff64fb?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                            class="value-imag3" alt="Core value illustration 3" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 수상 및 연혁 start-->
+
+        <section class="awards-history" id="awards-section" aria-labelledby="awards-title">
+            <div class="awards-container">
+                <h2 id="awards-title" class="section-title">Awards and History</h2>
+                <div class="timeline-container">
+                    <div class="year-quarter-group1">
+                        <div class="year-quarter1">
+                            <span class="year-text">2024</span>
+                            <span class="quarter">4Q</span>
+                        </div>
+                        <div class="achievements-list1">
+                            <p class="achievement-item">2024 Sungkyunkwan University KINGO-GA Entrepreneurship
+                                Competition ‘Gold Prize’ Awarded</p>
+                            <p class="achievement-item">Kibo Venture Camp 15th operator received ‘Best Award’ at Demo
+                                Day</p>
+                            <p class="achievement-item">Korea Tourism Organization 2025 Tokyo Tourism Business Support
+                                Center (KTSC) selected as a new resident company</p>
+                            <p class="achievement-item">Selected as a support project for local companies entering
+                                Vietnam TechFest</p>
+                            <p class="achievement-item">Selected as a blockchain business growth support project by KISA
+                                (Korea Internet & Security Agency)</p>
+                            <p class="achievement-item">Selected as a localization lab support project by NIPA (National
+                                IT Industry Promotion Agency)</p>
+                            <p class="achievement-item">Selected as a company for the Busan Metropolitan City Blockchain
+                                Offshore Company Development Center</p>
+                        </div>
+                    </div>
+
+                    <div class="year-quarter-group2">
+                        <div class="year-quarter2">
+                            <span class="quarter">3Q</span>
+                        </div>
+                        <div class="achievements-list2">
+                            <p class="achievement-item">Seoul Fintech Lab with IBK Industrial Bank of Korea selected as
+                                1st LAB project</p>
+                            <p class="achievement-item">Selected as a resident company for Seoul Fintech Lab in the
+                                second half of 2024</p>
+                            <p class="achievement-item">Obtained Certificate of Venture Business</p>
+                            <p class="achievement-item">Selected as a company for the 15th Contribution Venture Camp
+                                hosted by Korea Technology Finance Corporation (KIBO)</p>
+                            <p class="achievement-item">3Q Japan PoC+Living Lab project selected</p>
+                            <p class="achievement-item">Selected as a company for the 15th Contribution Venture Camp
+                                hosted by Korea Technology Finance Corporation (KIBO)</p>
+                        </div>
+                    </div>
+
+                    <div class="year-quarter-group3">
+                        <div class="year-quarter3">
+                            <span class="quarter">2Q</span>
+                        </div>
+                        <div class="achievements-list3">
+                            <p class="achievement-item">Attracted seed investment from a domestic professional investor
+                                (AC) group (KRW 200 million)</p>
+                            <p class="achievement-item">Selected as the 2024 preliminary startup package hosted by the
+                                Ministry of SMEs and Startups</p>
+                        </div>
+                    </div>
+
+                    <div class="year-quarter-group4">
+                        <div class="year-quarter4">
+                            <span class="year-text">2023</span>
+                            <span class="quarter">4Q</span>
+                        </div>
+                        <div class="achievements-list4">
+                            <p class="achievement-item">Won the ‘Grand Prize’ at the BIC Blockchain Conference
+                                Competition hosted by Chungcheongbuk-do</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- 수상 및 연혁 end -->
+
+
+        <!-- 보도자료 start-->
+
+
+        <section class="press-releases" id="press-section">
+            <div class="press-container">
+                <h1 class="press-title">Press Release</h1>
+
+                <article class="press-item">
+                    <h2 class="press-item-title">
+                        <a href="https://www.venturesquare.net/949333" target="_blank" rel="noopener noreferrer">
+                            Early Investment Accelerator Association holds ‘7th KAIA Working-level
+                            Clubhouse’Venture Square
+                        </a>
+                    </h2>
+                    <div class="press-meta">
+                        <time class="press-date">2024.12.04</time>
+                        <span class="press-source">Venture Square</span>
+                    </div>
+                </article>
+
+                <div class="press-divider"></div>
+
+                <article class="press-item">
+                    <h2 class="press-item-title">
+                        <a href="https://www.kyeonggi.com/article/20241202580120" target="_blank"
+                            rel="noopener noreferrer">
+                            GA Korea Group, Sungkyunkwan University and ‘KINGO-GA Startup Competition’…Gyeonggi Ilbo
+                        </a>
+                    </h2>
+                    <div class="press-meta">
+                        <time class="press-date">2024.12.02</time>
+                        <span class="press-source">Gyeonggi Ilbo</span>
+                    </div>
+                </article>
+
+                <div class="press-divider"></div>
+
+                <article class="press-item">
+                    <h2 class="press-item-title">
+                        <a href="https://www.venturesquare.net/948842" target="_blank" rel="noopener noreferrer">
+                            Crosshub Signs Supply Agreement with Vietnam's 'Ameba'
+                        </a>
+                    </h2>
+                    <div class="press-meta">
+                        <time class="press-date">2024.11.29</time>
+                        <span class="press-source">Venture Square</span>
+                    </div>
+                </article>
+
+                <div class="press-divider"></div>
+
+                <article class="press-item">
+                    <h2 class="press-item-title">
+                        <a href="https://www.news1.kr/local/daejeon-chungnam/5603906" target="_blank"
+                            rel="noopener noreferrer">
+                            Daejeon Innovation Center participates in Vietnam's 'Tech Fest 2024'... Support for startup
+                            advancement
+                        </a>
+                    </h2>
+                    <div class="press-meta">
+                        <time class="press-date">2024.11.18</time>
+                        <span class="press-source">News 1</span>
+                    </div>
+                </article>
+
+                <div class="press-divider"></div>
+
+                <article class="press-item">
+                    <h2 class="press-item-title">
+                        <a href="https://news.nate.com/view/20240618n21757" target="_blank" rel="noopener noreferrer">
+                            CrossHub attracts 200 million won worth of investment... “Expanding talent recruitment”
+                        </a>
+                    </h2>
+                    <div class="press-meta">
+                        <time class="press-date">2024.06.08</time>
+                        <span class="press-source">Nate Newspaper</span>
+                    </div>
+                </article>
+
+                <div class="press-divider"></div>
+            </div>
+        </section>
+
+        <!-- 보도자료 end-->
+
+    </main>
+
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-top">
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="/static/아이디블록 서비스 이용약관(kor).pdf" class="terms-link" target="_blank"
+                    rel="noopener noreferrer">Terms of Service</a>
+                <a href="/static/아이디블록 개인정보처리방침(kor).pdf" class="privacy-link" target="_blank"
+                    rel="noopener noreferrer">Privacy policy</a>
+            </nav>
+
+            <div class="social-icons">
+
+                <a href="https://youtube.com/@idblock_official?si=z70GRlyOS5S4b2zb" class="social-icon"
+                    aria-label="Visit our Youtube" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/861d637e81f7223a2d07d0cccbb92f2d309f863127d6cefe861093464fd7a212?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="36" height="36" />
+                </a>
+                <a href="https://www.instagram.com/idblock_official/" class="social-icon"
+                    aria-label="Visit our Instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/65e5c622af372f46c0405260ff51230a8327fa37e11ad1f1d5ff7c4e651c4ca7?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="30" height="30" />
+                </a>
+                <a href="https://www.linkedin.com/company/crosshubkr/?viewAsMember=true" class="social-icon"
+                    aria-label="Visit our LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/081f4f0742b54af2239f31b6c4ecb526b691f9f14c279c72db2883824f943909?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="28" height="28" />
+                </a>
+                <a href="https://www.facebook.com/people/Cross-Hub/pfbid02TYF8D8RysK4VuJGKWvZ7oHnbWXtitDuhVWHCEtf2CyChjhSAPw5oWGkZNz9J4vg3l/"
+                    class="social-icon" aria-label="Visit our Facebook" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b6901f72b3c8c924baa5c20beb56349a7476f899884b431cea37e7549194934?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                        alt="" width="35" height="35" />
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="divider" role="separator"></div>
+
+        <div class="footer-bottom">
+            <div class="company-info">
+                CrossHub Inc<br /><br />
+                Contact<br /><br />
+                TEL : +82 2-6975-9999<br />
+                FAX : +82 2-6008-5040<br />
+                E-mail : <a href="mailto:crosshub.kr@gmail.com"
+                    class="contact-link">crosshub.kr@gmail.com</a><br /><br />
+                Head office: 1161 Gyebaek-ro, Seo-gu, Daejeon, 404-D38 <br />
+                Seoul branch: 83 Uisadang-daero, Yeongdeungpo-gu, Seoul (O2 Tower), 5F <br />
+                Busan branch: 40 Munheongeumgeum-ro, Nam-gu, Busan, <br />
+                BIFC Busan International Finance Center, 9F
+                <br />
+                © 2024 CrossHub. All rights reserved.
+            </div>
+
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/30c04bf244a3634940b4f5fcab15de9934807001508d8dc8fde07902b1b65161?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                alt="CrossHub Logo" class="company-logo" width="128" height="108" />
+        </div>
+    </footer>
+
+
+
+    <script type="module" defer src="/js/nav.js"></script>
+    <script type="module" defer src="/js/about.js"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="description"
+        content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
+    <title>IDBlock - Connecting the World Through Authentication</title>
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/script_main.js"></script>
+    <script src="/js/scrolla.jquery.min.js"></script>
+    <script src="/js/splitting.min.js"></script>
+
+    <script src="/js/includeHTML.js?version-1.1"></script>
+
+    <link rel="stylesheet" href="animate.min.css">
+
+    <link rel="stylesheet" href="/common/nav.css">
+
+    <link rel="stylesheet" href="/common/mediaglobalstyle.css">
+    <link rel="stylesheet" href="/common/global.css">
+
+    <link rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)" href="mediacontact_tab.css">
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="media_contact.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- 네비게이션 start-->
+    <header class="header">
+        <!-- pcMenu nav start-->
+        <nav class="pcMenu">
+            <a href="index.html">
+                <img src="/static/pc_logo.svg" alt="IDBlock Logo" class="logo" width="132" height="57">
+            </a>
+            <ul class="navbar_menu">
+                <li class="navbar_item_dropdown">
+                    <a href="service.html">서비스소개</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="service.html#service-section">IDBlock</a></li>
+                        <li><a href="service.html#blockpay-section">Bpay</a></li>
+                    </ul>
+                </li>
+                <li class="navbar_item_dropdown">
+                    <a href="about.html">회사소개</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="about.html#vision-section">개요</a></li>
+                        <li><a href="about.html#awards-section">연혁</a></li>
+                        <li><a href="about.html#press-section">보도자료</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item_dropdown">
+                    <a href="contact.html">문의사항</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="contact.html">협업 문의</a></li>
+                        <li><a href="maps.html">오시는길</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item_dropdown" id="navbar_item_download">
+                    <a href="#download">다운로드</a>
+                    <div class="nav-item-download">
+                        <a href="https://example.com/ios-download">
+                            <img src="/static/basic_apple_download.svg" class="ios-download">
+                        </a>
+                        <a href="https://example.com/android-download">
+                            <img src="/static/basic_android_download.svg" class="android-download">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="navbar_lang_dropdown">
+                    <button class="language-toggle" aria-label="Change language" type="button" tabindex="0">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6389dc316151fa8fbd909e09d7f3f311ca3ad38a5b4424e51a0d4c36e00b1da?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
+                            alt="Language selection icon" width="30" height="30">
+                    </button>
+                    <ul class="dropdown_lang">
+                        <li><a href="index.html">KOR</a></li>
+                        <li> <a href="/en/index_en.html">ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- pcMenu nav end-->
+
+        <!-- mobileMenu nav start-->
+        <nav class="mobileMenu">
+            <a href="index.html">
+                <img loading="lazy" src="/static/mobile_logo.svg" class="mobile-logo" alt="Company logo" />
+            </a>
+            <button class="mobile-menu-button" aria-label="Toggle menu" role="button">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0ee22eb126ebc1390c8ade5d582f4850f749319377ad1e2460b87d2b294b11b?placeholderIfAbsent=true&apiKey=bc9f4e82a65e42379470e4a631b8b0f9"
+                    class="sidebar-open-icon" alt="Open Menu">
+            </button>
+
+            <!--햄버거 메뉴 바-->
+            <div class="sidebar-nav-menu">
+                <button class="sidebar-menu-close">
+                    <img src="/static/close_icon.png" class="sidebar-close-icon" alt="Close menu" />
+                </button>
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">서비스 소개</div>
+                        <a href="service.html">
+                        </a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">회사 소개</div>
+                        <a href="about.html">
+                        </a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">문의사항</div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="contact.html" class="sidebar-dropdown-item">협업문의</a>
+                        <a href="maps.html" class="sidebar-dropdown-item">오시는길</a>
+                    </div>
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-menu-text">다운로드</div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="#iOS" class="sidebar-dropdown-item">iOS</a>
+                        <a href="#andorid" class="sidebar-dropdown-item">Andorid</a>
+                    </div>
+
+                </button>
+
+                <button class="sidebar-menu-item" tabindex="0" role="button">
+                    <div class="sidebar-menu-content">
+                        <div class="sidebar-language-selector">
+                            <div class="sidebar-language-icon"></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-dropdown">
+                        <a href="index.html" class="sidebar-dropdown-item">KOR</a>
+                        <a href="/en/index_en.html" class="sidebar-dropdown-item">ENG</a>
+                    </div>
+                </button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+        <!-- mobileMenu nav start-->
+    </header>
+
+    <main class="desktop-main" role="main">
+
+        <!-- 협업 문의 start-->
+
+        <section class="partnership-container" aria-label="Partnership Information">
+            <div class="hero-section" role="banner">
+                <h1 class="hero-text">
+                    크로스허브는 더 나은 미래를 만들고 시너지를 높일 수 있는<br />
+                    동반 성장의 기회를 모색하고 있습니다.
+                </h1>
+            </div>
+            <div class="contact-section">
+                <div class="contact-header">
+                    <h2 class="contact-title">제휴문의</h2>
+                    <a href="mailto:Crosshub@crosshub.kr" class="contact-email" tabindex="0">
+                        crosshub@crosshub.kr
+                    </a>
+                </div>
+                <p class="contact-description">
+                    사업 제휴 등과 관련한 문의를 보내주시면<br />
+                    담당 부서 검토 후, 빠른 시일 내에 회신드리겠습니다.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- 협업 문의 end-->
+
+
+    </main>
+
+    <div include-html="footer.html"></div>
+
+    <script>includeHTML();</script>
+
+    <script type="module" defer src="/js/nav.js"></script>
+    <script type="module" defer src="/js/index.js"></script>
+</body>
+
+</html>

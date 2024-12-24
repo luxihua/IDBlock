@@ -1,0 +1,102 @@
+/* 폰트 정의 */
+
+@font-face {
+    font-family: PretendardFont;
+    src: url('./static/font/Pretendard-SemiBold.otf');
+}
+
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('./static/font/Noto_Sans_KR/NotoSansKR-Black.otf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('./static/font/Noto_Sans_KR/NotoSansKR-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('./static/font/Noto_Sans_KR/NotoSansKR-Light.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('./static/font/Noto_Sans_KR/NotoSansKR-Medium.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('./static/font/Noto_Sans_KR/NotoSansKR-Regular.otf');
+    font-weight: 300;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear_from_bottom {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+:root {
+    --primary-color: rgb(255, 85, 32);
+    --primary-blue: rgba(1, 86, 221, 1);
+    --text-color: rgb(30, 30, 30);
+    --shadow: 10px 4px 27px 6px rgba(0, 0, 0, 0.25);
+    --button-bg: rgb(70, 78, 97);
+    --white: #fff;
+    --black: #000;
+    --focus-outline-color: var(--primary-color);
+    --focus-outline-width: 2px;
+    --focus-outline-offset: 2px;
+    --transition-duration: 0.3s;
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --primary-font: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    --heading-size-desktop: 48px;
+    --heading-size-mobile: 40px;
+    --description-size: 24px;
+    --container-width: 1059px;
+    --primary-spacing: 20px;
+    --section-padding: 114px 80px 69px;
+    --heading-font: 'Pretendard', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Pretendard', 'Noto Sans', Arial, sans-serif; /* 기본 폰트 및 대체 폰트 */
+    font-style: normal; 
+    
+}
+
+

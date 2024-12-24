@@ -1,0 +1,527 @@
+@media all and (min-width:1025px) {
+
+    .feature-title,
+    .heading,
+    .main-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .passport-container {
+        justify-content: flex-start;
+        column-gap: 60px;
+
+    }
+
+    .payment-container {
+        display: flex;
+        width: 1332px;
+        height: 634px;
+        max-width: 100%;
+        align-items: center;
+        gap: 40px 100px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .payment-content-wrapper {
+        align-self: center;
+    }
+
+
+    .image-section {
+        width: 100%;
+        height: 100%;
+        padding-left: 250px;
+    }
+
+    .image-grid {
+        height: auto;
+        margin-top: -130px;
+    }
+
+    .certificate-section {
+        padding: 148px 527px;
+
+    }
+
+    .certificate-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-top: 7px;
+        margin-bottom: 0;
+        white-space: nowrap;
+        text-align: center;
+        align-self: center;
+    }
+
+    .certificate-image-container {
+        flex-wrap: nowrap;
+    }
+
+    .earth-section {
+        padding: 0 0px;
+    }
+
+
+    .earth-image {
+        aspect-ratio: auto;
+        object-position: center bottom;
+        width: 100%;
+        height: 647px;
+        margin: 0;
+
+    }
+
+    .partners-image {
+        max-width: 1319px;
+
+    }
+
+
+    .info-hero-text {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+
+    }
+
+
+    .app-images {
+        margin-top: 35px;
+    }
+
+
+    .image-gallery {
+        align-items: flex-start;
+        padding-left:52px;
+    }
+
+    .service-title, .download-button {
+        margin-left: 0px;
+    }
+
+    .big-highlight-text {
+        color: rgba(255, 85, 32, 1);
+        font-size: 48px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .text-content {
+        width: 60%;
+    }
+
+    .main-heading {
+        font-size: 40px;
+        line-height: 60px;
+        white-space: nowrap;
+    }
+
+    .description {
+        line-height: 36px;
+    }
+
+
+    .section-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 28.64px;
+        text-align: left;
+        font-family: Pretendard, sans-serif;
+        text-decoration-skip-ink: none;
+        margin-bottom: 0px;
+
+    }
+
+    .timeline-container {
+        width: 1300px;
+    }
+
+
+    .year-text{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .quarter {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .achievement-item {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 33.09px;
+        margin-top: 22px;
+        white-space: wrap;
+    }
+
+
+    .achievements-list1,
+    .achievements-list2,
+    .achievements-list3,
+    .achievements-list4 {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .year-quarter1 {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        white-space: nowrap;
+        justify-content: center;
+        padding: 7px 0;
+        align-items: start;
+    }
+
+    .year-quarter-group1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+        margin-bottom: 24px;
+    }
+
+    .year-quarter2 {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        white-space: nowrap;
+        justify-content: center;
+        padding: 7px 0;
+        align-items: start;
+    }
+
+    .year-quarter-group2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+        margin-bottom: 24px;
+        margin-left: 2px;
+        margin-bottom: 24px;
+    }
+
+    .year-quarter3 {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        white-space: nowrap;
+        justify-content: center;
+        padding: 7px 0;
+        align-items: start;
+    }
+
+
+    .year-quarter-group3 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+        margin-bottom: 24px;
+        margin-left: 3px;
+        margin-bottom: 24px;
+    }
+
+    .year-quarter4 {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        white-space: nowrap;
+        justify-content: center;
+        padding: 7px 0;
+        align-items: start;
+    }
+
+    .year-quarter-group4 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+        margin-bottom: 24px;
+    }
+
+    /* press-releases 섹션 수정 */
+    .press-releases {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 0 80px;
+        /* 여백 조정 */
+        max-width: 1300px;
+        /* 섹션 최대 너비 */
+        margin: 0 auto;
+        /* 중앙 정렬 */
+    }
+
+    .press-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        /* 기사 간 간격 */
+        width: 1200px;
+    }
+
+    .press-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 28.64px;
+        text-align: left;
+        font-family: Pretendard, sans-serif;
+        text-decoration-skip-ink: none;
+        margin-bottom: 120px;
+
+    }
+
+
+    .press-item {
+        justify-content: space-between;
+
+    }
+
+    .press-item-title {
+        width: 772px;
+        font-family: Pretendard, sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+        text-decoration: none; /* 밑줄 제거 */
+        white-space: nowrap; /* 제목 줄바꿈 방지 */
+        overflow: hidden; /* 제목이 길면 숨김 처리 */
+        text-overflow: ellipsis; /* 숨겨진 부분에 ... 표시 */
+    }
+
+
+
+    .press-meta {
+        display: flex;
+        justify-content: space-between;
+        /* 양 끝으로 정렬 */
+        align-items: center;
+        font-family: Pretendard, sans-serif;
+    }
+
+    .press-date {
+        font-family: Pretendard, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 14.32px;
+        text-align: right;
+    }
+
+    .press-source {
+        font-family: Pretendard, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 14.32px;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+    .press-divider {
+        background-color: #D9D9D9;
+        height: 1px;
+        /* 구분선 상하 간격 */
+        width: 100%;
+        margin: 25px 0;
+    }
+
+
+
+     
+
+
+}
+
+
+
+
+
+@media all and (max-width:768px) {
+
+    .hero-section {
+        gap: 0px;
+    }
+
+
+    .feature-title,
+    .main-title {
+        color: rgba(0, 0, 0, 1);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        white-space: nowrap;
+    }
+
+    .heading {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .main-heading,
+    .auth-title,
+    .payment-title {
+        font-size: 24px;
+        line-height: 150%;
+        white-space: nowrap;
+    }
+
+    .feature-description,
+    .description,
+    .payment-description {
+        line-height: 150%;
+        white-space: nowrap;
+    }
+
+    .travel-heading {
+        color: rgba(0, 0, 0, 1);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .big-highlight-text {
+        color: rgba(255, 85, 32, 1);
+        font-size: 24px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+
+    .highlight-text {
+        color: rgba(255, 85, 32, 1);
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+
+    .certificate-title {
+        width: 350px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+        white-space: normal;
+        align-self: center;
+    }
+
+    .earth-title {
+        align-self: stretch;
+        width: 313px;
+        position: absolute;
+        gap: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+        white-space: normal;
+        top: 20%;
+    }
+
+
+    .partners-title {
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .info-hero-text {
+        width: 343px;
+    }
+
+
+
+    .service-title {
+        font-size: 24px;
+        line-height: 150%;
+        width: 330px;
+        white-space: nowrap;
+    }
+
+    .verification-title,
+    .payment-label {
+        margin-bottom: 8px;
+    }
+
+    .services-title {
+        width: 256px;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+
+    .vision-text-container {
+        width: 305px;
+        height: 228px;
+
+    }
+
+    .vision-heading {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .vision-description {
+        font-size: 12px;
+    }
+
+
+    .overview-section-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        width: auto;
+    }
+
+
+    .hero-text {
+        width: 300px;
+    }
+
+
+
+
+
+
+
+}

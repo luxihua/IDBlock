@@ -1,0 +1,1051 @@
+/* service_intro1 start */
+.service-guide {
+    display: flex;
+    align-items: center;
+    /* 좌우 균형 배치 */
+    background-color: #fff;
+    overflow: hidden;
+    padding: 200px 50px;
+    /* 전체 너비 제한 */
+    margin: 0 auto;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+    padding-left: 72px;
+    max-height: 650px;
+}
+
+.facial-recognition-image {
+    aspect-ratio: 0.46;
+    object-fit: contain;
+    height: 100%;
+    object-position: center;
+    border-radius: 20px;
+    z-index: 1;
+    align-items: flex-end;
+}
+
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    justify-content: flex-end;
+
+}
+
+.service-title {
+    align-self: start;
+    color: rgba(0, 0, 0, 1);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.highlight-text {
+    color: rgba(255, 85, 32, 1);
+}
+
+.download-button {
+    align-self: flex-start;
+    display: flex;
+    width: 228px;
+    height: 56px;
+    margin-top: 35px;
+    margin-left: 70px;
+    background-color: white;
+    border-radius: 8px;
+    flex-direction: row;
+    /* Arrange items horizontally */
+    gap: 20px;
+    /* Add spacing between images */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* 그림자 효과 */
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Image styles */
+.download-button img {
+    position: relative;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    /* Add hover effect */
+}
+
+.download-button img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+/* service_intro1 end */
+
+/* service_intro2 start */
+.identity-verification {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 250px 50px;
+    margin: 0 auto;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 이미지가 왼쪽 정렬되도록 */
+    width: 50%;
+    /* 절반 너비 사용 */
+    justify-content: flex-end;
+
+}
+
+.verification-title {
+    font-family: Pretendard, sans-serif;
+    color: rgb(255, 85, 32);
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    ;
+}
+
+.text-wrapper {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.main-heading {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    white-space: nowrap;
+}
+
+.description {
+    color: rgb(136, 142, 149);
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 52px;
+    white-space: nowrap;
+}
+
+.images-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding: 100px 0;
+    overflow: hidden;
+    max-height: 650px;
+
+}
+
+.id-image {
+    aspect-ratio: 0.46;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+
+
+/* service_intro2 end */
+
+/* service_intro3 start */
+.auth-container {
+    display: flex;
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    /* 좌우 균형 배치 */
+    flex-wrap: wrap;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 250px 70px;
+    max-width: 1200px;
+    /* 전체 너비 제한 */
+    margin: 0 auto;
+    /* 화면 중앙 정렬 */
+    margin-bottom: 200px;
+}
+
+.auth-wrapper {
+    width: 1167px;
+    max-width: 100%;
+}
+
+.auth-content {
+    gap: 80px;
+    display: flex;
+}
+
+.auth-left-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+}
+
+.auth-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    position: relative;
+    min-height: 320px;
+    flex-grow: 1;
+    text-align: center;
+    padding: 54px 57px 116px;
+    font: 600 20px Pretendard, sans-serif;
+}
+
+.auth-background {
+    position: absolute;
+    inset: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kakao-button {
+    position: relative;
+    background-color: rgba(254, 228, 0, 1);
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    padding: 19px 70px;
+    cursor: pointer;
+    border: none;
+}
+
+.idblock-button {
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    padding: 19px 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-right-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 80px;
+}
+
+.auth-text-content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-family: Pretendard, sans-serif;
+    justify-content: start;
+    margin: auto 0;
+}
+
+.auth-title {
+    color: rgba(0, 0, 0, 1);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    white-space: nowrap;
+}
+
+.auth-description {
+    color: rgba(136, 142, 149, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 52px;
+    white-space: nowrap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* service_intro3 end */
+
+/* service_intro4 start */
+.payment-section {
+    display: flex;
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    /* 좌우 균형 배치 */
+    flex-wrap: wrap;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 250px 70px;
+    max-width: 1200px;
+    /* 전체 너비 제한 */
+    margin: 0 auto;
+    /* 화면 중앙 정렬 */
+    margin-bottom: 200px;
+}
+
+.payment-container {
+    display: flex;
+    width: 1099px;
+    max-width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+    /* 좌우 정렬 */
+    align-items: center;
+    /* 수직 정렬 */
+}
+
+.payment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto 0;
+    flex: 1;
+}
+
+.payment-label {
+    color: rgb(255, 85, 32);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.payment-title {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    align-self: stretch;
+    margin-top: 19px;
+    white-space: nowrap;
+}
+
+.payment-description {
+    color: rgb(136, 142, 149);
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 52px;
+    white-space: nowrap;
+}
+
+.payment-image {
+    aspect-ratio: 1.06;
+    object-fit: contain;
+    object-position: center;
+    width: 50%;
+    /* 이미지 크기를 적절히 줄임 */
+    max-width: 400px;
+    /* 최대 크기 제한 */
+    flex: 1;
+    /* 공간 분배 */
+}
+
+/* service_intro4 end */
+
+
+
+/*service_intro5 start */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 225px 80px;
+}
+
+.services-wrapper {
+    display: flex;
+    width: 1198px;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.header-content {
+    align-self: center;
+    display: flex;
+    width: 693px;
+    max-width: 100%;
+    flex-direction: column;
+    font-family: Pretendard, sans-serif;
+    text-align: center;
+    justify-content: start;
+}
+
+.services-title {
+    color: #000;
+    font: 700 48px/72px Pretendard, sans-serif;
+    white-space: nowrap;
+}
+
+.services-subtitle {
+    color: #888e95;
+    font: 400 24px Pretendard, sans-serif;
+    margin-top: 17px;
+}
+
+.features-grid {
+    display: flex;
+    margin-top: 152px;
+    width: 100%;
+    align-items: center;
+    gap: 40px 61px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    border-radius: 16px;
+    background-color: #f3f3f3;
+    min-width: 240px;
+    min-height: 282px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 287px;
+    margin: auto 0;
+    padding: 48px;
+}
+
+
+.feature-card {
+    cursor: pointer;
+    /* 마우스 올렸을 때 손 모양으로 변경 */
+    transition: transform 0.2s ease;
+    /* 마우스 올릴 때 살짝 확대 효과 */
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    /* 살짝 확대 */
+}
+
+
+.feature-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.feature-title1,
+.feature-title2,
+.feature-title3,
+.feature-title4 {
+    color: #000;
+    text-align: center;
+    align-items: center;
+    font: 600 24px Pretendard, sans-serif;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.feature-image1 {
+    margin-top: 36px;
+    max-width: 100%;
+}
+
+.feature-image2 {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.feature-image3 {
+    margin-top: 0px;
+    max-width: 100%;
+}
+
+.feature-image4 {
+    margin-top: 25px;
+    max-width: 100%;
+}
+
+.app-services {
+    padding: 45px 80px;
+}
+
+.app-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-images {
+    align-self: center;
+    display: flex;
+    min-height: 110px;
+    width: 160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-card {
+    padding: 49px 84px;
+}
+
+.payment-card-content {
+    display: flex;
+    max-width: 100%;
+    width: 190px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* service_intro5 end */
+
+
+/* service_intro 6 start */
+.blockpay-container {
+    background: #ff5520;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    font-family: Pretendard, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    padding:150px 70px;
+}
+
+.blockpay-content-wrapper {
+    display: flex;
+    width: 889px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockpay-subtitle {
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.blockpay-main-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    align-self: stretch;
+    margin-top: 27px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.blockpay-hero-image {
+    aspect-ratio: 1.4;
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+}
+
+
+/* service_intro 6 end */
+
+
+/* 초기 상태 - 숨김 */
+.service-guide,
+.identity-verification,
+.auth-container,
+.payment-section,
+.services-container,
+.block-pay-container {
+    opacity: 0;
+    transform: translateY(50px);
+    /* 아래로 이동 */
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+    /* 부드러운 전환 효과 */
+}
+
+/* 활성화 상태 */
+.service-guide.animate,
+.identity-verification.animate,
+.auth-container.animate,
+.payment-section.animate,
+.services-container.animate,
+.block-pay-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+    /* 원래 위치 */
+}
+
+
+.service-guide .gallery-column,
+.identity-verification .images-grid,
+.auth-container .auth-content,
+.payment-section .payment-content,
+.services-container .features-grid,
+.block-pay-container .content-wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+    /* 조금 더 낮게 이동 */
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+}
+
+.service-guide.animate .gallery-column,
+.identity-verification.animate .images-grid,
+.auth-container.animate .auth-content,
+.payment-section.animate .payment-content,
+.services-container.animate .features-grid,
+.block-pay-container.animate .content-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px),
+screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .service-guide {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 100px 50px;
+    }
+
+    .image-gallery {
+        aspect-ratio: 0.83;
+        object-fit: contain;
+        padding-left: 30px;
+
+    }
+
+
+    .content-section {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .service-title {
+        gap: 8px;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .big-highlight-text {
+        color: rgba(255, 85, 32, 1);
+    }
+
+    .download-button {
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .facial-recognition-image {
+        width: 100%;
+        aspect-ratio: 0.34;
+    }
+
+    /* identity-verification */
+    .identity-verification {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 100px 50px;
+    }
+
+    .text-content {
+        width: 50%;
+    }
+
+    .main-heading {
+        font-family: Pretendard, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+    }
+
+    .description {
+        font-family: Pretendard, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        margin-top: 32px;
+
+    }
+
+    .text-wrapper {
+        margin-right: 0px;
+    }
+
+    .verification-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+
+    .images-grid {
+        aspect-ratio: 0.83;
+        object-fit: contain;
+        padding-right: 20px;
+        padding: 0 0;
+    }
+
+    .id-image {
+        width: 100%;
+        aspect-ratio: 0.34;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 20px;
+        z-index: 1;
+        padding-left: 20px;
+    }
+
+    /* services-container */
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+        gap: 40px;
+    }
+
+    .features-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 72px;
+    }
+
+    .feature-card {
+        flex: 1;
+        min-width: 280px;
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+
+    .auth-title {
+        font-family: Pretendard, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+    }
+
+    .auth-description {
+        font-family: Pretendard, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        margin-top: 15px;
+
+    }
+
+    .auth-background {
+        position: absolute;
+        inset: 0;
+        /* 부모 요소의 크기에 맞춰 확장 */
+        width: 80%;
+        /* 이미지 크기를 줄임 */
+        height: auto;
+        /* 비율 유지 */
+        object-fit: contain;
+        object-position: center;
+        margin: auto;
+        /* 부모 요소 중심에 위치 */
+    }
+
+    .auth-content {
+        gap: 0px;
+    }
+
+    .payment-label {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+
+    .payment-title {
+        font-family: Pretendard;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        font-family: Pretendard, sans-serif;
+        text-decoration-skip-ink: none;
+    }
+
+    .payment-description {
+        font-family: Pretendard, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        margin-top: 15px
+    }
+
+    .payment-container {
+        gap: 80px;
+    }
+
+    .payment-content {
+        width: 50%;
+        /* 너비를 50%로 줄여서 더 오른쪽으로 이동 */
+        max-width: 400px;
+        /* 최대 크기를 제한 */
+        margin-left: 40px;
+        text-align: left;
+        /* 텍스트 정렬은 왼쪽 유지 */
+    }
+
+    .payment-image {
+        width: 35%;
+        /* 부모 요소의 50% 너비로 설정 */
+        max-width: 300px;
+        /* 최대 크기를 제한 */
+        height: auto;
+        /* 비율 유지 */
+        object-fit: contain;
+        /* 이미지를 비율에 맞게 조정 */
+        object-position: center;
+        /* 이미지를 중앙에 배치 */
+        margin-left: auto;
+        /* 오른쪽으로 정렬 */
+        margin-right: 100px;
+
+    }
+
+
+
+    .services-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .services-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .feature-card {
+        border-radius: 16px;
+        background-color: #f3f3f3;
+        min-width: 200px;
+        /* 최소 너비 */
+        max-width: 180px;
+        /* 최대 너비 */
+        min-height: 140px;
+        /* 최소 높이 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1;
+        width: auto;
+        /* 유동적 너비 */
+        margin: 16px;
+        /* 카드 간격 */
+        padding: 20px;
+        /* 내부 여백 */
+    }
+
+    .feature-grid {
+        margin-top: 152px;
+
+    }
+
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+        /* 세로 정렬 */
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        /* 너비 축소 */
+        max-width: 200px;
+        /* 최소 높이 축소 */
+        margin: auto;
+    }
+
+    .app-content {
+        display: flex;
+        flex-direction: column;
+        /* 세로 정렬 */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        /* 너비 축소 */
+        max-width: 200px;
+        /* 최대 너비 */
+        margin: auto;
+    }
+
+    .payment-card-content {
+
+        display: flex;
+        flex-direction: column;
+        /* 세로 정렬 */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        /* 너비 축소 */
+        max-width: 200px;
+        /* 최대 너비 */
+        margin: auto;
+
+    }
+
+    .feature-title1 {
+        font-size: 12px;
+        /* 제목 폰트 크기 */
+        margin-bottom: 10px;
+        /* 제목과 이미지 간격 */
+    }
+
+
+    .feature-title2 {
+        font-size: 12px;
+        margin-top: 15px;
+        /* 제목 폰트 크기 */
+        /* 제목과 이미지 간격 */
+    }
+
+
+    .feature-title3 {
+        font-size: 12px;
+        /* 제목 폰트 크기 */
+        margin-bottom: 10px;
+        /* 제목과 이미지 간격 */
+    }
+
+    .feature-image1 {
+        width: 70%;
+        /* 이미지 크기 */
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .feature-image2 {
+        width: 70%;
+        /* 이미지 크기 */
+        height: auto;
+        margin-top: 0px
+    }
+
+    .feature-image3 {
+        width: 70%;
+        height: auto;
+
+    }
+
+    .feature-image4 {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+
+    .block-pay-container {
+        padding: 150px 70px;
+    }
+
+    .blockpay-subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        font-family: Pretendard, sans-serif;
+        text-decoration-skip-ink: none;
+    }
+
+
+    .blockpay-main-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        font-family: Pretendard, sans-serif;
+        text-decoration-skip-ink: none;
+        padding-bottom: 180px;
+
+    }
+
+
+    .blockpay-hero-image {
+        aspect-ratio: 1.9;
+    }
+
+
+
+}

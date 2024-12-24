@@ -1,0 +1,711 @@
+/* 모바일 가로, 테블릿 세로(해상도 ~479px) */
+@media all and (max-width:767px) {
+
+  /* intro start */
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 19px;
+    margin-top: 55px;
+    margin-bottom: 96px;
+  }
+
+  .hero-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .hero-title {
+    color: rgba(255, 85, 32, 1);
+    font: 700 32px/45px Pretendard, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .hero-description {
+    color: rgba(136, 142, 149, 1);
+    font: 500 16px/24px Pretendard, sans-serif;
+    margin-top: 32px;
+    white-space: nowrap;
+  }
+
+  .download-buttons {
+    align-self: start;
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .store-button {
+    border-radius: 6px;
+    background-color: rgba(70, 78, 97, 1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding: 9px 18px;
+  }
+
+  .store-icon-wrapper {
+    display: flex;
+    min-height: 18px;
+    align-items: center;
+    width: 18px;
+    padding: 2px;
+  }
+
+  .store-icon {
+    object-fit: contain;
+    object-position: center;
+    width: 13px;
+  }
+
+  .store-text {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font: 600 10px Pretendard, sans-serif;
+  }
+
+  .hero-image {
+    aspect-ratio: 0.9;
+    object-fit: contain;
+    object-position: center;
+    width: 350px;
+    align-self: center;
+    max-width: 100%;
+  }
+
+  /* intro end */
+
+  /* section 1 start */
+  .features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 19px;
+    margin-top: 96px;
+
+  }
+
+  .features-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 100px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Pretendard, sans-serif;
+    justify-content: start;
+  }
+
+  .feature-title {
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    white-space: nowrap;
+  }
+
+  .feature-description {
+    color: rgba(136, 142, 149, 1);
+    font: 500 16px/24px Pretendard, sans-serif;
+    margin-top: 32px;
+    white-space: nowrap;
+  }
+
+  .image-container {
+    border-radius: 0;
+    align-self: center;
+    display: flex;
+    width: 164px;
+    max-width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature-image {
+    aspect-ratio: 0.47;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+    width: 164px;
+    height: auto;
+  }
+
+  /* section 1 end */
+
+  /* section 2 start */
+
+  .passport-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 19px;
+    margin-top: 96px;
+    margin-bottom: 150px;
+  }
+
+  .passport-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 100px;
+  }
+
+  .content-container {
+    order: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Pretendard, sans-serif;
+    justify-content: start;
+  }
+
+  .heading {
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    white-space: nowrap;
+  }
+
+  .description {
+    color: rgba(136, 142, 149, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 32px;
+    white-space: nowrap;
+  }
+
+  .image-container {
+    order: 2;
+    border-radius: 0;
+    align-self: center;
+    display: flex;
+    width: 164px;
+    max-width: 100%;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .passport-image {
+    aspect-ratio: 0.47;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+    width: 164px;
+    height: auto;
+  }
+
+
+  /* section 2 end */
+
+
+  /* section 3 start */
+  .payment-section {
+    display: flex;
+    flex-direction: column;
+    font-family: Pretendard, sans-serif;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 56px 19px;
+  }
+
+  .payment-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 116px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .main-title {
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    white-space: nowrap;
+  }
+
+  .payment-description {
+    color: rgba(136, 142, 149, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 32px;
+    white-space: nowrap;
+  }
+
+  .image-section {
+    border-radius: 0;
+    align-self: center;
+    display: flex;
+    width: 287px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .primary-image {
+    margin-top: 64px;
+    width: 100%;
+  }
+
+
+
+  /* section 3 end */
+
+  /* section 4 start */
+  .travel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 0;
+    margin-top: 96px;
+  }
+
+  .travel-container {
+    display: flex;
+    width: 297px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .travel-heading {
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .highlight-text {
+    color: rgba(255, 85, 32, 1);
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .travel-image {
+    aspect-ratio: 1.78;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 64px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+
+
+  /* section 4 end */
+
+  /* section 5 start */
+  .certificate-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 0;
+    margin-top: 96px;
+  }
+
+  .certificate-wrapper {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .certificate-text-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Pretendard, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    justify-content: start;
+
+  }
+
+  .certificate-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .certificate-title {
+    width: 350px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    white-space: normal;
+    align-self: center;
+  }
+
+  .certificate-image-container {
+    border-radius: 9px;
+    align-self: center;
+    display: flex;
+    margin-top: 64px;
+    width: 262px;
+    max-width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .certificate-image-left {
+    object-fit: contain;
+    object-position: center;
+    width: 120px;
+    border-radius: 9px;
+    box-shadow: 4px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+  }
+
+  .certificate-image-right {
+    object-fit: contain;
+    object-position: center;
+    width: 120px;
+    border-radius: 9px;
+    box-shadow: 4px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+  }
+
+  /* section 5 end */
+
+  /* section 6 start */
+  .earth-section {
+    display: flex;
+    padding: 82px 0 0;
+    flex-direction: column;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 96px;
+    min-width: 375px;
+  }
+
+  .earth-content {
+    position: relative;
+    display: flex;
+    min-height: 520px;
+    width: 100%;
+    background-color: #60a5ff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .earth-image {
+    aspect-ratio: auto;
+    object-position: center;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 330px;
+  }
+
+  .earth-title {
+    align-self: stretch;
+    width: 313px;
+    position: absolute;
+    gap: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    white-space: normal;
+    top: 20%;
+    /* 상단에서 20% 위치에 배치 */
+  }
+
+
+  /* section 6 end */
+
+  /* section 7 start */
+
+  .partners-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+    padding: 96px 10px;
+    margin-top: 96px;
+  }
+
+  .partners-title {
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .partners-image {
+    aspect-ratio: 2.22;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 80px;
+    padding: 5px 0
+  }
+
+
+  /* section 7 end */
+
+
+  /* section 8 start */
+
+  .info-app-container {
+    display: flex;
+    min-width: 375px;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 211px 20px;
+  }
+
+  .info-content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .info-content-inner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0 16px;
+  }
+
+  .info-logo {
+    aspect-ratio: 3.09;
+    object-fit: contain;
+    object-position: center;
+    width: 111px;
+    max-width: 100%;
+  }
+
+  .info-hero-text {
+    color: rgba(0, 0, 0, 1);
+    align-self: stretch;
+    margin-top: 24px;
+    font: 700 24px/36px Pretendard, sans-serif;
+  }
+
+  .info-highlight-text {
+    color: rgba(255, 85, 32, 1);
+  }
+
+  .info-download-buttons {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    gap: 12px;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .info-store-button {
+    border-radius: 5px;
+    background-color: rgba(70, 78, 97, 1);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    margin: auto 0;
+    padding: 8px 16px;
+    width: 100px;
+  }
+
+  .info-store-icon-wrapper {
+    align-self: stretch;
+    display: flex;
+    min-height: 16px;
+    align-items: center;
+    gap: 2px;
+    justify-content: start;
+    width: 16px;
+    margin: auto 0;
+    padding: 2px;
+  }
+
+  .info-store-icon {
+    aspect-ratio: 0.92;
+    object-fit: contain;
+    object-position: center;
+    width: 12px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+  .info-store-text {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    align-self: stretch;
+    margin: auto 0;
+    font: 600 9px Pretendard, sans-serif;
+    white-space: nowrap;
+  }
+
+  .info-app-preview {
+    aspect-ratio: 0.99;
+    object-fit: contain;
+    object-position: center;
+    width: 260px;
+    align-self: center;
+    margin-top: 64px;
+    max-width: 100%;
+  }
+
+  /* section 8 end */
+
+
+  /* css 애니메이션 */
+  /* 초기 상태 */
+  .hero-section h1,
+  .hero-section p,
+  .hero-section .download-buttons,
+  .features-section .feature-title,
+  .features-section .feature-description,
+  .features-section .image-container .image-wrapper,
+  .passport-section .heading,
+  .passport-section .description,
+  .passport-section .image-container .image-wrapper,
+  .payment-section .main-title,
+  .payment-section .payment-description,
+  .payment-section .image-column {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  /* 활성화 상태 */
+  .hero-section h1.active,
+  .hero-section p.active,
+  .hero-section .download-buttons.active,
+  .features-section .feature-title.active,
+  .features-section .feature-description.active,
+  .features-section .image-container .image-wrapper.active,
+  .passport-section .heading.active,
+  .passport-section .description.active,
+  .passport-section .image-container .image-wrapper.active,
+  .payment-section .main-title.active,
+  .payment-section .payment-description.active,
+  .payment-section .image-column.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .travel-heading,
+  .partners-title,
+  .partners-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  /* Travel Section - 부드러운 슬라이드 인 */
+  .fade-slide-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Earth Section - 스케일 업 애니메이션 */
+  .scale-up {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  }
+
+  /* Partners Section - 플립 인 애니메이션 */
+  .flip-in {
+    opacity: 1;
+    transform: rotateY(0);
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+
+  /* Partners Image - 줌 인 효과 */
+  .zoom-in {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  }
+
+  /* 초기 상태 (축소 상태) */
+  .partners-image {
+    transform: scale(0.8);
+  }
+
+
+
+
+}
