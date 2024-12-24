@@ -138,6 +138,7 @@
     position: relative;
     height: auto;
     cursor: pointer;
+    z-index: 2000;
     transition: transform 0.2s ease; /* Add hover effect */
 }
 

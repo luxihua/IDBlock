@@ -100,8 +100,9 @@
 
 
     .image-gallery {
-        align-items: flex-start;
+        align-items: flex-end;
         padding-left:52px;
+        padding-right: 45px;
     }
 
     .service-title, .download-button {

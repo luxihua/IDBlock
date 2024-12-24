@@ -9,8 +9,7 @@
         content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
     <title>IDBlock - Connecting the World Through Authentication</title>
 
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAk4QHuoEIsNmzL-7iILkyWf1ZSsYabeDs&region=kr"></script>
-
+    <script src="/js/appkey.js"></script>
 
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/script_main.js"></script>
@@ -29,7 +28,6 @@
     <link rel="stylesheet" href="media_contact.css">
 
 
-
 </head>
 
 <body>
@@ -38,7 +36,7 @@
     <header class="header">
         <!-- pcMenu nav start-->
         <nav class="pcMenu">
-            <a href="index.html">
+            <a href="/index.html">
                 <img src="/static/pc_logo.svg" alt="IDBlock Logo" class="logo" width="132" height="57">
             </a>
             <ul class="navbar_menu">
@@ -84,8 +82,8 @@
                             alt="Language selection icon" width="30" height="30">
                     </button>
                     <ul class="dropdown_lang">
-                        <li><a href="index.html">KOR</a></li>
-                        <li> <a href="/en/index_en.html">ENG</a></li>
+                        <li><a href="/index.html">KOR</a></li>
+                        <li> <a href="/index_en.html">ENG</a></li>
                     </ul>
                 </li>
             </ul>
@@ -94,7 +92,7 @@
 
         <!-- mobileMenu nav start-->
         <nav class="mobileMenu">
-            <a href="index.html">
+            <a href="/index.html">
                 <img loading="lazy" src="/static/mobile_logo.svg" class="mobile-logo" alt="Company logo" />
             </a>
             <button class="mobile-menu-button" aria-label="Toggle menu" role="button">
@@ -152,8 +150,8 @@
                         </div>
                     </div>
                     <div class="sidebar-dropdown">
-                        <a href="index.html" class="sidebar-dropdown-item">KOR</a>
-                        <a href="/en/index_en.html" class="sidebar-dropdown-item">ENG</a>
+                        <a href="/index.html" class="sidebar-dropdown-item">KOR</a>
+                        <a href="/index_en.html" class="sidebar-dropdown-item">ENG</a>
                     </div>
                 </button>
             </div>
@@ -174,36 +172,7 @@
                 <h2 class="location-title">오시는 길</h2>
                 <div class="location-grid">
                     <article class="location-card">
-                        <div class="location-image" id="map">
-                            <script type="text/javascript">
-
-                                var map;
-                                // 지도 출력
-                                function initMap() {
-                                    // 위치데이터 경도, 위도로 구성된 jso 파일은 항상 이런식으로 구성되어있다.
-                                    var ll = { lat: 36.305263647416, lng: 127.3522761164 };
-                                    map = new google.maps.Map(
-                                        document.getElementById("map"),
-                                        { zoom: 17, center: ll }
-                                    );
-                                    new google.maps.Marker(
-                                        {
-                                            position: ll,
-                                            map: map,
-                                            label: "현재 위치"
-                                        }
-                                    );
-                                }
-                                initMap(); // 맵 생성
-
-                                // 지도의 중심을 변경하는 작업
-                                function changeMap1() {
-                                    var ll = { lat: 36.305263647416, lng: 127.3522761164 };
-                                    map.panTo(ll);
-                                    map.setZoom(16);
-                                } 
-                            </script>
-                        </div>
+                        <div class="location-image" id="map"> </div>
                         <div class="location-details">
                             <h3 class="location-name">본사</h3>
                             <div class="contact-row">
@@ -225,36 +194,7 @@
                     </article>
 
                     <article class="location-card">
-                        <div class="location-image" id="map2">
-                            <script type="text/javascript">
-
-                                var map2;
-                                // 지도 출력
-                                function initMap() {
-                                    // 위치데이터 경도, 위도로 구성된 jso 파일은 항상 이런식으로 구성되어있다.
-                                    var ll = { lat: 37.523335815094, lng: 126.92334638573 };
-                                    map = new google.maps.Map(
-                                        document.getElementById("map2"),
-                                        { zoom: 17, center: ll }
-                                    );
-                                    new google.maps.Marker(
-                                        {
-                                            position: ll,
-                                            map: map,
-                                            label: "현재 위치"
-                                        }
-                                    );
-                                }
-                                initMap(); // 맵 생성
-
-                                // 지도의 중심을 변경하는 작업
-                                function changeMap1() {
-                                    var ll = { lat: 37.523335815094, lng: 126.92334638573 };
-                                    map.panTo(ll);
-                                    map.setZoom(16);
-                                } 
-                            </script>
-                        </div>
+                        <div class="location-image" id="map2"></div>
                         <div class="location-details">
                             <h3 class="location-name">서울 지사</h3>
                             <div class="contact-row">
@@ -278,6 +218,47 @@
 
     <script type="module" defer src="/js/nav.js"></script>
     <script type="module" defer src="/js/index.js"></script>
+
+
+    <!-- Google Maps API 동적 로드 -->
+    <script>
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initMap&language=en`;
+        script.async = true;
+        script.defer = true;
+        document.head.appendChild(script);
+
+        // 지도 초기화 함수 정의
+        function initMap() {
+            const locations = [
+                {
+                    id: 'map',
+                    lat: 36.305263647416,
+                    lng: 127.3522761164,
+                    label: 'Head Office'
+                },
+                {
+                    id: 'map2',
+                    lat: 37.526263,
+                    lng: 126.929719,
+                    label: 'Seoul Branch'
+                }
+            ];
+
+            locations.forEach((location) => {
+                const map = new google.maps.Map(document.getElementById(location.id), {
+                    center: { lat: location.lat, lng: location.lng },
+                    zoom: 17
+                });
+
+                new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map: map,
+                    label: location.label
+                });
+            });
+        }
+    </script>
 
 
 </body>
