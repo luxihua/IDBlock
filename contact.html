@@ -9,35 +9,40 @@
         content="IDBlock - Connecting the world through authentication. Safe and convenient Korean travel experience for foreign tourists">
     <title>IDBlock - Connecting the World Through Authentication</title>
 
-    <script src="/js/appkey.js"></script>
 
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/script_main.js"></script>
-    <script src="/js/scrolla.jquery.min.js"></script>
-    <script src="/js/splitting.min.js"></script>
 
-    <script src="/js/includeHTML.js?version-1.1"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script_main.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/splitting.min.js"></script>
+
+    <script src="js/includeHTML.js?version-1.1"></script>
 
     <link rel="stylesheet" href="animate.min.css">
 
-    <link rel="stylesheet" href="/common/global.css">
-    <link rel="stylesheet" href="/common/nav.css">
+    <link rel="stylesheet" href="common/nav.css">
 
-    <link rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)" href="mediamaps_tab.css">
-    <link rel="stylesheet" href="contact_style.css">
-    <link rel="stylesheet" href="media_contact.css">
+    <link rel="stylesheet" href="common/mediaglobalstyle.css">
+    <link rel="stylesheet" href="common/global.css">
+
+    <link rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)"
+        href="css/mediacontact_tab.css">
+    <link rel="stylesheet" href="css/contact_style.css">
+    <link rel="stylesheet" href="css/media_contact.css">
+
 
 
 </head>
 
 <body>
 
+
     <!-- 네비게이션 start-->
     <header class="header">
         <!-- pcMenu nav start-->
         <nav class="pcMenu">
-            <a href="/index.html">
-                <img src="/static/pc_logo.svg" alt="IDBlock Logo" class="logo" width="132" height="57">
+            <a href="index.html">
+                <img src="static/pc_logo.svg" alt="IDBlock Logo" class="logo" width="132" height="57">
             </a>
             <ul class="navbar_menu">
                 <li class="navbar_item_dropdown">
@@ -68,10 +73,10 @@
                     <a href="#download">다운로드</a>
                     <div class="nav-item-download">
                         <a href="https://example.com/ios-download">
-                            <img src="/static/basic_apple_download.svg" class="ios-download">
+                            <img src="static/basic_apple_download.svg" class="ios-download">
                         </a>
                         <a href="https://example.com/android-download">
-                            <img src="/static/basic_android_download.svg" class="android-download">
+                            <img src="static/basic_android_download.svg" class="android-download">
                         </a>
                     </div>
                 </li>
@@ -82,8 +87,8 @@
                             alt="Language selection icon" width="30" height="30">
                     </button>
                     <ul class="dropdown_lang">
-                        <li><a href="/index.html">KOR</a></li>
-                        <li> <a href="/index_en.html">ENG</a></li>
+                        <li><a href="index.html">KOR</a></li>
+                        <li> <a href="index_en.html">ENG</a></li>
                     </ul>
                 </li>
             </ul>
@@ -92,8 +97,8 @@
 
         <!-- mobileMenu nav start-->
         <nav class="mobileMenu">
-            <a href="/index.html">
-                <img loading="lazy" src="/static/mobile_logo.svg" class="mobile-logo" alt="Company logo" />
+            <a href="index.html">
+                <img loading="lazy" src="static/mobile_logo.svg" class="mobile-logo" alt="Company logo" />
             </a>
             <button class="mobile-menu-button" aria-label="Toggle menu" role="button">
                 <img loading="lazy"
@@ -104,7 +109,7 @@
             <!--햄버거 메뉴 바-->
             <div class="sidebar-nav-menu">
                 <button class="sidebar-menu-close">
-                    <img src="/static/close_icon.png" class="sidebar-close-icon" alt="Close menu" />
+                    <img src="static/close_icon.png" class="sidebar-close-icon" alt="Close menu" />
                 </button>
                 <button class="sidebar-menu-item" tabindex="0" role="button">
                     <div class="sidebar-menu-content">
@@ -150,8 +155,8 @@
                         </div>
                     </div>
                     <div class="sidebar-dropdown">
-                        <a href="/index.html" class="sidebar-dropdown-item">KOR</a>
-                        <a href="/index_en.html" class="sidebar-dropdown-item">ENG</a>
+                        <a href="index.html" class="sidebar-dropdown-item">KOR</a>
+                        <a href="index_en.html" class="sidebar-dropdown-item">ENG</a>
                     </div>
                 </button>
             </div>
@@ -163,104 +168,44 @@
         <!-- mobileMenu nav start-->
     </header>
 
+
     <main class="desktop-main" role="main">
 
-        <!-- 오시는길 start-->
+        <!-- 협업 문의 start-->
 
-        <section class="location-section" aria-label="Office Locations">
-            <div class="location-container">
-                <h2 class="location-title">오시는 길</h2>
-                <div class="location-grid">
-                    <article class="location-card">
-                        <div class="location-image" id="map"> </div>
-                        <div class="location-details">
-                            <h3 class="location-name">본사</h3>
-                            <div class="contact-row">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb86cc0f470a7244bc48d2d0591861fd2bb5b440b4210c82ea43cd8c2353879b?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                                    alt="" class="contact-icon" />
-                                <address class="contact-text">대전광역시 서구 계백로 1161, 404-D38호</address>
-                            </div>
-                            <div class="contact-row">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9926349e1886d10ef91a3d6b148c24a55f766288bf1fb1c09869089b53cca550?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                                    alt="" class="contact-icon" />
-                                <p class="contact-text">TEL : +82 2-6975-9999 | FAX : +82 2-6008-5040</p>
-                            </div>
-                            <div class="contact-row">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4b50c3be9922ab770ca4e14e7c6641d8406f98cd5b4da54f6a8e6736093fac8?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                                    alt="" class="contact-icon" />
-                                <p class="contact-text">E-mail : crosshub@crosshub.kr</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="location-card">
-                        <div class="location-image" id="map2"></div>
-                        <div class="location-details">
-                            <h3 class="location-name">서울 지사</h3>
-                            <div class="contact-row">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef6c4dc94f5d1d8a9fefbdc25532dbda47eb5baa47271eea7d24e7f258129901?placeholderIfAbsent=true&apiKey=342eb70ec9c347beb3127fd33e54f28d"
-                                    alt="" class="contact-icon" />
-                                <address class="contact-text">서울특별시 영등포구 의사당대로 83(오투타워),5F</address>
-                            </div>
-                        </div>
-                    </article>
+        <section class="partnership-container" aria-label="Partnership Information">
+            <div class="hero-section" role="banner">
+                <h1 class="hero-text">
+                    크로스허브는 더 나은 미래를 만들고 시너지를 높일 수 있는<br />
+                    동반 성장의 기회를 모색하고 있습니다.
+                </h1>
+            </div>
+            <div class="contact-section">
+                <div class="contact-header">
+                    <h2 class="contact-title">제휴문의</h2>
+                    <a href="mailto:Crosshub@crosshub.kr" class="contact-email" tabindex="0">
+                        crosshub@crosshub.kr
+                    </a>
                 </div>
+                <p class="contact-description">
+                    사업 제휴 등과 관련한 문의를 보내주시면<br />
+                    담당 부서 검토 후, 빠른 시일 내에 회신드리겠습니다.
+                </p>
             </div>
         </section>
 
-        <!-- 오시는길 end-->
+
+        <!-- 협업 문의 end-->
+
 
     </main>
 
     <div include-html="footer.html"></div>
+
     <script>includeHTML();</script>
 
-
-    <script type="module" defer src="/js/nav.js"></script>
-    <script type="module" defer src="/js/index.js"></script>
-
-
-    <!-- Google Maps API 동적 로드 -->
-    <script>
-        const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initMap&language=en`;
-        script.async = true;
-        script.defer = true;
-        document.head.appendChild(script);
-
-        // 지도 초기화 함수 정의
-        function initMap() {
-            const locations = [
-                {
-                    id: 'map',
-                    lat: 36.305263647416,
-                    lng: 127.3522761164,
-                    label: 'Head Office'
-                },
-                {
-                    id: 'map2',
-                    lat: 37.526263,
-                    lng: 126.929719,
-                    label: 'Seoul Branch'
-                }
-            ];
-
-            locations.forEach((location) => {
-                const map = new google.maps.Map(document.getElementById(location.id), {
-                    center: { lat: location.lat, lng: location.lng },
-                    zoom: 17
-                });
-
-                new google.maps.Marker({
-                    position: { lat: location.lat, lng: location.lng },
-                    map: map,
-                    label: location.label
-                });
-            });
-        }
-    </script>
-
-
+    <script type="module" defer src="js/nav.js"></script>
+    <script type="module" defer src="js/index.js"></script>
 </body>
 
 </html>

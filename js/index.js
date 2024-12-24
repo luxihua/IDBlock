@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const originalLeftSrc = certificateImageLeft.src.trim();
   const originalRightSrc = certificateImageRight.src.trim();
-  const alternateLeftSrc = "/static/cert_image1.png";
-  const alternateRightSrc = "/static/cert_image2.png";
+  const alternateLeftSrc = "static/cert_image1.png";
+  const alternateRightSrc = "static/cert_image2.png";
 
   const changeImageWithEffect = (imageElement, newSrc) => {
     console.log(`Changing image source to: ${newSrc}`);
