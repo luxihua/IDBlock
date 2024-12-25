@@ -68,6 +68,13 @@
         padding: 0 0px;
     }
 
+    .earth-content {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 200px;
+        gap: 85px;
+    }
+
 
     .earth-image {
         aspect-ratio: auto;
@@ -261,28 +268,7 @@
         margin-bottom: 24px;
     }
 
-    /* press-releases 섹션 수정 */
-    .press-releases {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        padding: 0 80px;
-        /* 여백 조정 */
-        max-width: 1300px;
-        /* 섹션 최대 너비 */
-        margin: 0 auto;
-        /* 중앙 정렬 */
-    }
 
-    .press-container {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        /* 기사 간 간격 */
-        width: 1200px;
-    }
 
     .press-title {
         font-size: 48px;
@@ -291,64 +277,38 @@
         text-align: left;
         font-family: Pretendard, sans-serif;
         text-decoration-skip-ink: none;
-        margin-bottom: 120px;
 
     }
 
-
-    .press-item {
-        justify-content: space-between;
-
+    .press-container {
+        width:1200px;
     }
+
+
 
     .press-item-title {
-        width: 772px;
+        width: 711px;
         font-family: Pretendard, sans-serif;
         font-size: 28px;
         font-weight: 700;
         line-height: 32px;
-        text-align: left;
         text-decoration: none; /* 밑줄 제거 */
-        white-space: nowrap; /* 제목 줄바꿈 방지 */
+        white-space: nowrap; 
         overflow: hidden; /* 제목이 길면 숨김 처리 */
         text-overflow: ellipsis; /* 숨겨진 부분에 ... 표시 */
-    }
-
-
-
-    .press-meta {
-        display: flex;
-        justify-content: space-between;
-        /* 양 끝으로 정렬 */
-        align-items: center;
-        font-family: Pretendard, sans-serif;
     }
 
     .press-date {
         font-family: Pretendard, sans-serif;
         font-size: 24px;
         font-weight: 400;
-        line-height: 14.32px;
-        text-align: right;
     }
 
     .press-source {
         font-family: Pretendard, sans-serif;
         font-size: 24px;
         font-weight: 400;
-        line-height: 14.32px;
-        text-align: right;
-        margin-bottom: 5px;
     }
-
-    .press-divider {
-        background-color: #D9D9D9;
-        height: 1px;
-        /* 구분선 상하 간격 */
-        width: 100%;
-        margin: 25px 0;
-    }
-
 
 
      

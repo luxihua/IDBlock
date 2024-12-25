@@ -143,12 +143,12 @@
 }
 
 .nav-item-download .ios-download:hover {
-    content: url('static/apple_download.svg'); /* 새로운 이미지 URL */
+    content: url('../static/apple_download.svg'); /* 새로운 이미지 URL */
 }
 
 
 .nav-item-download .android-download:hover {
-    content: url('static/android_download.svg'); /* 새로운 이미지 URL */
+    content: url('../static/android_download.svg'); /* 새로운 이미지 URL */
 }
 
 /* Links */
@@ -481,7 +481,7 @@
 }
 
 .sidebar-menu-item.active .sidebar-language-icon {
-     background-image: url('static/global.svg');
+     background-image: url('../static/global.svg');
 }
 
 

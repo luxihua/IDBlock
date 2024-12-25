@@ -88,7 +88,7 @@
     }
 
     .download-button .ios-download:hover {
-        content: url('.../static/apple_download.svg'); /* 새로운 이미지 URL */
+        content: url('../static/apple_download.svg'); /* 새로운 이미지 URL */
     }
 
     .download-button .android-download:hover {
