@@ -15,35 +15,15 @@ function initializeAfterIncludeHTML() {
             }
         });
     }
-
-    const pcDropdownLinks = document.querySelectorAll(".pc-menu .dropdown > a");
-
-    pcDropdownLinks.forEach((link) => {
-        link.addEventListener("mouseenter", function () {
-            const dropdownMenu = this.nextElementSibling;
-            if (dropdownMenu) {
-                dropdownMenu.style.display = 'block';
-            }
-        });
-
-        link.parentElement.addEventListener("mouseleave", function () {
-            const dropdownMenu = link.nextElementSibling;
-            if (dropdownMenu) {
-                dropdownMenu.style.display = 'none';
-            }
-        });
-    });
-
-    // Add functionality for "navbar_item_download"
     const navbarDownloadItem = document.querySelector("#navbar_item_download");
+    const navLangDownloadItem = document.querySelector("#navbar_lang_dropdown");
     const navItemDownload = document.querySelector(".nav-item-download");
+    const navLangDownload = document.querySelector(".language-toggle");
+
 
     if (navbarDownloadItem && navItemDownload) {
-        navbarDownloadItem.addEventListener("mouseenter", function (e) {
-            e.stopPropagation(); // Prevent click bubbling
-            const isActive = navbarDownloadItem.classList.contains("active");
-
-            // Close all other dropdowns
+        // 공통 함수: 모든 드롭다운 닫기
+        function closeAllDropdowns() {
             document.querySelectorAll(".navbar_item_dropdown").forEach(item => {
                 item.classList.remove("active");
                 const dropdown = item.querySelector(".nav-item-download");
@@ -51,49 +31,80 @@ function initializeAfterIncludeHTML() {
                     dropdown.style.display = "none";
                 }
             });
+        }
 
-            // Toggle the current dropdown
+        // 다운로드 버튼 클릭 또는 마우스 진입으로 드롭다운 열기
+        navbarDownloadItem.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const isActive = navbarDownloadItem.classList.contains("active");
+
+            closeAllDropdowns();
+
             if (!isActive) {
                 navbarDownloadItem.classList.add("active");
                 navItemDownload.style.display = "block";
-            } else {
-                navbarDownloadItem.classList.remove("active");
-                navItemDownload.style.display = "none";
             }
         });
 
-        // Close the dropdown when clicking outside
-        document.addEventListener("click", () => {
-            navbarDownloadItem.classList.remove("active");
-            navItemDownload.style.display = "none";
+        navbarDownloadItem.addEventListener("mouseenter", function (e) {
+            e.stopPropagation();
+            const isActive = navbarDownloadItem.classList.contains("active");
+
+            closeAllDropdowns();
+
+            if (!isActive) {
+                navbarDownloadItem.classList.add("active");
+                navItemDownload.style.display = "block";
+            }
         });
 
+        // 다른 드롭다운으로 이동 시 드롭다운 닫기
+        document.querySelectorAll(".navbar_item_dropdown").forEach(item => {
+            item.addEventListener("mouseenter", function () {
+                if (item !== navbarDownloadItem) {
+                    closeAllDropdowns();
+                }
+            });
+        });
+
+
+        // 페이지 외부 클릭 시 드롭다운 닫기
+        document.addEventListener("click", () => {
+            closeAllDropdowns();
+        });
+
+        // 다운로드 드롭다운 외부로 마우스 이동 시 닫기
         navItemDownload.addEventListener("mouseleave", function () {
             navbarDownloadItem.classList.remove("active");
             navItemDownload.style.display = "none";
         });
 
-        // Handle download links within the dropdown
+        // 다운로드 드롭다운 외부로 마우스 이동 시 닫기
+        navLangDownload.addEventListener("mouseenter", function () {
+            navbarDownloadItem.classList.remove("active");
+            navItemDownload.style.display = "none";
+        });
+
+        // 다운로드 링크 핸들링
         const iosLink = navItemDownload.querySelector('a[href="#iOS"]');
         const androidLink = navItemDownload.querySelector('a[href="#andorid"]');
 
         if (iosLink) {
             iosLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                window.location.href = "https://example.com/ios-download"; // Replace with actual iOS URL
+                window.location.href = "https://example.com/ios-download"; // 실제 iOS URL로 변경
             });
         }
 
         if (androidLink) {
             androidLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                window.location.href = "https://example.com/android-download"; // Replace with actual Android URL
+                window.location.href = "https://example.com/android-download"; // 실제 Android URL로 변경
             });
         }
     } else {
-        console.error("'navbar_item_download' or 'nav-item-download' not found.");
+        console.error("'navbar_item_download' 또는 'nav-item-download' 요소를 찾을 수 없습니다.");
     }
-
     // Other existing initializations...
 }
 
@@ -183,30 +194,30 @@ document.querySelectorAll(".sidebar-menu-item").forEach((item) => {
         }
 
 
-    // 드롭다운이 있는 경우 기존 동작 유지
-    const isActive = item.classList.contains("active");
+        // 드롭다운이 있는 경우 기존 동작 유지
+        const isActive = item.classList.contains("active");
 
-    // 모든 드롭다운 닫기
-    document.querySelectorAll(".sidebar-menu-item").forEach((el) => {
-        el.classList.remove("active");
-        const elDropdown = el.querySelector(".sidebar-dropdown");
-        if (elDropdown) {
-            elDropdown.style.display = "none";
-            el.style.marginBottom = "0";
+        // 모든 드롭다운 닫기
+        document.querySelectorAll(".sidebar-menu-item").forEach((el) => {
+            el.classList.remove("active");
+            const elDropdown = el.querySelector(".sidebar-dropdown");
+            if (elDropdown) {
+                elDropdown.style.display = "none";
+                el.style.marginBottom = "0";
+            }
+        });
+
+        if (dropdown && !isActive) {
+            item.classList.add("active");
+            dropdown.style.display = "flex";
+
+            const dropdownHeight = dropdown.offsetHeight;
+            item.style.marginBottom = `${dropdownHeight}px`;
+        } else if (dropdown) {
+            item.classList.remove("active");
+            dropdown.style.display = "none";
         }
     });
-
-    if (dropdown && !isActive) {
-        item.classList.add("active");
-        dropdown.style.display = "flex";
-
-        const dropdownHeight = dropdown.offsetHeight;
-        item.style.marginBottom = `${dropdownHeight}px`;
-    } else if (dropdown) {
-        item.classList.remove("active");
-        dropdown.style.display = "none";
-    }
-});
 });
 
 document.addEventListener("DOMContentLoaded", function () {
