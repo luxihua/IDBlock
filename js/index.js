@@ -147,6 +147,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   };
 
+
+
+  
   const isMobile = () => window.innerWidth <= 479;
 
   // PC 이벤트

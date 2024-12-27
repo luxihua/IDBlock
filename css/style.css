@@ -661,14 +661,16 @@
         /* 마우스 올릴 때 살짝 확대 효과 */
     }
 
+    .certificate-image-left.flip-animation, .certificate-image-right.flip-animation {
+        transform: rotateY(90deg); /* Y축 회전 */
+        opacity: 0.5; /* 투명도 효과 */
+    }
+
+
     .certificate-image-left:hover,
     .certificate-image-right:hover {
         transform: scale(1.05);
         /* 살짝 확대 */
-    }
-
-    .flip-animation {
-        transition: transform 0.3s ease-in-out;
     }
 
 
